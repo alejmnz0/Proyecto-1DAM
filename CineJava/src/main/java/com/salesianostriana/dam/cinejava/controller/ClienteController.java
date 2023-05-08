@@ -29,10 +29,15 @@ public class ClienteController {
 		return "register";
 	}
 	
-	@PostMapping()
+	@PostMapping("/nuevo/submit")
 	public String procesarRegistro (@ModelAttribute("cliente") Cliente c) {
 		servicioCliente.add(c);
-		return "redirect:/";
+		return "redirect:/list";
+	}
+	
+	@GetMapping("/login") 
+	public String mandarLogin () {
+		return "login";
 	}
 	
 }

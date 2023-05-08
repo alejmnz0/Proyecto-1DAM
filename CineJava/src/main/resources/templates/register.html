@@ -46,7 +46,7 @@
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input th:field="*{fechanac}" type="date" id="fechanac" class="form-control form-control-lg">
+                    <input th:field="*{fechaNac}" type="date" id="fechanac" class="form-control form-control-lg">
                     <label class="form-label" for="fechanac">Fecha de nacimiento</label>
                   </div>
 
@@ -71,7 +71,7 @@
                   </div>
 
                   <div class="text-center">
-                    <p class="mb-0 mt-3">¿Ya tienes cuenta? <a href="login.html" class="text-white-50 fw-bold">Inicia sesión</a></p>
+                    <p class="mb-0 mt-3">¿Ya tienes cuenta? <a th:href="@{/login}" class="text-white-50 fw-bold">Inicia sesión</a></p>
                   </div>
                 </form>
               </div>
