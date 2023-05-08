@@ -1,4 +1,4 @@
-package com.salesianostriana.dam.cinejava.model;
+/*package com.salesianostriana.dam.cinejava.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,3 +39,4 @@ public class Sala {
 		orphanRemoval = true) //eliminar los huerfanos (asientos sin sala)
 	private List<Asiento> asientos= new ArrayList<>();
 }
+*/

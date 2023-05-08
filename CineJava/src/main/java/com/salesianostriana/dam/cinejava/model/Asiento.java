@@ -1,4 +1,4 @@
-package com.salesianostriana.dam.cinejava.model;
+/*package com.salesianostriana.dam.cinejava.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -25,3 +25,4 @@ public class Asiento {
 	
 	private boolean vip;
 }
+*/

@@ -1,4 +1,4 @@
-package com.salesianostriana.dam.cinejava.model;
+/*package com.salesianostriana.dam.cinejava.model;
 
 import java.time.LocalDateTime;
 
@@ -31,3 +31,4 @@ public class Pase {
 	
 	
 }
+*/

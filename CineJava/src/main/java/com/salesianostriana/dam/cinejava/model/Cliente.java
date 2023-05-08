@@ -23,6 +23,7 @@ public class Cliente {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	private long nombre, apellido, gmail;
-	LocalDate fechaNac;
+	private long nombre, apellidos, email;
+	private String password;
+	private LocalDate fechaNac;
 }
