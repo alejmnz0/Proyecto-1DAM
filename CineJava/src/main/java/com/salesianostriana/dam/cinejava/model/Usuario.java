@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Cliente {
+public class Usuario{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,4 +30,6 @@ public class Cliente {
 	
 	@DateTimeFormat(iso = ISO.DATE)
 	private LocalDate fechaNac;
+	
+	private boolean admin;
 }

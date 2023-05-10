@@ -2,8 +2,8 @@ package com.salesianostriana.dam.cinejava.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.salesianostriana.dam.cinejava.model.Cliente;
+import com.salesianostriana.dam.cinejava.model.Usuario;
 
-public interface ClienteRepository extends JpaRepository<Cliente, Long>{
+public interface ClienteRepository extends JpaRepository<Usuario, Long>{
 
 }
