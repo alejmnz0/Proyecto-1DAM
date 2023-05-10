@@ -6,40 +6,40 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.salesianostriana.dam.cinejava.model.Usuario;
-import com.salesianostriana.dam.cinejava.repository.ClienteRepository;
+import com.salesianostriana.dam.cinejava.repository.UsuarioRepository;
 
 @Service
-public class ClienteService {
+public class UsuarioService {
 
 	@Autowired
-	private ClienteRepository repositorioClientes;
+	private UsuarioRepository repositorioUsuarios;
 	
-	public ClienteService(ClienteRepository repo) {
-		this.repositorioClientes = repo;
+	public UsuarioService(UsuarioRepository repo) {
+		this.repositorioUsuarios = repo;
 	}
 	
 	public Usuario add (Usuario c) {
-		return repositorioClientes.save(c);
+		return repositorioUsuarios.save(c);
 	}
 	
 	public Usuario edit (Usuario c) {
-		return repositorioClientes.save(c);
+		return repositorioUsuarios.save(c);
 	}
 	
 	public void delete (Usuario c) {
-		repositorioClientes.delete(c);
+		repositorioUsuarios.delete(c);
 	}
 	
 	public void delete (long id) {
-		repositorioClientes.deleteById(id);
+		repositorioUsuarios.deleteById(id);
 	}
 	
 	public List<Usuario> findAll () {
-		return repositorioClientes.findAll();
+		return repositorioUsuarios.findAll();
 	}
 	
 	public Usuario findById (Long id) {
-		return repositorioClientes.findById(id).orElse(null);
+		return repositorioUsuarios.findById(id).orElse(null);
 	}
 	
 }

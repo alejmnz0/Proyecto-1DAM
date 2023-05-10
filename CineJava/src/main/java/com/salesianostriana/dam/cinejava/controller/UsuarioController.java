@@ -7,31 +7,31 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.salesianostriana.dam.cinejava.model.Usuario;
-import com.salesianostriana.dam.cinejava.service.ClienteService;
+import com.salesianostriana.dam.cinejava.service.UsuarioService;
 
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 @Controller
-public class ClienteController {
+public class UsuarioController {
 
-	private ClienteService servicioCliente;
+	private UsuarioService servicioUsuario;
 	
 	@GetMapping({"/", "/list"})
 	public String listarTodos(Model model) {
-		model.addAttribute("lista", servicioCliente.findAll());
+		model.addAttribute("lista", servicioUsuario.findAll());
 		return "index";
 	}
 	
 	@GetMapping("/nuevo")
 	public String mostrarRegistro (Model model) {
-		model.addAttribute("cliente", new Usuario());
+		model.addAttribute("usuario", new Usuario());
 		return "register";
 	}
 	
 	@PostMapping("/nuevo/submit")
-	public String procesarRegistro (@ModelAttribute("cliente") Usuario c) {
-		servicioCliente.add(c);
+	public String procesarRegistro (@ModelAttribute("usuario") Usuario u) {
+		servicioUsuario.add(u);
 		return "redirect:/list";
 	}
 	
