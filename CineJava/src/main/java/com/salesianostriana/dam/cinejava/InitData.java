@@ -1,5 +1,6 @@
 package com.salesianostriana.dam.cinejava;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -27,12 +28,18 @@ public class InitData {
 				//.password("1234")
 				.email("user@user.es")
 				.password(passwordEncoder.encode("1234"))
+				.nombre("Alejandro")
+				.apellidos("Jimenez")
+				.fechaNac(LocalDate.of(2004,06,11))
 				.build();
 		
 		Usuario admin = Usuario.builder()
 				.admin(true)
 				.password(passwordEncoder.encode("admin"))
 				.email("admin@admin.es")
+				.nombre("Jorge")
+				.apellidos("diaz")
+				.fechaNac(LocalDate.of(2004,01,16))
 				.build();
 		
 		repo.saveAll(List.of(usuario, admin));

@@ -13,76 +13,29 @@
 	<title>Ejemplo de un CRUD completo</title>
 </head>
 <body>
-<div id="menu">
-	<a th:href="@{/list}">Inicio</a> | <a th:href="@{/nuevo}">Nuevo cliente</a>
-</div>
-<br /><br />
-<table border=1>
-	<thead>
-		<tr>
-			<th>Id</th>
-			<th>Nombre</th>
-			<th>Apellidos</th>
-			<th>email</th>
-			<th>Operar</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr th:each="cliente : ${lista}">
-			<td th:text="${cliente.id}">1</td>
-			<td th:text="${cliente.nombre}">Nombre cliente</td>
-			<td th:text="${cliente.apellidos}">Apellidos</td>
-			<td th:text="${cliente.email}">Email</td>
-			
-<!-- Estamos "montando las rutas" que aparecen como enlaces (editar y borrar) 
-en la tabla de alumnos ya que estas cambian al pinchar en 
-un alumno en concreto recogiendo el id de dicho alumno 
-y así poder acceder a su información. Para ello:
+	<form th:action="@{/logout}" method="POST" id="logoutForm"></form>
+	<h1>
+		Bienvenido <span sec:authentication="name">Usuario</span>
+	</h1>
 
-* Usamos como siempre en th @{ }
-* La primera parte (la parte que no varía podríamos decir) es igual a las vistas de otras ocasiones, 
-por ejemplo, th:href="@{/editar/más si hubiera otras"
-* Después agregamos las llaves con id para que sea reconocido 
-como un parámetro o parte de la ruta "que va a cambiar"
-* Dentro de paréntesis, asignamos un valor a dicho id, 
-en este caso como es el atributo de la entidad, usamos la forma normal de th
-para el uso de variables, es decir, símbolo de dólar y el nombre del objeto.nombreatributo, 
-quedando como puede verse en el código
-* Con esto, tendremos el id del alumno que pinchemos en la tabla
+	<nav class="navbar navbar-expand-sm bg-light">
 
--->
-			<td>
-				<a href="#" th:href="@{/editar/{id}(id=${cliente.id})}">Editar</a> | 
-				<a href="#" th:href="@{/borrar/{id}(id=${cliente.id})}">Borrar</a>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<table class="table table-dark table-hover table-sm">
-	<thead>
-	  <tr>
-		<th scope="col">ID</th>
-		<th scope="col">Nombre</th>
-		<th scope="col">Apellidos</th>
-		<th scope="col">Correo</th>
-		<th scope="col">Fecha Nacimiento</th>
-		<th scope="col">Operar</th>
-	  </tr>
-	</thead>
-	<tbody>
-	  <tr>
-		<th th:text="${cliente.id}" scope="row">1</th>
-		<td th:text="${cliente.nombre}">Mark</td>
-		<td th:text="${cliente.apellidos}">Ottovonmiskarc</td>
-		<td th:text="${cliente.email}">@mdo</td>
-		<td th:text="${cliente.fechaNac}">0000-00-00</td>
-		<td>
-			<a href="#" th:href="@{/editar/{id}(id=${cliente.id})}"><i class="bi-pencil-square"></i></a> | 
-			<a href="#" th:href="@{/borrar/{id}(id=${cliente.id})}"><i class="bi-trash3"></i></a>
-		</td>
-	  </tr>
-	</tbody>
-</table>
+		<div class="container-fluid">
+		  <!-- Links -->
+		  <ul class="navbar-nav">
+			<li class="nav-item">
+			  <a class="nav-link" href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+			</li>
+			<li id="btnadmin" class="nav-item" sec:authorize="hasRole('ROLE_ADMIN')">
+				<a class="nav-link btn btn-dark text-danger mx-1" href="http://localhost:9000/sesiones/" role="button">Administración</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Link 3</a>
+			</li>
+		  </ul>
+		</div>
+	  
+	  </nav>
+	
 </body>
 </html>
