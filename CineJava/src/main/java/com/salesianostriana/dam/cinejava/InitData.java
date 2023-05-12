@@ -23,26 +23,26 @@ public class InitData {
 	@PostConstruct
 	public void init() {
 		
+		Usuario admin = Usuario.builder()
+				.admin(true)
+				.password("{bcrypt}$2a$12$GsUXFobMZAxzGeKkOXAXe.SebrjbNvsTAUIWlOTCsd5j8rQ/k4TYu")
+				.email("admin@admin.es")
+				.nombre("Alejandro")
+				.apellidos("Jiménez")
+				.fechaNac(LocalDate.of(2004,06,11))
+				.build();
+		
 		Usuario usuario = Usuario.builder()
 				.admin(false)
 				//.password("1234")
 				.email("user@user.es")
 				.password(passwordEncoder.encode("1234"))
-				.nombre("Alejandro")
-				.apellidos("Jimenez")
-				.fechaNac(LocalDate.of(2004,06,11))
-				.build();
-		
-		Usuario admin = Usuario.builder()
-				.admin(true)
-				.password(passwordEncoder.encode("admin"))
-				.email("admin@admin.es")
-				.nombre("Jorge")
-				.apellidos("diaz")
+				.nombre("Antonio")
+				.apellidos("García")
 				.fechaNac(LocalDate.of(2004,01,16))
 				.build();
 		
-		repo.saveAll(List.of(usuario, admin));
+		repo.saveAll(List.of(admin, usuario));
 		
 	}
 
