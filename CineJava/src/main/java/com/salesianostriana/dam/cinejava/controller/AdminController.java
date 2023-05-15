@@ -28,7 +28,7 @@ public class AdminController {
 	@GetMapping("/nuevo")
 	public String mostrarRegistro (Model model) {
 		model.addAttribute("usuario", new Usuario());
-		return "register";
+		return "userRegister";
 	}
 	
 	@PostMapping("/nuevo/submit")
@@ -44,7 +44,7 @@ public class AdminController {
 		
 		if (aEditar != null) {
 			model.addAttribute("usuario", aEditar);
-			return "register";
+			return "userRegister";
 		} else {
 			return "redirect:/admin/";
 		}

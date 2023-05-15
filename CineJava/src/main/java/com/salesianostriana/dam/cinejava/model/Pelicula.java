@@ -1,4 +1,4 @@
-/*package com.salesianostriana.dam.cinejava.model;
+package com.salesianostriana.dam.cinejava.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,8 +19,7 @@ public class Pelicula {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id_pelicula;
+	private long id;
 	
-	private String titulo, sinopsis, portada;
+	private String titulo, sinopsis, portada, altPortada;
 }
-*/
