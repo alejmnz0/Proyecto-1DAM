@@ -725,3 +725,787 @@ ALTER SEQUENCE hibernate.sequence RESTART WITH 1000 [90079-214]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
 	at com.salesianostriana.dam.cinejava.CineJavaApplication.main(CineJavaApplication.java:10)
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}' || crypt('juangonzalez', gen_salt('bf')))"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}' || crypt('juangonzalez', gen_salt('bf')))"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}' || crypt('juangonzalez', gen_salt('bf'))) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}' || crypt('mariarodriguez', gen_salt('bf')))"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}' || crypt('mariarodriguez', gen_salt('bf')))"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}' || crypt('mariarodriguez', gen_salt('bf'))) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}' || crypt('carlosfernandez', gen_salt('bf')))"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}' || crypt('carlosfernandez', gen_salt('bf')))"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}' || crypt('carlosfernandez', gen_salt('bf'))) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}' || crypt('lauralopez', gen_salt('bf')))"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}' || crypt('lauralopez', gen_salt('bf')))"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}' || crypt('lauralopez', gen_salt('bf'))) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}' || crypt('javiermartinez', gen_salt('bf')))"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}' || crypt('javiermartinez', gen_salt('bf')))"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}' || crypt('javiermartinez', gen_salt('bf'))) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}' || crypt('sofiagomez', gen_salt('bf')))"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}' || crypt('sofiagomez', gen_salt('bf')))"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}' || crypt('sofiagomez', gen_salt('bf'))) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Pérez', 'diegoperez@gmail.com', '1999-11-04', 'Diego', '{bcrypt}' || crypt('diegoperez', gen_salt('bf')))"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Pérez', 'diegoperez@gmail.com', '1999-11-04', 'Diego', '{bcrypt}' || crypt('diegoperez', gen_salt('bf')))"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Pérez', 'diegoperez@gmail.com', '1999-11-04', 'Diego', '{bcrypt}' || crypt('diegoperez', gen_salt('bf'))) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Jiménez', 'anajimenez@gmail.com', '2002-01-09', 'Ana', '{bcrypt}' || crypt('anajimenez', gen_salt('bf')))"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Jiménez', 'anajimenez@gmail.com', '2002-01-09', 'Ana', '{bcrypt}' || crypt('anajimenez', gen_salt('bf')))"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Jiménez', 'anajimenez@gmail.com', '2002-01-09', 'Ana', '{bcrypt}' || crypt('anajimenez', gen_salt('bf'))) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Vargas', 'pedrovargas@gmail.com', '1998-04-14', 'Pedro', '{bcrypt}' || crypt('pedrovargas', gen_salt('bf')))"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Vargas', 'pedrovargas@gmail.com', '1998-04-14', 'Pedro', '{bcrypt}' || crypt('pedrovargas', gen_salt('bf')))"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Vargas', 'pedrovargas@gmail.com', '1998-04-14', 'Pedro', '{bcrypt}' || crypt('pedrovargas', gen_salt('bf'))) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:14:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Torres', 'martatorres@gmail.com', '2001-08-19', 'Marta', '{bcrypt}' || crypt('martatorres', gen_salt('bf')))"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Torres', 'martatorres@gmail.com', '2001-08-19', 'Marta', '{bcrypt}' || crypt('martatorres', gen_salt('bf')))"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Torres', 'martatorres@gmail.com', '2001-08-19', 'Marta', '{bcrypt}' || crypt('martatorres', gen_salt('bf'))) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}$2y$12$vekK2qkJuSY5SeTGkQIHJuEpe0Yj0IlydqoONF.Zs3TkqYn2RqWdK')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}$2y$12$vekK2qkJuSY5SeTGkQIHJuEpe0Yj0IlydqoONF.Zs3TkqYn2RqWdK')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}$2y$12$vekK2qkJuSY5SeTGkQIHJuEpe0Yj0IlydqoONF.Zs3TkqYn2RqWdK') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}$2y$12$wZrrTo24OHf4t.KPz3VgDuG12Pbr11hRy6EDcVHDA9URazDFACUZa')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}$2y$12$wZrrTo24OHf4t.KPz3VgDuG12Pbr11hRy6EDcVHDA9URazDFACUZa')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}$2y$12$wZrrTo24OHf4t.KPz3VgDuG12Pbr11hRy6EDcVHDA9URazDFACUZa') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}$2y$12$8sDH61UArOrIIS9xtxV1b.iycB4ibex2d4e7xEsUbUvSpizlhtfXK')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}$2y$12$8sDH61UArOrIIS9xtxV1b.iycB4ibex2d4e7xEsUbUvSpizlhtfXK')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}$2y$12$8sDH61UArOrIIS9xtxV1b.iycB4ibex2d4e7xEsUbUvSpizlhtfXK') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}$2y$12$r3iyVnypd7wkbJk1gT9cN.fv1g6x6EMkzTzG7H0KN9eNKF.jxdMxi')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}$2y$12$r3iyVnypd7wkbJk1gT9cN.fv1g6x6EMkzTzG7H0KN9eNKF.jxdMxi')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}$2y$12$r3iyVnypd7wkbJk1gT9cN.fv1g6x6EMkzTzG7H0KN9eNKF.jxdMxi') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Pérez', 'diegoperez@gmail.com', '1999-11-04', 'Diego', '{bcrypt}$2y$12$ZeC3QVwyVLW4MNT7RViJe.qoFstGt4W68aY5.HbgG.Jp2UkqhTbDu')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Pérez', 'diegoperez@gmail.com', '1999-11-04', 'Diego', '{bcrypt}$2y$12$ZeC3QVwyVLW4MNT7RViJe.qoFstGt4W68aY5.HbgG.Jp2UkqhTbDu')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Pérez', 'diegoperez@gmail.com', '1999-11-04', 'Diego', '{bcrypt}$2y$12$ZeC3QVwyVLW4MNT7RViJe.qoFstGt4W68aY5.HbgG.Jp2UkqhTbDu') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Jiménez', 'anajimenez@gmail.com', '2002-01-09', 'Ana', '{bcrypt}$2y$12$vEgn1N48Xb.eELCBWwwRju89Q89PfRR5N3dy2m2Ryo7PzijcJvdW6')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Jiménez', 'anajimenez@gmail.com', '2002-01-09', 'Ana', '{bcrypt}$2y$12$vEgn1N48Xb.eELCBWwwRju89Q89PfRR5N3dy2m2Ryo7PzijcJvdW6')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Jiménez', 'anajimenez@gmail.com', '2002-01-09', 'Ana', '{bcrypt}$2y$12$vEgn1N48Xb.eELCBWwwRju89Q89PfRR5N3dy2m2Ryo7PzijcJvdW6') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Vargas', 'pedrovargas@gmail.com', '1998-04-14', 'Pedro', '{bcrypt}$2y$12$qvRAz7Qx/EbqrCXq31OzVeJxfskMK.JImhC1Zk2Kx3l0sIpkQI0V6')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Vargas', 'pedrovargas@gmail.com', '1998-04-14', 'Pedro', '{bcrypt}$2y$12$qvRAz7Qx/EbqrCXq31OzVeJxfskMK.JImhC1Zk2Kx3l0sIpkQI0V6')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Vargas', 'pedrovargas@gmail.com', '1998-04-14', 'Pedro', '{bcrypt}$2y$12$qvRAz7Qx/EbqrCXq31OzVeJxfskMK.JImhC1Zk2Kx3l0sIpkQI0V6') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Torres', 'martatorres@gmail.com', '2001-08-19', 'Marta', '{bcrypt}$2y$12$TyT.T9nMEQOqYv0Yw6KoUuJgdxhwK5vHqEoLW5H0EF5i3Eg.kr9Iu')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Torres', 'martatorres@gmail.com', '2001-08-19', 'Marta', '{bcrypt}$2y$12$TyT.T9nMEQOqYv0Yw6KoUuJgdxhwK5vHqEoLW5H0EF5i3Eg.kr9Iu')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Torres', 'martatorres@gmail.com', '2001-08-19', 'Marta', '{bcrypt}$2y$12$TyT.T9nMEQOqYv0Yw6KoUuJgdxhwK5vHqEoLW5H0EF5i3Eg.kr9Iu') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Sánchez', 'lucasanchez@gmail.com', '2000-02-15', 'Lucía', '{bcrypt}$2y$12$A4kbLHTJf2gqgs2.Z2nhQ.Oi1oU4lzzW0zy5cttKd8K.k2zB/sFqS')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Sánchez', 'lucasanchez@gmail.com', '2000-02-15', 'Lucía', '{bcrypt}$2y$12$A4kbLHTJf2gqgs2.Z2nhQ.Oi1oU4lzzW0zy5cttKd8K.k2zB/sFqS')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Sánchez', 'lucasanchez@gmail.com', '2000-02-15', 'Lucía', '{bcrypt}$2y$12$A4kbLHTJf2gqgs2.Z2nhQ.Oi1oU4lzzW0zy5cttKd8K.k2zB/sFqS') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Romero', 'luisaromero@gmail.com', '1999-06-22', 'Luisa', '{bcrypt}$2y$12$7i9P8KfKTv0Y1U3mtpcSs.jM/bLdta4SdMWfg4NULd6lvZy2C8WU6')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Romero', 'luisaromero@gmail.com', '1999-06-22', 'Luisa', '{bcrypt}$2y$12$7i9P8KfKTv0Y1U3mtpcSs.jM/bLdta4SdMWfg4NULd6lvZy2C8WU6')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Romero', 'luisaromero@gmail.com', '1999-06-22', 'Luisa', '{bcrypt}$2y$12$7i9P8KfKTv0Y1U3mtpcSs.jM/bLdta4SdMWfg4NULd6lvZy2C8WU6') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Silva', 'fernandosilva@gmail.com', '2002-10-27', 'Fernando', '{bcrypt}$2y$12$.0IxX7Ecb79erPBQST49Eu7Vbsx9bC9bY2BShDkRZaR3ntkYrWZIy')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Silva', 'fernandosilva@gmail.com', '2002-10-27', 'Fernando', '{bcrypt}$2y$12$.0IxX7Ecb79erPBQST49Eu7Vbsx9bC9bY2BShDkRZaR3ntkYrWZIy')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Silva', 'fernandosilva@gmail.com', '2002-10-27', 'Fernando', '{bcrypt}$2y$12$.0IxX7Ecb79erPBQST49Eu7Vbsx9bC9bY2BShDkRZaR3ntkYrWZIy') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Ramírez', 'paolaramirez@gmail.com', '1998-05-05', 'Paola', '{bcrypt}$2y$12$5aK7dk9N1yH.8jRkG5j1z.8X6I11pDLbUIbAnIbE/LDLjicx0Nw3q')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Ramírez', 'paolaramirez@gmail.com', '1998-05-05', 'Paola', '{bcrypt}$2y$12$5aK7dk9N1yH.8jRkG5j1z.8X6I11pDLbUIbAnIbE/LDLjicx0Nw3q')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Ramírez', 'paolaramirez@gmail.com', '1998-05-05', 'Paola', '{bcrypt}$2y$12$5aK7dk9N1yH.8jRkG5j1z.8X6I11pDLbUIbAnIbE/LDLjicx0Nw3q') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Hernández', 'carlahernandez@gmail.com', '2001-09-10', 'Carla', '{bcrypt}$2y$12$L.wgWZ7vBM5GRa36wPsU0eOYHhakEzJcml7UKubHhEGevEBB0uRB.')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Hernández', 'carlahernandez@gmail.com', '2001-09-10', 'Carla', '{bcrypt}$2y$12$L.wgWZ7vBM5GRa36wPsU0eOYHhakEzJcml7UKubHhEGevEBB0uRB.')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Hernández', 'carlahernandez@gmail.com', '2001-09-10', 'Carla', '{bcrypt}$2y$12$L.wgWZ7vBM5GRa36wPsU0eOYHhakEzJcml7UKubHhEGevEBB0uRB.') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Morales', 'jorgemorales@gmail.com', '2000-03-17', 'Jorge', '{bcrypt}$2y$12$Uzr1iG9ymA8URaAyPrUjO.xFNsyI8hkgfFWIGZILlFIDpWkeo0UwC')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Morales', 'jorgemorales@gmail.com', '2000-03-17', 'Jorge', '{bcrypt}$2y$12$Uzr1iG9ymA8URaAyPrUjO.xFNsyI8hkgfFWIGZILlFIDpWkeo0UwC')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Morales', 'jorgemorales@gmail.com', '2000-03-17', 'Jorge', '{bcrypt}$2y$12$Uzr1iG9ymA8URaAyPrUjO.xFNsyI8hkgfFWIGZILlFIDpWkeo0UwC') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'García', 'lucíagarcia@gmail.com', '1999-07-24', 'Lucía', '{bcrypt}$2y$12$dfxOmJAEc2/55EjA2YAJj.gCYOLiBICVcrET7vM6K2SJckRiyTWhu')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'García', 'lucíagarcia@gmail.com', '1999-07-24', 'Lucía', '{bcrypt}$2y$12$dfxOmJAEc2/55EjA2YAJj.gCYOLiBICVcrET7vM6K2SJckRiyTWhu')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'García', 'lucíagarcia@gmail.com', '1999-07-24', 'Lucía', '{bcrypt}$2y$12$dfxOmJAEc2/55EjA2YAJj.gCYOLiBICVcrET7vM6K2SJckRiyTWhu') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Rojas', 'alejandrorojas@gmail.com', '2002-11-29', 'Alejandro', '{bcrypt}$2y$12$HbcXUGW/zHSeiWXb.pOQI.HzJPEe2E1M.6qZ1t01x3GJZB48Sszhm')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Rojas', 'alejandrorojas@gmail.com', '2002-11-29', 'Alejandro', '{bcrypt}$2y$12$HbcXUGW/zHSeiWXb.pOQI.HzJPEe2E1M.6qZ1t01x3GJZB48Sszhm')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Rojas', 'alejandrorojas@gmail.com', '2002-11-29', 'Alejandro', '{bcrypt}$2y$12$HbcXUGW/zHSeiWXb.pOQI.HzJPEe2E1M.6qZ1t01x3GJZB48Sszhm') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Navarro', 'natalianavarro@gmail.com', '1998-06-07', 'Natalia', '{bcrypt}$2y$12$7nYDxO.dH/rYZ1xR/w1vteH6IzGgNNFscDkflND5LQeMPgTC/eBr.')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Navarro', 'natalianavarro@gmail.com', '1998-06-07', 'Natalia', '{bcrypt}$2y$12$7nYDxO.dH/rYZ1xR/w1vteH6IzGgNNFscDkflND5LQeMPgTC/eBr.')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Navarro', 'natalianavarro@gmail.com', '1998-06-07', 'Natalia', '{bcrypt}$2y$12$7nYDxO.dH/rYZ1xR/w1vteH6IzGgNNFscDkflND5LQeMPgTC/eBr.') [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:21:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Herrera', 'davidherrera@gmail.com', '2001-10-12', 'David', '{bcrypt}$2y$12$JG4Np4pPEm7s0h64y7Uur.wC5AomMX5X2yWUBKItJ7EW1fJtrMpmK')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Herrera', 'davidherrera@gmail.com', '2001-10-12', 'David', '{bcrypt}$2y$12$JG4Np4pPEm7s0h64y7Uur.wC5AomMX5X2yWUBKItJ7EW1fJtrMpmK')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Herrera', 'davidherrera@gmail.com', '2001-10-12', 'David', '{bcrypt}$2y$12$JG4Np4pPEm7s0h64y7Uur.wC5AomMX5X2yWUBKItJ7EW1fJtrMpmK') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}$2y$12$vekK2qkJuSY5SeTGkQIHJuEpe0Yj0IlydqoONF.Zs3TkqYn2RqWdK')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}$2y$12$vekK2qkJuSY5SeTGkQIHJuEpe0Yj0IlydqoONF.Zs3TkqYn2RqWdK')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}$2y$12$vekK2qkJuSY5SeTGkQIHJuEpe0Yj0IlydqoONF.Zs3TkqYn2RqWdK') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}$2y$12$wZrrTo24OHf4t.KPz3VgDuG12Pbr11hRy6EDcVHDA9URazDFACUZa')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}$2y$12$wZrrTo24OHf4t.KPz3VgDuG12Pbr11hRy6EDcVHDA9URazDFACUZa')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}$2y$12$wZrrTo24OHf4t.KPz3VgDuG12Pbr11hRy6EDcVHDA9URazDFACUZa') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}$2y$12$8sDH61UArOrIIS9xtxV1b.iycB4ibex2d4e7xEsUbUvSpizlhtfXK')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}$2y$12$8sDH61UArOrIIS9xtxV1b.iycB4ibex2d4e7xEsUbUvSpizlhtfXK')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}$2y$12$8sDH61UArOrIIS9xtxV1b.iycB4ibex2d4e7xEsUbUvSpizlhtfXK') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}$2y$12$r3iyVnypd7wkbJk1gT9cN.fv1g6x6EMkzTzG7H0KN9eNKF.jxdMxi')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}$2y$12$r3iyVnypd7wkbJk1gT9cN.fv1g6x6EMkzTzG7H0KN9eNKF.jxdMxi')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}$2y$12$r3iyVnypd7wkbJk1gT9cN.fv1g6x6EMkzTzG7H0KN9eNKF.jxdMxi') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Pérez', 'diegoperez@gmail.com', '1999-11-04', 'Diego', '{bcrypt}$2y$12$ZeC3QVwyVLW4MNT7RViJe.qoFstGt4W68aY5.HbgG.Jp2UkqhTbDu')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Pérez', 'diegoperez@gmail.com', '1999-11-04', 'Diego', '{bcrypt}$2y$12$ZeC3QVwyVLW4MNT7RViJe.qoFstGt4W68aY5.HbgG.Jp2UkqhTbDu')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Pérez', 'diegoperez@gmail.com', '1999-11-04', 'Diego', '{bcrypt}$2y$12$ZeC3QVwyVLW4MNT7RViJe.qoFstGt4W68aY5.HbgG.Jp2UkqhTbDu') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Jiménez', 'anajimenez@gmail.com', '2002-01-09', 'Ana', '{bcrypt}$2y$12$vEgn1N48Xb.eELCBWwwRju89Q89PfRR5N3dy2m2Ryo7PzijcJvdW6')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Jiménez', 'anajimenez@gmail.com', '2002-01-09', 'Ana', '{bcrypt}$2y$12$vEgn1N48Xb.eELCBWwwRju89Q89PfRR5N3dy2m2Ryo7PzijcJvdW6')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Jiménez', 'anajimenez@gmail.com', '2002-01-09', 'Ana', '{bcrypt}$2y$12$vEgn1N48Xb.eELCBWwwRju89Q89PfRR5N3dy2m2Ryo7PzijcJvdW6') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Vargas', 'pedrovargas@gmail.com', '1998-04-14', 'Pedro', '{bcrypt}$2y$12$qvRAz7Qx/EbqrCXq31OzVeJxfskMK.JImhC1Zk2Kx3l0sIpkQI0V6')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Vargas', 'pedrovargas@gmail.com', '1998-04-14', 'Pedro', '{bcrypt}$2y$12$qvRAz7Qx/EbqrCXq31OzVeJxfskMK.JImhC1Zk2Kx3l0sIpkQI0V6')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Vargas', 'pedrovargas@gmail.com', '1998-04-14', 'Pedro', '{bcrypt}$2y$12$qvRAz7Qx/EbqrCXq31OzVeJxfskMK.JImhC1Zk2Kx3l0sIpkQI0V6') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Torres', 'martatorres@gmail.com', '2001-08-19', 'Marta', '{bcrypt}$2y$12$TyT.T9nMEQOqYv0Yw6KoUuJgdxhwK5vHqEoLW5H0EF5i3Eg.kr9Iu')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Torres', 'martatorres@gmail.com', '2001-08-19', 'Marta', '{bcrypt}$2y$12$TyT.T9nMEQOqYv0Yw6KoUuJgdxhwK5vHqEoLW5H0EF5i3Eg.kr9Iu')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Torres', 'martatorres@gmail.com', '2001-08-19', 'Marta', '{bcrypt}$2y$12$TyT.T9nMEQOqYv0Yw6KoUuJgdxhwK5vHqEoLW5H0EF5i3Eg.kr9Iu') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Sánchez', 'lucasanchez@gmail.com', '2000-02-15', 'Lucía', '{bcrypt}$2y$12$A4kbLHTJf2gqgs2.Z2nhQ.Oi1oU4lzzW0zy5cttKd8K.k2zB/sFqS')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Sánchez', 'lucasanchez@gmail.com', '2000-02-15', 'Lucía', '{bcrypt}$2y$12$A4kbLHTJf2gqgs2.Z2nhQ.Oi1oU4lzzW0zy5cttKd8K.k2zB/sFqS')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Sánchez', 'lucasanchez@gmail.com', '2000-02-15', 'Lucía', '{bcrypt}$2y$12$A4kbLHTJf2gqgs2.Z2nhQ.Oi1oU4lzzW0zy5cttKd8K.k2zB/sFqS') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Romero', 'luisaromero@gmail.com', '1999-06-22', 'Luisa', '{bcrypt}$2y$12$7i9P8KfKTv0Y1U3mtpcSs.jM/bLdta4SdMWfg4NULd6lvZy2C8WU6')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Romero', 'luisaromero@gmail.com', '1999-06-22', 'Luisa', '{bcrypt}$2y$12$7i9P8KfKTv0Y1U3mtpcSs.jM/bLdta4SdMWfg4NULd6lvZy2C8WU6')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Romero', 'luisaromero@gmail.com', '1999-06-22', 'Luisa', '{bcrypt}$2y$12$7i9P8KfKTv0Y1U3mtpcSs.jM/bLdta4SdMWfg4NULd6lvZy2C8WU6') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Silva', 'fernandosilva@gmail.com', '2002-10-27', 'Fernando', '{bcrypt}$2y$12$.0IxX7Ecb79erPBQST49Eu7Vbsx9bC9bY2BShDkRZaR3ntkYrWZIy')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Silva', 'fernandosilva@gmail.com', '2002-10-27', 'Fernando', '{bcrypt}$2y$12$.0IxX7Ecb79erPBQST49Eu7Vbsx9bC9bY2BShDkRZaR3ntkYrWZIy')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Silva', 'fernandosilva@gmail.com', '2002-10-27', 'Fernando', '{bcrypt}$2y$12$.0IxX7Ecb79erPBQST49Eu7Vbsx9bC9bY2BShDkRZaR3ntkYrWZIy') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Ramírez', 'paolaramirez@gmail.com', '1998-05-05', 'Paola', '{bcrypt}$2y$12$5aK7dk9N1yH.8jRkG5j1z.8X6I11pDLbUIbAnIbE/LDLjicx0Nw3q')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Ramírez', 'paolaramirez@gmail.com', '1998-05-05', 'Paola', '{bcrypt}$2y$12$5aK7dk9N1yH.8jRkG5j1z.8X6I11pDLbUIbAnIbE/LDLjicx0Nw3q')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Ramírez', 'paolaramirez@gmail.com', '1998-05-05', 'Paola', '{bcrypt}$2y$12$5aK7dk9N1yH.8jRkG5j1z.8X6I11pDLbUIbAnIbE/LDLjicx0Nw3q') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Hernández', 'carlahernandez@gmail.com', '2001-09-10', 'Carla', '{bcrypt}$2y$12$L.wgWZ7vBM5GRa36wPsU0eOYHhakEzJcml7UKubHhEGevEBB0uRB.')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Hernández', 'carlahernandez@gmail.com', '2001-09-10', 'Carla', '{bcrypt}$2y$12$L.wgWZ7vBM5GRa36wPsU0eOYHhakEzJcml7UKubHhEGevEBB0uRB.')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Hernández', 'carlahernandez@gmail.com', '2001-09-10', 'Carla', '{bcrypt}$2y$12$L.wgWZ7vBM5GRa36wPsU0eOYHhakEzJcml7UKubHhEGevEBB0uRB.') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Morales', 'jorgemorales@gmail.com', '2000-03-17', 'Jorge', '{bcrypt}$2y$12$Uzr1iG9ymA8URaAyPrUjO.xFNsyI8hkgfFWIGZILlFIDpWkeo0UwC')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Morales', 'jorgemorales@gmail.com', '2000-03-17', 'Jorge', '{bcrypt}$2y$12$Uzr1iG9ymA8URaAyPrUjO.xFNsyI8hkgfFWIGZILlFIDpWkeo0UwC')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Morales', 'jorgemorales@gmail.com', '2000-03-17', 'Jorge', '{bcrypt}$2y$12$Uzr1iG9ymA8URaAyPrUjO.xFNsyI8hkgfFWIGZILlFIDpWkeo0UwC') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'García', 'lucíagarcia@gmail.com', '1999-07-24', 'Lucía', '{bcrypt}$2y$12$dfxOmJAEc2/55EjA2YAJj.gCYOLiBICVcrET7vM6K2SJckRiyTWhu')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'García', 'lucíagarcia@gmail.com', '1999-07-24', 'Lucía', '{bcrypt}$2y$12$dfxOmJAEc2/55EjA2YAJj.gCYOLiBICVcrET7vM6K2SJckRiyTWhu')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'García', 'lucíagarcia@gmail.com', '1999-07-24', 'Lucía', '{bcrypt}$2y$12$dfxOmJAEc2/55EjA2YAJj.gCYOLiBICVcrET7vM6K2SJckRiyTWhu') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Rojas', 'alejandrorojas@gmail.com', '2002-11-29', 'Alejandro', '{bcrypt}$2y$12$HbcXUGW/zHSeiWXb.pOQI.HzJPEe2E1M.6qZ1t01x3GJZB48Sszhm')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Rojas', 'alejandrorojas@gmail.com', '2002-11-29', 'Alejandro', '{bcrypt}$2y$12$HbcXUGW/zHSeiWXb.pOQI.HzJPEe2E1M.6qZ1t01x3GJZB48Sszhm')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Rojas', 'alejandrorojas@gmail.com', '2002-11-29', 'Alejandro', '{bcrypt}$2y$12$HbcXUGW/zHSeiWXb.pOQI.HzJPEe2E1M.6qZ1t01x3GJZB48Sszhm') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Navarro', 'natalianavarro@gmail.com', '1998-06-07', 'Natalia', '{bcrypt}$2y$12$7nYDxO.dH/rYZ1xR/w1vteH6IzGgNNFscDkflND5LQeMPgTC/eBr.')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Navarro', 'natalianavarro@gmail.com', '1998-06-07', 'Natalia', '{bcrypt}$2y$12$7nYDxO.dH/rYZ1xR/w1vteH6IzGgNNFscDkflND5LQeMPgTC/eBr.')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Navarro', 'natalianavarro@gmail.com', '1998-06-07', 'Natalia', '{bcrypt}$2y$12$7nYDxO.dH/rYZ1xR/w1vteH6IzGgNNFscDkflND5LQeMPgTC/eBr.') [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:23:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Herrera', 'davidherrera@gmail.com', '2001-10-12', 'David', '{bcrypt}$2y$12$JG4Np4pPEm7s0h64y7Uur.wC5AomMX5X2yWUBKItJ7EW1fJtrMpmK')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Herrera', 'davidherrera@gmail.com', '2001-10-12', 'David', '{bcrypt}$2y$12$JG4Np4pPEm7s0h64y7Uur.wC5AomMX5X2yWUBKItJ7EW1fJtrMpmK')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Herrera', 'davidherrera@gmail.com', '2001-10-12', 'David', '{bcrypt}$2y$12$JG4Np4pPEm7s0h64y7Uur.wC5AomMX5X2yWUBKItJ7EW1fJtrMpmK') [42001-214]
+2023-05-16 13:26:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:26:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty') [42001-214]
+2023-05-16 13:26:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:26:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS') [42001-214]
+2023-05-16 13:26:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:26:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}$2y$12$vekK2qkJuSY5SeTGkQIHJuEpe0Yj0IlydqoONF.Zs3TkqYn2RqWdK')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}$2y$12$vekK2qkJuSY5SeTGkQIHJuEpe0Yj0IlydqoONF.Zs3TkqYn2RqWdK')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}$2y$12$vekK2qkJuSY5SeTGkQIHJuEpe0Yj0IlydqoONF.Zs3TkqYn2RqWdK') [42001-214]
+2023-05-16 13:26:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:26:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}$2y$12$wZrrTo24OHf4t.KPz3VgDuG12Pbr11hRy6EDcVHDA9URazDFACUZa')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}$2y$12$wZrrTo24OHf4t.KPz3VgDuG12Pbr11hRy6EDcVHDA9URazDFACUZa')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}$2y$12$wZrrTo24OHf4t.KPz3VgDuG12Pbr11hRy6EDcVHDA9URazDFACUZa') [42001-214]
+2023-05-16 13:26:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:26:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}$2y$12$8sDH61UArOrIIS9xtxV1b.iycB4ibex2d4e7xEsUbUvSpizlhtfXK')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}$2y$12$8sDH61UArOrIIS9xtxV1b.iycB4ibex2d4e7xEsUbUvSpizlhtfXK')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}$2y$12$8sDH61UArOrIIS9xtxV1b.iycB4ibex2d4e7xEsUbUvSpizlhtfXK') [42001-214]
+2023-05-16 13:26:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:26:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}$2y$12$r3iyVnypd7wkbJk1gT9cN.fv1g6x6EMkzTzG7H0KN9eNKF.jxdMxi')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}$2y$12$r3iyVnypd7wkbJk1gT9cN.fv1g6x6EMkzTzG7H0KN9eNKF.jxdMxi')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}$2y$12$r3iyVnypd7wkbJk1gT9cN.fv1g6x6EMkzTzG7H0KN9eNKF.jxdMxi') [42001-214]
+2023-05-16 13:26:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:26:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty') [42001-214]
+2023-05-16 13:26:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+INSERT INTO usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:26:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "VALUES ([*]DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "VALUES ([*]DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+VALUES (DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}$2y$12$vekK2qkJuSY5SeTGkQIHJuEpe0Yj0IlydqoONF.Zs3TkqYn2RqWdK')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}$2y$12$vekK2qkJuSY5SeTGkQIHJuEpe0Yj0IlydqoONF.Zs3TkqYn2RqWdK')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}$2y$12$vekK2qkJuSY5SeTGkQIHJuEpe0Yj0IlydqoONF.Zs3TkqYn2RqWdK') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}$2y$12$wZrrTo24OHf4t.KPz3VgDuG12Pbr11hRy6EDcVHDA9URazDFACUZa')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}$2y$12$wZrrTo24OHf4t.KPz3VgDuG12Pbr11hRy6EDcVHDA9URazDFACUZa')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}$2y$12$wZrrTo24OHf4t.KPz3VgDuG12Pbr11hRy6EDcVHDA9URazDFACUZa') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}$2y$12$8sDH61UArOrIIS9xtxV1b.iycB4ibex2d4e7xEsUbUvSpizlhtfXK')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}$2y$12$8sDH61UArOrIIS9xtxV1b.iycB4ibex2d4e7xEsUbUvSpizlhtfXK')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}$2y$12$8sDH61UArOrIIS9xtxV1b.iycB4ibex2d4e7xEsUbUvSpizlhtfXK') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}$2y$12$r3iyVnypd7wkbJk1gT9cN.fv1g6x6EMkzTzG7H0KN9eNKF.jxdMxi')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}$2y$12$r3iyVnypd7wkbJk1gT9cN.fv1g6x6EMkzTzG7H0KN9eNKF.jxdMxi')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}$2y$12$r3iyVnypd7wkbJk1gT9cN.fv1g6x6EMkzTzG7H0KN9eNKF.jxdMxi') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Pérez', 'diegoperez@gmail.com', '1999-11-04', 'Diego', '{bcrypt}$2y$12$ZeC3QVwyVLW4MNT7RViJe.qoFstGt4W68aY5.HbgG.Jp2UkqhTbDu')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Pérez', 'diegoperez@gmail.com', '1999-11-04', 'Diego', '{bcrypt}$2y$12$ZeC3QVwyVLW4MNT7RViJe.qoFstGt4W68aY5.HbgG.Jp2UkqhTbDu')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Pérez', 'diegoperez@gmail.com', '1999-11-04', 'Diego', '{bcrypt}$2y$12$ZeC3QVwyVLW4MNT7RViJe.qoFstGt4W68aY5.HbgG.Jp2UkqhTbDu') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Jiménez', 'anajimenez@gmail.com', '2002-01-09', 'Ana', '{bcrypt}$2y$12$vEgn1N48Xb.eELCBWwwRju89Q89PfRR5N3dy2m2Ryo7PzijcJvdW6')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Jiménez', 'anajimenez@gmail.com', '2002-01-09', 'Ana', '{bcrypt}$2y$12$vEgn1N48Xb.eELCBWwwRju89Q89PfRR5N3dy2m2Ryo7PzijcJvdW6')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Jiménez', 'anajimenez@gmail.com', '2002-01-09', 'Ana', '{bcrypt}$2y$12$vEgn1N48Xb.eELCBWwwRju89Q89PfRR5N3dy2m2Ryo7PzijcJvdW6') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Vargas', 'pedrovargas@gmail.com', '1998-04-14', 'Pedro', '{bcrypt}$2y$12$qvRAz7Qx/EbqrCXq31OzVeJxfskMK.JImhC1Zk2Kx3l0sIpkQI0V6')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Vargas', 'pedrovargas@gmail.com', '1998-04-14', 'Pedro', '{bcrypt}$2y$12$qvRAz7Qx/EbqrCXq31OzVeJxfskMK.JImhC1Zk2Kx3l0sIpkQI0V6')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Vargas', 'pedrovargas@gmail.com', '1998-04-14', 'Pedro', '{bcrypt}$2y$12$qvRAz7Qx/EbqrCXq31OzVeJxfskMK.JImhC1Zk2Kx3l0sIpkQI0V6') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Torres', 'martatorres@gmail.com', '2001-08-19', 'Marta', '{bcrypt}$2y$12$TyT.T9nMEQOqYv0Yw6KoUuJgdxhwK5vHqEoLW5H0EF5i3Eg.kr9Iu')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Torres', 'martatorres@gmail.com', '2001-08-19', 'Marta', '{bcrypt}$2y$12$TyT.T9nMEQOqYv0Yw6KoUuJgdxhwK5vHqEoLW5H0EF5i3Eg.kr9Iu')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Torres', 'martatorres@gmail.com', '2001-08-19', 'Marta', '{bcrypt}$2y$12$TyT.T9nMEQOqYv0Yw6KoUuJgdxhwK5vHqEoLW5H0EF5i3Eg.kr9Iu') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Sánchez', 'lucasanchez@gmail.com', '2000-02-15', 'Lucía', '{bcrypt}$2y$12$A4kbLHTJf2gqgs2.Z2nhQ.Oi1oU4lzzW0zy5cttKd8K.k2zB/sFqS')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Sánchez', 'lucasanchez@gmail.com', '2000-02-15', 'Lucía', '{bcrypt}$2y$12$A4kbLHTJf2gqgs2.Z2nhQ.Oi1oU4lzzW0zy5cttKd8K.k2zB/sFqS')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Sánchez', 'lucasanchez@gmail.com', '2000-02-15', 'Lucía', '{bcrypt}$2y$12$A4kbLHTJf2gqgs2.Z2nhQ.Oi1oU4lzzW0zy5cttKd8K.k2zB/sFqS') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Romero', 'luisaromero@gmail.com', '1999-06-22', 'Luisa', '{bcrypt}$2y$12$7i9P8KfKTv0Y1U3mtpcSs.jM/bLdta4SdMWfg4NULd6lvZy2C8WU6')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Romero', 'luisaromero@gmail.com', '1999-06-22', 'Luisa', '{bcrypt}$2y$12$7i9P8KfKTv0Y1U3mtpcSs.jM/bLdta4SdMWfg4NULd6lvZy2C8WU6')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Romero', 'luisaromero@gmail.com', '1999-06-22', 'Luisa', '{bcrypt}$2y$12$7i9P8KfKTv0Y1U3mtpcSs.jM/bLdta4SdMWfg4NULd6lvZy2C8WU6') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Silva', 'fernandosilva@gmail.com', '2002-10-27', 'Fernando', '{bcrypt}$2y$12$.0IxX7Ecb79erPBQST49Eu7Vbsx9bC9bY2BShDkRZaR3ntkYrWZIy')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Silva', 'fernandosilva@gmail.com', '2002-10-27', 'Fernando', '{bcrypt}$2y$12$.0IxX7Ecb79erPBQST49Eu7Vbsx9bC9bY2BShDkRZaR3ntkYrWZIy')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Silva', 'fernandosilva@gmail.com', '2002-10-27', 'Fernando', '{bcrypt}$2y$12$.0IxX7Ecb79erPBQST49Eu7Vbsx9bC9bY2BShDkRZaR3ntkYrWZIy') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Ramírez', 'paolaramirez@gmail.com', '1998-05-05', 'Paola', '{bcrypt}$2y$12$5aK7dk9N1yH.8jRkG5j1z.8X6I11pDLbUIbAnIbE/LDLjicx0Nw3q')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Ramírez', 'paolaramirez@gmail.com', '1998-05-05', 'Paola', '{bcrypt}$2y$12$5aK7dk9N1yH.8jRkG5j1z.8X6I11pDLbUIbAnIbE/LDLjicx0Nw3q')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Ramírez', 'paolaramirez@gmail.com', '1998-05-05', 'Paola', '{bcrypt}$2y$12$5aK7dk9N1yH.8jRkG5j1z.8X6I11pDLbUIbAnIbE/LDLjicx0Nw3q') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Hernández', 'carlahernandez@gmail.com', '2001-09-10', 'Carla', '{bcrypt}$2y$12$L.wgWZ7vBM5GRa36wPsU0eOYHhakEzJcml7UKubHhEGevEBB0uRB.')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Hernández', 'carlahernandez@gmail.com', '2001-09-10', 'Carla', '{bcrypt}$2y$12$L.wgWZ7vBM5GRa36wPsU0eOYHhakEzJcml7UKubHhEGevEBB0uRB.')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Hernández', 'carlahernandez@gmail.com', '2001-09-10', 'Carla', '{bcrypt}$2y$12$L.wgWZ7vBM5GRa36wPsU0eOYHhakEzJcml7UKubHhEGevEBB0uRB.') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Morales', 'jorgemorales@gmail.com', '2000-03-17', 'Jorge', '{bcrypt}$2y$12$Uzr1iG9ymA8URaAyPrUjO.xFNsyI8hkgfFWIGZILlFIDpWkeo0UwC')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Morales', 'jorgemorales@gmail.com', '2000-03-17', 'Jorge', '{bcrypt}$2y$12$Uzr1iG9ymA8URaAyPrUjO.xFNsyI8hkgfFWIGZILlFIDpWkeo0UwC')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Morales', 'jorgemorales@gmail.com', '2000-03-17', 'Jorge', '{bcrypt}$2y$12$Uzr1iG9ymA8URaAyPrUjO.xFNsyI8hkgfFWIGZILlFIDpWkeo0UwC') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'García', 'lucíagarcia@gmail.com', '1999-07-24', 'Lucía', '{bcrypt}$2y$12$dfxOmJAEc2/55EjA2YAJj.gCYOLiBICVcrET7vM6K2SJckRiyTWhu')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'García', 'lucíagarcia@gmail.com', '1999-07-24', 'Lucía', '{bcrypt}$2y$12$dfxOmJAEc2/55EjA2YAJj.gCYOLiBICVcrET7vM6K2SJckRiyTWhu')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'García', 'lucíagarcia@gmail.com', '1999-07-24', 'Lucía', '{bcrypt}$2y$12$dfxOmJAEc2/55EjA2YAJj.gCYOLiBICVcrET7vM6K2SJckRiyTWhu') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Rojas', 'alejandrorojas@gmail.com', '2002-11-29', 'Alejandro', '{bcrypt}$2y$12$HbcXUGW/zHSeiWXb.pOQI.HzJPEe2E1M.6qZ1t01x3GJZB48Sszhm')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Rojas', 'alejandrorojas@gmail.com', '2002-11-29', 'Alejandro', '{bcrypt}$2y$12$HbcXUGW/zHSeiWXb.pOQI.HzJPEe2E1M.6qZ1t01x3GJZB48Sszhm')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Rojas', 'alejandrorojas@gmail.com', '2002-11-29', 'Alejandro', '{bcrypt}$2y$12$HbcXUGW/zHSeiWXb.pOQI.HzJPEe2E1M.6qZ1t01x3GJZB48Sszhm') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Navarro', 'natalianavarro@gmail.com', '1998-06-07', 'Natalia', '{bcrypt}$2y$12$7nYDxO.dH/rYZ1xR/w1vteH6IzGgNNFscDkflND5LQeMPgTC/eBr.')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Navarro', 'natalianavarro@gmail.com', '1998-06-07', 'Natalia', '{bcrypt}$2y$12$7nYDxO.dH/rYZ1xR/w1vteH6IzGgNNFscDkflND5LQeMPgTC/eBr.')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Navarro', 'natalianavarro@gmail.com', '1998-06-07', 'Natalia', '{bcrypt}$2y$12$7nYDxO.dH/rYZ1xR/w1vteH6IzGgNNFscDkflND5LQeMPgTC/eBr.') [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:32:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]DEFAULT, false, 'Herrera', 'davidherrera@gmail.com', '2001-10-12', 'David', '{bcrypt}$2y$12$JG4Np4pPEm7s0h64y7Uur.wC5AomMX5X2yWUBKItJ7EW1fJtrMpmK')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]DEFAULT, false, 'Herrera', 'davidherrera@gmail.com', '2001-10-12', 'David', '{bcrypt}$2y$12$JG4Np4pPEm7s0h64y7Uur.wC5AomMX5X2yWUBKItJ7EW1fJtrMpmK')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (DEFAULT, false, 'Herrera', 'davidherrera@gmail.com', '2001-10-12', 'David', '{bcrypt}$2y$12$JG4Np4pPEm7s0h64y7Uur.wC5AomMX5X2yWUBKItJ7EW1fJtrMpmK') [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty') [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Rodríguez', 'mariarodriguez@gmail.com', '1999-05-10', 'María', '{bcrypt}$2y$12$8DnyGL9uYwsA39q.2XofteU/0L6ztFwrl0sDWdRTJILC8vLQWCLvS') [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}$2y$12$vekK2qkJuSY5SeTGkQIHJuEpe0Yj0IlydqoONF.Zs3TkqYn2RqWdK')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}$2y$12$vekK2qkJuSY5SeTGkQIHJuEpe0Yj0IlydqoONF.Zs3TkqYn2RqWdK')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Fernández', 'carlosfernandez@gmail.com', '2002-09-15', 'Carlos', '{bcrypt}$2y$12$vekK2qkJuSY5SeTGkQIHJuEpe0Yj0IlydqoONF.Zs3TkqYn2RqWdK') [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}$2y$12$wZrrTo24OHf4t.KPz3VgDuG12Pbr11hRy6EDcVHDA9URazDFACUZa')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}$2y$12$wZrrTo24OHf4t.KPz3VgDuG12Pbr11hRy6EDcVHDA9URazDFACUZa')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'López', 'lauralopez@gmail.com', '1998-12-20', 'Laura', '{bcrypt}$2y$12$wZrrTo24OHf4t.KPz3VgDuG12Pbr11hRy6EDcVHDA9URazDFACUZa') [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}$2y$12$8sDH61UArOrIIS9xtxV1b.iycB4ibex2d4e7xEsUbUvSpizlhtfXK')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}$2y$12$8sDH61UArOrIIS9xtxV1b.iycB4ibex2d4e7xEsUbUvSpizlhtfXK')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Martínez', 'javiermartinez@gmail.com', '2001-03-25', 'Javier', '{bcrypt}$2y$12$8sDH61UArOrIIS9xtxV1b.iycB4ibex2d4e7xEsUbUvSpizlhtfXK') [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}$2y$12$r3iyVnypd7wkbJk1gT9cN.fv1g6x6EMkzTzG7H0KN9eNKF.jxdMxi')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}$2y$12$r3iyVnypd7wkbJk1gT9cN.fv1g6x6EMkzTzG7H0KN9eNKF.jxdMxi')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Gómez', 'sofiagomez@gmail.com', '2000-07-30', 'Sofía', '{bcrypt}$2y$12$r3iyVnypd7wkbJk1gT9cN.fv1g6x6EMkzTzG7H0KN9eNKF.jxdMxi') [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Pérez', 'diegoperez@gmail.com', '1999-11-04', 'Diego', '{bcrypt}$2y$12$ZeC3QVwyVLW4MNT7RViJe.qoFstGt4W68aY5.HbgG.Jp2UkqhTbDu')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Pérez', 'diegoperez@gmail.com', '1999-11-04', 'Diego', '{bcrypt}$2y$12$ZeC3QVwyVLW4MNT7RViJe.qoFstGt4W68aY5.HbgG.Jp2UkqhTbDu')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Pérez', 'diegoperez@gmail.com', '1999-11-04', 'Diego', '{bcrypt}$2y$12$ZeC3QVwyVLW4MNT7RViJe.qoFstGt4W68aY5.HbgG.Jp2UkqhTbDu') [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Jiménez', 'anajimenez@gmail.com', '2002-01-09', 'Ana', '{bcrypt}$2y$12$vEgn1N48Xb.eELCBWwwRju89Q89PfRR5N3dy2m2Ryo7PzijcJvdW6')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Jiménez', 'anajimenez@gmail.com', '2002-01-09', 'Ana', '{bcrypt}$2y$12$vEgn1N48Xb.eELCBWwwRju89Q89PfRR5N3dy2m2Ryo7PzijcJvdW6')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Jiménez', 'anajimenez@gmail.com', '2002-01-09', 'Ana', '{bcrypt}$2y$12$vEgn1N48Xb.eELCBWwwRju89Q89PfRR5N3dy2m2Ryo7PzijcJvdW6') [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Vargas', 'pedrovargas@gmail.com', '1998-04-14', 'Pedro', '{bcrypt}$2y$12$qvRAz7Qx/EbqrCXq31OzVeJxfskMK.JImhC1Zk2Kx3l0sIpkQI0V6')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Vargas', 'pedrovargas@gmail.com', '1998-04-14', 'Pedro', '{bcrypt}$2y$12$qvRAz7Qx/EbqrCXq31OzVeJxfskMK.JImhC1Zk2Kx3l0sIpkQI0V6')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Vargas', 'pedrovargas@gmail.com', '1998-04-14', 'Pedro', '{bcrypt}$2y$12$qvRAz7Qx/EbqrCXq31OzVeJxfskMK.JImhC1Zk2Kx3l0sIpkQI0V6') [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Torres', 'martatorres@gmail.com', '2001-08-19', 'Marta', '{bcrypt}$2y$12$TyT.T9nMEQOqYv0Yw6KoUuJgdxhwK5vHqEoLW5H0EF5i3Eg.kr9Iu')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Torres', 'martatorres@gmail.com', '2001-08-19', 'Marta', '{bcrypt}$2y$12$TyT.T9nMEQOqYv0Yw6KoUuJgdxhwK5vHqEoLW5H0EF5i3Eg.kr9Iu')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Torres', 'martatorres@gmail.com', '2001-08-19', 'Marta', '{bcrypt}$2y$12$TyT.T9nMEQOqYv0Yw6KoUuJgdxhwK5vHqEoLW5H0EF5i3Eg.kr9Iu') [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Sánchez', 'lucasanchez@gmail.com', '2000-02-15', 'Lucía', '{bcrypt}$2y$12$A4kbLHTJf2gqgs2.Z2nhQ.Oi1oU4lzzW0zy5cttKd8K.k2zB/sFqS')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Sánchez', 'lucasanchez@gmail.com', '2000-02-15', 'Lucía', '{bcrypt}$2y$12$A4kbLHTJf2gqgs2.Z2nhQ.Oi1oU4lzzW0zy5cttKd8K.k2zB/sFqS')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Sánchez', 'lucasanchez@gmail.com', '2000-02-15', 'Lucía', '{bcrypt}$2y$12$A4kbLHTJf2gqgs2.Z2nhQ.Oi1oU4lzzW0zy5cttKd8K.k2zB/sFqS') [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Romero', 'luisaromero@gmail.com', '1999-06-22', 'Luisa', '{bcrypt}$2y$12$7i9P8KfKTv0Y1U3mtpcSs.jM/bLdta4SdMWfg4NULd6lvZy2C8WU6')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Romero', 'luisaromero@gmail.com', '1999-06-22', 'Luisa', '{bcrypt}$2y$12$7i9P8KfKTv0Y1U3mtpcSs.jM/bLdta4SdMWfg4NULd6lvZy2C8WU6')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Romero', 'luisaromero@gmail.com', '1999-06-22', 'Luisa', '{bcrypt}$2y$12$7i9P8KfKTv0Y1U3mtpcSs.jM/bLdta4SdMWfg4NULd6lvZy2C8WU6') [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Silva', 'fernandosilva@gmail.com', '2002-10-27', 'Fernando', '{bcrypt}$2y$12$.0IxX7Ecb79erPBQST49Eu7Vbsx9bC9bY2BShDkRZaR3ntkYrWZIy')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Silva', 'fernandosilva@gmail.com', '2002-10-27', 'Fernando', '{bcrypt}$2y$12$.0IxX7Ecb79erPBQST49Eu7Vbsx9bC9bY2BShDkRZaR3ntkYrWZIy')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Silva', 'fernandosilva@gmail.com', '2002-10-27', 'Fernando', '{bcrypt}$2y$12$.0IxX7Ecb79erPBQST49Eu7Vbsx9bC9bY2BShDkRZaR3ntkYrWZIy') [42001-214]
+2023-05-16 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Ramírez', 'paolaramirez@gmail.com', '1998-05-05', 'Paola', '{bcrypt}$2y$12$5aK7dk9N1yH.8jRkG5j1z.8X6I11pDLbUIbAnIbE/LDLjicx0Nw3q')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Ramírez', 'paolaramirez@gmail.com', '1998-05-05', 'Paola', '{bcrypt}$2y$12$5aK7dk9N1yH.8jRkG5j1z.8X6I11pDLbUIbAnIbE/LDLjicx0Nw3q')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Ramírez', 'paolaramirez@gmail.com', '1998-05-05', 'Paola', '{bcrypt}$2y$12$5aK7dk9N1yH.8jRkG5j1z.8X6I11pDLbUIbAnIbE/LDLjicx0Nw3q') [42001-214]
+2023-05-16 13:33:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Hernández', 'carlahernandez@gmail.com', '2001-09-10', 'Carla', '{bcrypt}$2y$12$L.wgWZ7vBM5GRa36wPsU0eOYHhakEzJcml7UKubHhEGevEBB0uRB.')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Hernández', 'carlahernandez@gmail.com', '2001-09-10', 'Carla', '{bcrypt}$2y$12$L.wgWZ7vBM5GRa36wPsU0eOYHhakEzJcml7UKubHhEGevEBB0uRB.')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Hernández', 'carlahernandez@gmail.com', '2001-09-10', 'Carla', '{bcrypt}$2y$12$L.wgWZ7vBM5GRa36wPsU0eOYHhakEzJcml7UKubHhEGevEBB0uRB.') [42001-214]
+2023-05-16 13:33:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Morales', 'jorgemorales@gmail.com', '2000-03-17', 'Jorge', '{bcrypt}$2y$12$Uzr1iG9ymA8URaAyPrUjO.xFNsyI8hkgfFWIGZILlFIDpWkeo0UwC')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Morales', 'jorgemorales@gmail.com', '2000-03-17', 'Jorge', '{bcrypt}$2y$12$Uzr1iG9ymA8URaAyPrUjO.xFNsyI8hkgfFWIGZILlFIDpWkeo0UwC')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Morales', 'jorgemorales@gmail.com', '2000-03-17', 'Jorge', '{bcrypt}$2y$12$Uzr1iG9ymA8URaAyPrUjO.xFNsyI8hkgfFWIGZILlFIDpWkeo0UwC') [42001-214]
+2023-05-16 13:33:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'García', 'lucíagarcia@gmail.com', '1999-07-24', 'Lucía', '{bcrypt}$2y$12$dfxOmJAEc2/55EjA2YAJj.gCYOLiBICVcrET7vM6K2SJckRiyTWhu')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'García', 'lucíagarcia@gmail.com', '1999-07-24', 'Lucía', '{bcrypt}$2y$12$dfxOmJAEc2/55EjA2YAJj.gCYOLiBICVcrET7vM6K2SJckRiyTWhu')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'García', 'lucíagarcia@gmail.com', '1999-07-24', 'Lucía', '{bcrypt}$2y$12$dfxOmJAEc2/55EjA2YAJj.gCYOLiBICVcrET7vM6K2SJckRiyTWhu') [42001-214]
+2023-05-16 13:33:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Rojas', 'alejandrorojas@gmail.com', '2002-11-29', 'Alejandro', '{bcrypt}$2y$12$HbcXUGW/zHSeiWXb.pOQI.HzJPEe2E1M.6qZ1t01x3GJZB48Sszhm')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Rojas', 'alejandrorojas@gmail.com', '2002-11-29', 'Alejandro', '{bcrypt}$2y$12$HbcXUGW/zHSeiWXb.pOQI.HzJPEe2E1M.6qZ1t01x3GJZB48Sszhm')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Rojas', 'alejandrorojas@gmail.com', '2002-11-29', 'Alejandro', '{bcrypt}$2y$12$HbcXUGW/zHSeiWXb.pOQI.HzJPEe2E1M.6qZ1t01x3GJZB48Sszhm') [42001-214]
+2023-05-16 13:33:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Navarro', 'natalianavarro@gmail.com', '1998-06-07', 'Natalia', '{bcrypt}$2y$12$7nYDxO.dH/rYZ1xR/w1vteH6IzGgNNFscDkflND5LQeMPgTC/eBr.')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Navarro', 'natalianavarro@gmail.com', '1998-06-07', 'Natalia', '{bcrypt}$2y$12$7nYDxO.dH/rYZ1xR/w1vteH6IzGgNNFscDkflND5LQeMPgTC/eBr.')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Navarro', 'natalianavarro@gmail.com', '1998-06-07', 'Natalia', '{bcrypt}$2y$12$7nYDxO.dH/rYZ1xR/w1vteH6IzGgNNFscDkflND5LQeMPgTC/eBr.') [42001-214]
+2023-05-16 13:33:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; se esperaba "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password)[*]"; expected "OVERRIDING USER VALUE, OVERRIDING SYSTEM VALUE, DIRECT, SORTED, DEFAULT VALUES, VALUES, SET, WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) [42001-214]
+2023-05-16 13:33:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "values ([*]default, false, 'Herrera', 'davidherrera@gmail.com', '2001-10-12', 'David', '{bcrypt}$2y$12$JG4Np4pPEm7s0h64y7Uur.wC5AomMX5X2yWUBKItJ7EW1fJtrMpmK')"; se esperaba "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "values ([*]default, false, 'Herrera', 'davidherrera@gmail.com', '2001-10-12', 'David', '{bcrypt}$2y$12$JG4Np4pPEm7s0h64y7Uur.wC5AomMX5X2yWUBKItJ7EW1fJtrMpmK')"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+values (default, false, 'Herrera', 'davidherrera@gmail.com', '2001-10-12', 'David', '{bcrypt}$2y$12$JG4Np4pPEm7s0h64y7Uur.wC5AomMX5X2yWUBKItJ7EW1fJtrMpmK') [42001-214]

@@ -15,50 +15,33 @@
 	<title>Admin view</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-		<div class="container-fluid">
-			<img src="/media/img/logo.png" alt="Logo de la compañía"  height="100">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span><i class="bi bi-three-dots text-light"></i></span>
-			</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="btn btn-dark" th:href="@{/index}">Inicio</a>
-					</li>
-				<li class="nav-item dropdown" sec:authorize="hasRole('ROLE_ADMIN')">
-					<a class="btn btn-dark" th:href="@{/admin/nuevo}">Nuevo cliente</a>
-				</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-<br>
+	
+	<nav th:replace="~{fragmentos/nav}"></nav>
 
-<table class="table table-dark table-hover table-sm">
-	<thead>
-	  <tr>
-		<th scope="col">ID</th>
-		<th scope="col">Nombre</th>
-		<th scope="col">Apellidos</th>
-		<th scope="col">Correo</th>
-		<th scope="col">Fecha Nacimiento</th>
-		<th scope="col">Operar</th>
-	  </tr>
-	</thead>
-	<tbody>
-	  <tr th:each="usuario : ${lista}">
-		<th th:text="${usuario.id}" scope="row">1</th>
-		<td th:text="${usuario.nombre}">Mark</td>
-		<td th:text="${usuario.apellidos}">Otto</td>
-		<td th:text="${usuario.email}">@mdo</td>
-		<td th:text="${usuario.fechaNac}">0000-00-00</td>
-		<td>
-			<a href="#" th:href="@{/admin/editar/{id}(id=${usuario.id})}"><i class="bi-pencil-square"></i></a> | 
-			<a href="#" th:href="@{/admin/borrar/{id}(id=${usuario.id})}"><i class="bi-trash3"></i></a>
-		</td>
-	  </tr>
-	</tbody>
-</table>
+	<table class="table table-dark mt-2 table-hover table-sm">
+		<thead>
+		  <tr>
+			<th scope="col">ID</th>
+			<th scope="col">Nombre</th>
+			<th scope="col">Apellidos</th>
+			<th scope="col">Correo</th>
+			<th scope="col">Fecha Nacimiento</th>
+			<th scope="col"><a class="btn btn-info" th:href="@{/admin/nuevo}">Nuevo cliente</a></th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr th:each="usuario : ${lista}">
+			<th th:text="${usuario.id}" scope="row">1</th>
+			<td th:text="${usuario.nombre}">Mark</td>
+			<td th:text="${usuario.apellidos}">Otto</td>
+			<td th:text="${usuario.email}">@mdo</td>
+			<td th:text="${usuario.fechaNac}">0000-00-00</td>
+			<td>
+				<a href="#" th:href="@{/admin/editar/{id}(id=${usuario.id})}"><i class="bi-pencil-square"></i></a> | 
+				<a href="#" th:href="@{/admin/borrar/{id}(id=${usuario.id})}"><i class="bi-trash3"></i></a>
+			</td>
+		  </tr>
+		</tbody>
+	</table>
 </body>
 </html>
