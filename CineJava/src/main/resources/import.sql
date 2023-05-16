@@ -39,3 +39,24 @@ insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) v
 insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) values (default, false, 'Navarro', 'natalianavarro@gmail.com', '1998-06-07', 'Natalia', '{bcrypt}$2y$12$7nYDxO.dH/rYZ1xR/w1vteH6IzGgNNFscDkflND5LQeMPgTC/eBr.')
 
 insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) values (default, false, 'Herrera', 'davidherrera@gmail.com', '2001-10-12', 'David', '{bcrypt}$2y$12$JG4Np4pPEm7s0h64y7Uur.wC5AomMX5X2yWUBKItJ7EW1fJtrMpmK')
+
+
+INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT, 'portada de El Padrino II', 'https://es.web.img3.acsta.net/r_1280_720/medias/nmedia/18/68/09/06/20197890.jpg', 'El Padrino II es una película estadounidense de 1974 dirigida por Francis Ford Coppola y producida por Albert S. Ruddy. Es la segunda entrega de la trilogía de El Padrino. La película está protagonizada por Al Pacino, Robert Duvall y Diane Keaton.', 'El Padrino II');
+
+INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT, 'portada de El Padrino III', 'https://www.ecartelera.com/carteles/2500/2523/001_m.jpg', 'El Padrino III es una película estadounidense de 1990 dirigida por Francis Ford Coppola y producida por Zoetrope Studios. Es la tercera entrega de la trilogía de El Padrino. La película está protagonizada por Al Pacino, Diane Keaton y Andy García.', 'El Padrino III');
+
+INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT, 'portada de Forrest Gump', 'https://imgcuore2.elperiodico.com/01/18/3a/cartel-forrest-gump-600.jpg', 'Forrest Gump es una película estadounidense de 1994 dirigida por Robert Zemeckis y escrita por Eric Roth. Está basada en la novela homónima de Winston Groom. La película está protagonizada por Tom Hanks como Forrest Gump.', 'Forrest Gump');
+
+INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT,'portada de Titanic', 'https://comicstores.es/imagenes_grandes/9789200/978920054761.JPG', 'Titanic es una película estadounidense dramática y romántica de 1997 escrita y dirigida por James Cameron. Está protagonizada por Leonardo DiCaprio y Kate Winslet como los personajes principales Jack Dawson y Rose DeWitt Bukater.', 'Titanic');
+
+INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT,'portada de El rey león', 'https://www.mubis.es/media/users/7286/97567/portada-el-rey-leon-de-la-coleccion-original.jpg', 'El rey león es una película animada estadounidense producida por Walt Disney Feature Animation y dirigida por Roger Allers y Rob Minkoff. La película está protagonizada por Matthew Broderick como Simba.', 'El rey león');
+
+INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT,'portada de Toy Story', 'https://www.efeeme.com/wp-content/uploads/2016/10/toy-story-16-10-16-b.jpg', 'Toy Story es una película animada estadounidense producida por Pixar Animation Studios y dirigida por John Lasseter. La película está protagonizada por Tom Hanks como Woody y Tim Allen como Buzz Lightyear.', 'Toy Story');
+
+INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT,'portada de La chaqueta metálica', 'https://4.bp.blogspot.com/-Au5BYXoPHTI/WU6bWgD7rqI/AAAAAAAAFZ0/KUyr5QZW0Kwt3SPkvmLAx2P4rkqmoiQMwCLcBGAs/s1600/Portada%2Bpel%25C3%25ADcula%2BLa%2BChaqueta%2BMet%25C3%25A1lica.jpg', 'La chaqueta metálica es una película británico-estadounidense de 1987 dirigida por Stanley Kubrick y basada en la novela corta The Short-Timers de Gustav Hasford. La película está protagonizada por Matthew Modine como el soldado Joker.', 'La chaqueta metálica');
+
+INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT,'portada de El laberinto del fauno', 'https://www.premiosgoya.com/wp-content/uploads/2016/01/El-laberinto-del-Fauno.jpg', 'El laberinto del fauno es una película española-mexicana del año 2006 escrita y dirigida por Guillermo del Toro. La película está protagonizada por Ivana Baquero como Ofelia.', 'El laberinto del fauno');
+
+INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT,'portada de El exorcista', 'https://www.ecartelera.com/carteles/5100/5147/001_m.jpg', 'El exorcista es una película estadounidense de terror sobrenatural dirigida por William Friedkin y basada en la novela homónima de William Peter Blatty. La película está protagonizada por Ellen Burstyn como Chris MacNeil.', 'El exorcista');
+
+INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT,'portada de El resplandor', 'https://es.web.img3.acsta.net/pictures/14/04/15/10/46/568345.jpg', 'El resplandor es una película estadounidense de terror psicológico dirigida por Stanley Kubrick y basada en la novela homónima de Stephen King. La película está protagonizada por Jack Nicholson como Jack Torrance.', 'El resplandor');
