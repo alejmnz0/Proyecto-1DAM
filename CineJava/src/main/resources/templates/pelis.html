@@ -27,10 +27,10 @@
                 <th scope="col"><a class="btn btn-info" th:href="@{/admin/peliculas/nuevo}">Nueva pelicula</a></th>
             </tr>
         </thead>
-            <tbody>
+        <tbody>
             <tr th:each="pelicula : ${lista}" class="text-center align-middle">
                 <th th:text="${pelicula.id}" scope="row">1</th>
-                <td><img th:src="${pelicula.portada}" alt="${pelicula.altPortada}" class="img-fluid" height="100" width="150"></td>
+                <td><img th:src="${pelicula.portada}" th:alt="${pelicula.altPortada}" class="img-fluid" height="100" width="150"></td>
                 <td th:text="${pelicula.titulo}" class="h3">Avengers</td>
                 <td th:text="${pelicula.sinopsis}">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam eligendi rem dolorem cum voluptatem ducimus consectetur ipsa hic culpa obcaecati vel facilis error, repudiandae iure praesentium, modi sint. Quasi, adipisci?</td>
                 <td>

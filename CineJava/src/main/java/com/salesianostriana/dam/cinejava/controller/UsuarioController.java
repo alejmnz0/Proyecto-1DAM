@@ -57,4 +57,14 @@ public class UsuarioController {
 		return "redirect:/login/";
 	}
 	
+	@GetMapping("/información")
+	public String mostrarAboutUs () {
+		return "info";
+	}
+	
+	@GetMapping("/información/salas")
+	public String mostrarInfoSalas () {
+		return "infosalas";
+	}
+	
 }

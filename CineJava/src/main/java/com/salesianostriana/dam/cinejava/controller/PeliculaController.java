@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.salesianostriana.dam.cinejava.model.Pelicula;
-import com.salesianostriana.dam.cinejava.model.Usuario;
 import com.salesianostriana.dam.cinejava.service.PeliculaService;
 
 @Controller

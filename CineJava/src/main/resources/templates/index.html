@@ -17,36 +17,46 @@
 <body>
 	<form th:action="@{/logout}" method="POST" id="logoutForm"></form>
 	
-		<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-			<div class="container-fluid">
-				<img src="media/img/logo.png" alt="Logo de la compañía"  height="100">
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+		<div class="container-fluid">
+			<img src="media/img/logo.png" alt="Logo de la compañía"  height="100">
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span><i class="bi bi-three-dots text-light"></i></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
 					<li class="nav-item">
 						<a class="nav-link btn btn-dark text-danger mx-1" href="javascript:document.getElementById('logoutForm').submit()">Logout</a>
 					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle nav-link btn btn-dark text-info" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Información</a>
+						
+						<ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item btn btn-dark text-info" th:href="@{/información}">Sobre nosotros</a></li>
+							<li><a class="dropdown-item btn btn-dark text-info" th:href="@{/información/salas/}">Nuestras salas</a></li>
+						</ul>
+					</li>
+
 					<li class="nav-item dropdown" sec:authorize="hasRole('ROLE_ADMIN')">
-						<a class="nav-link dropdown-toggle nav-link btn btn-dark text-info" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						Administrar
-						</a>
+						<a class="nav-link dropdown-toggle nav-link btn btn-dark text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Administrar</a>
+						
+						<ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item btn btn-dark text-primary" th:href="@{/admin/}">Usuarios</a></li>
+							<li><a class="dropdown-item btn btn-dark text-primary" th:href="@{/admin/peliculas/}">Peliculas</a></li>
+							<li><a class="dropdown-item btn btn-dark text-primary" href="#">Salas <i class="bi bi-exclamation-diamond text-warning"></i></a></li>
+						</ul>
+					</li>
 					
-					<ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-						<li><a class="dropdown-item btn btn-dark text-info" th:href="@{/admin/}">Usuarios</a></li>
-						<li><a class="dropdown-item btn btn-dark text-info" th:href="@{/admin/peliculas/}">Peliculas <i class="bi bi-gear-fill text-warning"></i></i></a></li>
-						<li><a class="dropdown-item btn btn-dark text-info" href="#">Salas <i class="bi bi-exclamation-diamond text-warning"></i></a></li>
-					</ul>
-				</li>
 				</ul>
 				<form class="d-flex">
-				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success" type="submit">Search</button>
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
 				</form>
 			</div>
-			</div>
-		</nav>
+		</div>
+	</nav>
 	
 </body>
 </html>
