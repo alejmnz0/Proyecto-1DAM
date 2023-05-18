@@ -9,56 +9,56 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.salesianostriana.dam.cinejava.model.Usuario;
-import com.salesianostriana.dam.cinejava.service.UsuarioService;
+import com.salesianostriana.dam.cinejava.model.Pelicula;
+import com.salesianostriana.dam.cinejava.service.PeliculaService;
 
 @Controller
-@RequestMapping("/admin")
-public class AdminController {
+@RequestMapping("/admin/peliculas")
+public class PeliculaController {
 
 	@Autowired
-	private UsuarioService servicioUsuario;
+	private PeliculaService servicioPeli;
 	
 	@GetMapping({"/", "/list"})
 	public String listarTodos(Model model) {
-		model.addAttribute("lista", servicioUsuario.findAll());
-		return "users";
+		model.addAttribute("lista", servicioPeli.findAll());
+		return "pelis";
 	}
 	
 	@GetMapping("/nuevo")
 	public String mostrarRegistro (Model model) {
-		model.addAttribute("usuario", new Usuario());
-		return "userRegister";
+		model.addAttribute("pelicula", new Pelicula());
+		return "filmRegister";
 	}
 	
 	@PostMapping("/nuevo/submit")
-	public String procesarRegistro (@ModelAttribute("usuario") Usuario u) {
-		servicioUsuario.add(u);
-		return "redirect:/admin/";
+	public String procesarRegistro (@ModelAttribute("pelicula") Pelicula u) {
+		servicioPeli.add(u);
+		return "redirect:/admin/peliculas/";
 	}
 	
 	@GetMapping("/editar/{id}")
 	public String mostrarFormularioEdicion(@PathVariable("id") long id, Model model) {
-		
-		Usuario aEditar = servicioUsuario.findById(id);
-		
+
+		Pelicula aEditar = servicioPeli.findById(id);
+
 		if (aEditar != null) {
-			model.addAttribute("usuario", aEditar);
-			return "userRegister";
+			model.addAttribute("pelicula", aEditar);
+			return "filmRegister";
 		} else {
-			return "redirect:/admin/";
+			return "redirect:/admin/peliculas/";
 		}
 	}
-	
+
 	@PostMapping("/editar/submit")
-	public String procesarFormularioEdicion(@ModelAttribute("usuario") Usuario a) {
-		servicioUsuario.edit(a);
-		return "redirect:/admin/";
+	public String procesarFormularioEdicion(@ModelAttribute("pelicula") Pelicula a) {
+		servicioPeli.edit(a);
+		return "redirect:/admin/peliculas/";
 	}
-	
+
 	@GetMapping("/borrar/{id}")
 	public String borrar(@PathVariable("id") long id) {
-		servicioUsuario.delete(id);
-		return "redirect:/admin/";
+		servicioPeli.delete(id);
+		return "redirect:/admin/peliculas/";
 	}
 }
