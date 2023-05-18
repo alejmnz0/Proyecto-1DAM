@@ -17,18 +17,18 @@ public class UsuarioService {
 	private final UsuarioRepository repositorioUsuarios;
 	private final PasswordEncoder passwordEncoder;
 	
-	public Usuario add (Usuario c) {
-		c.setPassword(passwordEncoder.encode(c.getPassword()));
-		return repositorioUsuarios.save(c);
+	public Usuario add (Usuario u) {
+		u.setPassword(passwordEncoder.encode(u.getPassword()));
+		return repositorioUsuarios.save(u);
 	}
 	
-	public Usuario edit (Usuario c) {
-		c.setPassword(passwordEncoder.encode(c.getPassword()));
-		return repositorioUsuarios.save(c);
+	public Usuario edit (Usuario u) {
+		u.setPassword(passwordEncoder.encode(u.getPassword()));
+		return repositorioUsuarios.save(u);
 	}
 	
-	public void delete (Usuario c) {
-		repositorioUsuarios.delete(c);
+	public void delete (Usuario u) {
+		repositorioUsuarios.delete(u);
 	}
 	
 	public void delete (long id) {
