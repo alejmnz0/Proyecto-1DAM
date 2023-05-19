@@ -26,13 +26,13 @@ public class SalaController {
 	}
 	
 	@GetMapping("/editar/{id}")
-	public String mostrarFormularioEdicion(@PathVariable("id") int id, Model model) {
+	public String mostrarFormularioEdicion(@PathVariable("id") long id, Model model) {
 
 		Sala aEditar = servicioSala.findById(id);
 
 		if (aEditar != null) {
 			model.addAttribute("sala", aEditar);
-			return "salaRegister";
+			return "salas";
 		} else {
 			return "redirect:/admin/salas/";
 		}
@@ -47,11 +47,11 @@ public class SalaController {
 	@PostMapping("/nuevo")
 	public String addSala(@ModelAttribute("sala") Sala s,  Model model) {
 		servicioSala.add(s);
-		return "redirect:/admin/salas";
+		return "redirect:/admin/salas/";
 	}
 
 	@GetMapping("/borrar/{id}")
-	public String borrar(@PathVariable("id") int id) {
+	public String borrar(@PathVariable("id") long id) {
 		servicioSala.delete(id);
 		return "redirect:/admin/salas/";
 	}

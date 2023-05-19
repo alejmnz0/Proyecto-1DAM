@@ -27,7 +27,7 @@ public class SalaService {
 		repoSalas.delete(s);
 	}
 	
-	public void delete (Integer id) {
+	public void delete (long id) {
 		repoSalas.deleteById(id);
 	}
 	
@@ -35,7 +35,7 @@ public class SalaService {
 		return repoSalas.findAll();
 	}
 	
-	public Sala findById (Integer id) {
+	public Sala findById (long id) {
 		return repoSalas.findById(id).orElse(null);
 	}
 }
