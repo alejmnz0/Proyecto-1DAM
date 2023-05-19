@@ -41,7 +41,7 @@ insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) v
 insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) values (default, false, 'Herrera', 'davidherrera@gmail.com', '2001-10-12', 'David', '{bcrypt}$2y$12$JG4Np4pPEm7s0h64y7Uur.wC5AomMX5X2yWUBKItJ7EW1fJtrMpmK')
 
 
-INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT, 'portada de El Padrino', 'https://pics.filmaffinity.com/El_padrino-993414333-large.jpg', 'Vito Corleone es el jefe de una de las familias que lideran la Cosa Nostra neoyorkina durante los años 40. Dos de sus hijos participan en las actividades ilícitas, mientras que Michael, el menor de los hijos, está distanciado del negocio familiar.', 'El Padrino');
+INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT, 'portada de El Padrino', 'https://es.web.img3.acsta.net/pictures/18/06/12/12/12/0117051.jpg?coixp=49&coiyp=27', 'Vito Corleone es el jefe de una de las familias que lideran la Cosa Nostra neoyorkina durante los años 40. Dos de sus hijos participan en las actividades ilícitas, mientras que Michael, el menor de los hijos, está distanciado del negocio familiar.', 'El Padrino');
 
 INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT, 'portada de El Padrino II', 'https://es.web.img3.acsta.net/r_1280_720/medias/nmedia/18/68/09/06/20197890.jpg', 'El Padrino II es una película estadounidense de 1974 dirigida por Francis Ford Coppola y producida por Albert S. Ruddy. Es la segunda entrega de la trilogía de El Padrino. La película está protagonizada por Al Pacino, Robert Duvall y Diane Keaton.', 'El Padrino II');
 

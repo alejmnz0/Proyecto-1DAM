@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.salesianostriana.dam.cinejava.model.Pelicula;
 import com.salesianostriana.dam.cinejava.model.Sala;
 import com.salesianostriana.dam.cinejava.service.SalaService;
 
@@ -25,6 +26,18 @@ public class SalaController {
 		return "salas";
 	}
 	
+	@GetMapping("/nuevo")
+	public String mostrarRegistro (Model model) {
+		model.addAttribute("sala", new Sala());
+		return "salaRegister";
+	}
+	
+	@PostMapping("/nuevo/submit")
+	public String procesarRegistro (@ModelAttribute("sala") Sala s) {
+		servicioSala.add(s);
+		return "redirect:/admin/salas/";
+	}
+	
 	@GetMapping("/editar/{id}")
 	public String mostrarFormularioEdicion(@PathVariable("id") long id, Model model) {
 
@@ -32,21 +45,15 @@ public class SalaController {
 
 		if (aEditar != null) {
 			model.addAttribute("sala", aEditar);
-			return "salas";
+			return "salaRegister";
 		} else {
 			return "redirect:/admin/salas/";
 		}
 	}
 
 	@PostMapping("/editar/submit")
-	public String procesarFormularioEdicion(@ModelAttribute("sala") Sala a) {
-		servicioSala.edit(a);
-		return "redirect:/admin/salas/";
-	}
-	
-	@PostMapping("/nuevo")
-	public String addSala(@ModelAttribute("sala") Sala s,  Model model) {
-		servicioSala.add(s);
+	public String procesarFormularioEdicion(@ModelAttribute("pelicula") Sala s) {
+		servicioSala.edit(s);
 		return "redirect:/admin/salas/";
 	}
 

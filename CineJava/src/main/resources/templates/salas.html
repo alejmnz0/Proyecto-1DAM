@@ -22,7 +22,7 @@
             <tr class="text-center align-middle">
                 <th scope="col">ID</th>
                 <th scope="col">Nombre sala</th>
-                <th scope="col" class="w-25"><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Nueva sala</button></th>
+                <th scope="col" class="w-25"><a class="btn btn-info" th:href="@{/admin/salas/nuevo}">Nueva sala</a></th>
             </tr>
         </thead>
         <tbody>
@@ -36,62 +36,5 @@
             </tr>
         </tbody>
     </table>
-
-<<<<<<< HEAD
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Ingrese el nombre de la sala</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form th:action="${sala.id != 0} ? @{/admin/salas/submit} : @{/admin/salas/nuevo/submit}" th:object="${sala}" method="post" class="bg-dark text-white">
-                        <div class="row">
-                            <div class="col-md-5 mb-4">
-                                <div class="form-outline">
-                                    <input th:field="*{nombre}" type="text" id="nombre" name="nombre" class="form-control form-control-lg" required placeholder="Inserte el título">
-                                    <label class="form-label" for="nombre">Nombre</label>
-                                </div> 
-                            </div>
-                        </div>
-                        </div>
-                        </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Crear</button>
-                </div>
-            </div>
-        </div>
-    </div>
-=======
-    <!-- Botón para abrir el modal -->
-<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#nuevaSalaModal">Nueva sala</button>
-
-<!-- Modal -->
-<div class="modal fade" id="nuevaSalaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="nuevaSalaLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="nuevaSalaLabel">Ingrese el nombre de la sala</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Formulario -->
-                <form method="POST" th:action="@{/admin/salas/nuevo}" th:object="${sala}">
-                    <input th:if="${sala.id != 0}" type="hidden" name="id" th:field="*{id}" />
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre de la sala</label>
-                        <input required type="text" th:field="*{nombre}" class="form-control" id="nombre" name="nombre" />
-                    </div>
-                    <button type="submit" class="btn btn-primary">Crear</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
->>>>>>> 7496184d6943ccb750b18861d67ad9fe7fdf0097
 </body>
 </html>

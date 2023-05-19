@@ -20,7 +20,7 @@
             <div class="col-10">
                 <div class="card card-registration bg-dark text-white rounded-4">
                     <div class="card-body p-md-5 pb-md-1">
-                        <form th:action="${pelicula.id != 0} ? @{/admin/editar/submit} : @{/admin/peliculas/nuevo/submit}" th:object="${pelicula}" method="post" class="bg-dark text-white">
+                        <form th:action="${pelicula.id != 0} ? @{/admin/peliculas/editar/submit} : @{/admin/peliculas/nuevo/submit}" th:object="${pelicula}" method="post" class="bg-dark text-white">
                         <h3 class="mb-4 text-uppercase fw-bold">Pelicula <i class="bi bi-film"></i></h3>
         
                         <div class="row">
