@@ -1,4 +1,6 @@
-insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) values (default, true, 'Jimenez', 'admin@admin.es', '2004-06-11', 'Alejandro', '{bcrypt}$2a$12$GsUXFobMZAxzGeKkOXAXe.SebrjbNvsTAUIWlOTCsd5j8rQ/k4TYu')
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) values (default, true, 'Jiménez', 'admin@admin.es', '2004-06-11', 'Alejandro', '{bcrypt}$2a$12$GsUXFobMZAxzGeKkOXAXe.SebrjbNvsTAUIWlOTCsd5j8rQ/k4TYu')
+
+insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) values (default, false, 'Díaz', 'user@user.es', '2004-10-05', 'Jorge', '{bcrypt}$2a$12$j0TjWqmMbk6m2qIa9zz2DeFvJzDyEqnjLKgbhdL/p9c5/DoSp/h7O')
 
 insert into usuario (id, admin, apellidos, email, fecha_nac, nombre, password) values (default, false, 'González', 'juangonzalez@gmail.com', '2000-01-01', 'Juan', '{bcrypt}$2y$12$7aNDkT3uaLptZExdYR3bEenLV4No.nR5S1EjFvKuaj0gyr3FnY6ty')
 

@@ -32,8 +32,8 @@ public class PeliculaController {
 	}
 	
 	@PostMapping("/nuevo/submit")
-	public String procesarRegistro (@ModelAttribute("pelicula") Pelicula u) {
-		servicioPeli.add(u);
+	public String procesarRegistro (@ModelAttribute("pelicula") Pelicula p) {
+		servicioPeli.add(p);
 		return "redirect:/admin/peliculas/";
 	}
 	
@@ -51,8 +51,8 @@ public class PeliculaController {
 	}
 
 	@PostMapping("/editar/submit")
-	public String procesarFormularioEdicion(@ModelAttribute("pelicula") Pelicula a) {
-		servicioPeli.edit(a);
+	public String procesarFormularioEdicion(@ModelAttribute("pelicula") Pelicula p) {
+		servicioPeli.edit(p);
 		return "redirect:/admin/peliculas/";
 	}
 
