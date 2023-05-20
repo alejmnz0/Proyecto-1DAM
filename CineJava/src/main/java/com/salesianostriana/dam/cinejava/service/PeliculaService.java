@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.salesianostriana.dam.cinejava.model.Pelicula;
-import com.salesianostriana.dam.cinejava.model.Usuario;
 import com.salesianostriana.dam.cinejava.repository.PeliculaRepository;
 
 import lombok.RequiredArgsConstructor;

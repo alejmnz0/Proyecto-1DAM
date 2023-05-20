@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.salesianostriana.dam.cinejava.model.Pelicula;
 import com.salesianostriana.dam.cinejava.model.Sala;
 import com.salesianostriana.dam.cinejava.service.SalaService;
 
