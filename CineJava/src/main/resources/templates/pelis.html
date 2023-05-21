@@ -34,8 +34,8 @@
                 <td th:text="${pelicula.titulo}" class="h3">Avengers</td>
                 <td th:text="${pelicula.sinopsis}">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam eligendi rem dolorem cum voluptatem ducimus consectetur ipsa hic culpa obcaecati vel facilis error, repudiandae iure praesentium, modi sint. Quasi, adipisci?</td>
                 <td>
-                    <a href="#" th:href="@{/admin/peliculas/editar/{id}(id=${pelicula.id})}"><i class="bi-pencil-square h3"></i></a> | 
-                    <a href="#" th:href="@{/admin/peliculas/borrar/{id}(id=${pelicula.id})}"><i class="bi-trash3 h3"></i></a>
+                    <a href="#" th:href="@{/admin/peliculas/editar/{id}(id=${pelicula.id})}"><i class="bi-pencil-square h3 text-info"></i></a> -- 
+                    <a href="#" th:href="@{/admin/peliculas/borrar/{id}(id=${pelicula.id})}"><i class="bi-trash3 h3 text-info"></i></a>
                 </td>
             </tr>
         </tbody>

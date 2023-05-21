@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.salesianostriana.dam.cinejava.model.Usuario;
+import com.salesianostriana.dam.cinejava.service.PeliculaService;
 import com.salesianostriana.dam.cinejava.service.UsuarioService;
 
 import lombok.AllArgsConstructor;
@@ -20,10 +21,18 @@ public class UsuarioController {
 	
 	@Autowired
 	private UsuarioService servicioUsuario;
+	@Autowired
+	private PeliculaService servicioPeli;
 	
 	@GetMapping("/login") 
 	public String mandarLogin () {
 		return "login";
+	}
+	
+	@GetMapping({"/"})
+	public String listarTodos(Model model) {
+		model.addAttribute("lista", servicioPeli.findAll());
+		return "index";
 	}
 	
 	

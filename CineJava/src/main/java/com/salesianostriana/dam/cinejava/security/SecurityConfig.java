@@ -61,7 +61,7 @@ public class SecurityConfig {
 			.and()
 		.formLogin()
 			.loginPage("/login")
-			.defaultSuccessUrl("/index", true)
+			.defaultSuccessUrl("/", true)
 			.permitAll();
 		
 		// Añadimos esto para poder seguir accediendo a la consola de H2
