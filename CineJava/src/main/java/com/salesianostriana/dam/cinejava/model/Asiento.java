@@ -1,5 +1,7 @@
 package com.salesianostriana.dam.cinejava.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -14,10 +16,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Asiento {
+public class Asiento implements Serializable{
 
 	@Id
-	private byte fila,columna;
+	private long fila,columna;
 	
 	@Id
 	@ManyToOne

@@ -1,4 +1,4 @@
-/*package com.salesianostriana.dam.cinejava.model;
+package com.salesianostriana.dam.cinejava.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,7 +21,8 @@ public class Entrada {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id_entrada;
 	
+	
+	
 	private double precio;
-
+	
 }
-*/
