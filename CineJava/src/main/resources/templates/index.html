@@ -41,9 +41,9 @@
 						</li>
 
 						<li class="nav-item dropdown" sec:authorize="hasRole('ROLE_ADMIN')">
-							<a class="nav-link dropdown-toggle nav-link btn btn-dark text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Administrar</a>
+							<a class="nav-link dropdown-toggle nav-link btn btn-dark text-primary" href="#" id="navbarDropdownAdmin" role="button" data-bs-toggle="dropdown" aria-expanded="false">Administrar</a>
 							
-							<ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+							<ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownAdmin">
 								<li><a class="dropdown-item btn btn-dark text-primary" th:href="@{/admin/}">Usuarios</a></li>
 								<li><a class="dropdown-item btn btn-dark text-primary" th:href="@{/admin/peliculas/}">Peliculas</a></li>
 								<li><a class="dropdown-item btn btn-dark text-primary" th:href="@{/admin/salas/}">Salas</a></li>
@@ -60,7 +60,7 @@
 		</nav>
 	</header>
 	
-	<ul class="list-unstyled row mt-4">
+	<ul class="list-unstyled row mt-4 me-5">
 		<li th:each="pelicula : ${lista}" class="col-3 offset-1">
 			<div class="card indexcard text-center align-items-center mb-5 pt-3 bg-dark">
 				<img th:src="${pelicula.portada}" th:alt="${pelicula.altPortada}" class="img-fluid imgEntrada card-img-top" />
@@ -71,7 +71,7 @@
 		</li>
 	</ul>
 
-	
+	<nav th:replace="~{fragmentos/footer}"></nav>
 	
 </body>
 </html>
