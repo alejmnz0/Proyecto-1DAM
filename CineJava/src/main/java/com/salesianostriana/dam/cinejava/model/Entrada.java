@@ -21,7 +21,9 @@
 //	@GeneratedValue(strategy = GenerationType.IDENTITY)
 //	private long id_entrada;
 //	
+//	private Pase pase;
 //	
+//	private Asiento asiento;
 //	
 //	private double precio;
 //	
