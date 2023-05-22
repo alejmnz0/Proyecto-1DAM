@@ -1,10 +1,15 @@
 package com.salesianostriana.dam.cinejava.service;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
 import com.salesianostriana.dam.cinejava.model.Asiento;
+import com.salesianostriana.dam.cinejava.model.AsientoId;
+import com.salesianostriana.dam.cinejava.model.Pase;
 import com.salesianostriana.dam.cinejava.model.Sala;
 import com.salesianostriana.dam.cinejava.repository.SalaRepository;
 
@@ -16,17 +21,40 @@ public class SalaService {
 
 	private final SalaRepository repoSalas;
 	
+	/***
+	 * Crea los asientos de la sala y genera 
+	 * 3 pases al dia (uno cada 3 horas a partir
+	 * de la hora de apertura) para una semana
+	 * al crear una nueva sala.)
+	 * @param s
+	 * @return
+	 */
+	
+	
 	public Sala add (Sala s) {
-		for (int i = 1; i < 8; i++) {
-			for (int j = 1; j < 9; j++) {
-				Asiento a;
-				if(i<7)
-					a = new Asiento(i,j,s,false);
-				else
-					a = new Asiento(i,j,s,true);
-				
+		byte semana=7;
+		byte filas=8;
+		byte columnas=9;
+		LocalTime horaApertura= LocalTime.of(15, 00);
+		LocalDate dia = LocalDate.now();
+		
+		
+		for (int i = 1; i < filas; i++) {
+			for (int j = 1; j < columnas; j++) {
+				Asiento a = (i<filas-1)?new Asiento(new AsientoId (i,j,s.getId()) ,s,false):new Asiento(new AsientoId (i,j,s.getId()) ,s,true);
 				s.addAsiento(a);
 			}
+		}
+		
+		for (int i = 1; i < semana; i++) {
+			for (int j = 0; j < 7; j+=3) {
+				Pase p = Pase.builder()
+				.sala(s)
+				.fecha(LocalDateTime.of(dia.plusDays(i), horaApertura.plusHours(j)))
+				.build();
+				s.addPase(p);
+			}
+
 		}
 		
 		return repoSalas.save(s);

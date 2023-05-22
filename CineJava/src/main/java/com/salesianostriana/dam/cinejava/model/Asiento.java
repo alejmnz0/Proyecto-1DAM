@@ -1,10 +1,9 @@
 package com.salesianostriana.dam.cinejava.model;
 
-import java.io.Serializable;
-
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.MapsId;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,12 +15,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Asiento implements Serializable{
+public class Asiento {
 
-	@Id
-	private long fila,columna;
+	@EmbeddedId
+	private AsientoId id;
 	
-	@Id
+	@MapsId("salaId")
 	@ManyToOne
 	private Sala sala;
 	

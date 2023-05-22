@@ -1,14 +1,14 @@
 package com.salesianostriana.dam.cinejava.service;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
 import com.salesianostriana.dam.cinejava.model.Pase;
 import com.salesianostriana.dam.cinejava.model.Pelicula;
-import com.salesianostriana.dam.cinejava.repository.PaseRepository;
+import com.salesianostriana.dam.cinejava.model.Sala;
 import com.salesianostriana.dam.cinejava.repository.PeliculaRepository;
+import com.salesianostriana.dam.cinejava.repository.SalaRepository;
 
 import lombok.RequiredArgsConstructor;
 
@@ -17,22 +17,19 @@ import lombok.RequiredArgsConstructor;
 public class PeliculaService {
 
 	private final PeliculaRepository repositorioPelis;
-	private final PaseRepository repositorioPases;
+	private final SalaRepository repositorioSalas;
 	
 	public Pelicula add (Pelicula p) {
-		LocalDateTime fecha = LocalDateTime.now();
-		Pase pa;
-		for(Pase pase : repositorioPases.findAll()) {
-			
-		}
+		byte breakPoint=0;
 		
-		for (Pase pase : repositorioPases.findAll()) {
-			if(pase.getFecha().getDayOfYear()>(fecha.getDayOfYear()))
-			fecha=pase.getFecha();
-			
+		for (Sala sala : repositorioSalas.findAll()) {
+			for (Pase pase : sala.getPases()) {
+				if (pase.getPeli()==null&&breakPoint<9) {
+					pase.setPeli(p);
+					breakPoint++;
+				}
+			}
 		}
-		
-		repositorioPases.save(pa);
 		
 		return repositorioPelis.save(p);
 	}
