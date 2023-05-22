@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.salesianostriana.dam.cinejava.model.Pelicula;
 import com.salesianostriana.dam.cinejava.model.Usuario;
 import com.salesianostriana.dam.cinejava.service.PeliculaService;
+import com.salesianostriana.dam.cinejava.service.SalaService;
 import com.salesianostriana.dam.cinejava.service.UsuarioService;
 
 import lombok.AllArgsConstructor;
@@ -24,6 +26,8 @@ public class UsuarioController {
 	private UsuarioService servicioUsuario;
 	@Autowired
 	private PeliculaService servicioPeli;
+	@Autowired
+	private SalaService servicioSala;
 	
 	@GetMapping("/login") 
 	public String mandarLogin () {
@@ -77,9 +81,21 @@ public class UsuarioController {
 		return "infosalas";
 	}
 	
-	@GetMapping("/comprar/{id}")
+	@GetMapping("/pelicula/{id}")
 	public String comprar (@PathVariable("id") long id, Model model) {
+		
+		Pelicula aMostrar = servicioPeli.findById(id);
+		
+		model.addAttribute("lista", servicioSala.findPaseByFilm(aMostrar));
+		model.addAttribute("pelicula",aMostrar);
 		return "comprar";
+	}
+	
+	@GetMapping("/pase/{id_pase}")
+	public String comprarPase (@PathVariable("id_pase") String idPase, Model model) {
+		
+//		model.addAttribute("asientos", servicioSala.findAsientosByPase(servicioSala.findPaseById(idPase)));
+		return "asientoForm";
 	}
 	
 }

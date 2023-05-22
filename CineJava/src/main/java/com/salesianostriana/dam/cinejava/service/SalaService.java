@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import com.salesianostriana.dam.cinejava.model.Asiento;
 import com.salesianostriana.dam.cinejava.model.AsientoId;
 import com.salesianostriana.dam.cinejava.model.Pase;
+import com.salesianostriana.dam.cinejava.model.Pelicula;
 import com.salesianostriana.dam.cinejava.model.Sala;
 import com.salesianostriana.dam.cinejava.repository.SalaRepository;
 
@@ -17,9 +18,9 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class SalaService {
+public class SalaService extends BaseServiceImpl<Sala, Long, SalaRepository>{
 
-	private final SalaRepository repoSalas;
+	private final SalaRepository repoSalas ;
 	
 	/***
 	 * Crea los asientos de la sala y genera 
@@ -79,4 +80,17 @@ public class SalaService {
 	public Sala findById (long id) {
 		return repoSalas.findById(id).orElse(null);
 	}
+	
+	public List<Pase> findPaseByFilm(Pelicula p) {
+		return this.repository.buscarPasePorPeli(p);
+	}
+	
+	public Pase findPaseById(long id) {
+		return this.repository.buscarPasePorId(id);
+	}
+	
+	public List<Asiento> findAsientosByPase(Pase pa) {
+		return this.repository.buscarAsientosPorPase(pa);
+	}
+	
 }

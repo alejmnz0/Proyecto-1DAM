@@ -18,7 +18,7 @@
     <script src="/js/aos.js" defer></script>
 
     <link rel="stylesheet" href="/CSS/login.css">
-    <title>Compra</title>
+    <title>Asiento</title>
 </head>
 
 <body>
@@ -46,28 +46,15 @@
             <div class="col-11">
                 <div class="card card-registration bg-dark text-white rounded-4">
                     <div class="card-body p-md-5 pb-md-1 d-flex" th:object="${pelicula}">
-                        <table class="table table-dark table-hover table-sm table-bordered">
-                            <thead>
-                                <tr class="text-center align-middle">
-                                    <th scope="col">Portada</th>
-                                    <th scope="col" class="w-50">Sinopsis</th>
-                                    <th scope="col">Horas</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="text-center align-middle">
-                                    <td th:text="*{sinopsis}">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Quam eligendi rem dolorem cum voluptatem ducimus consectetur ipsa hic culpa
-                                        obcaecati vel facilis error, repudiandae iure praesentium, modi sint. Quasi,
-                                        adipisci?</td>
-                                    <td th:each="pase : ${lista}" class="d-flex justify-content-center"><button
-                                            type="button" class="btn btn-light"
-                                            th:text="${#temporals.format(pase.fecha, 'dd/MM/yyyy HH:mm')}"
-                                            th:href="@{/pase/{id}(id=${pase.id_pase})}"></button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <ul class="list-unstyled row mt-4 me-5">
+                            <li th:each="asiento : ${asientos}" class="col-3 offset-1" data-aos="fade-up">
+                                <div class="card indexcard text-center align-items-center mb-5 pt-3 bg-dark">
+                                    <div class="card-body">
+                                        <i class="bi-laptop"></i>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
