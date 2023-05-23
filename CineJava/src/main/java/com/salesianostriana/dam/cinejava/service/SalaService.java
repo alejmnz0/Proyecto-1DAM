@@ -22,16 +22,6 @@ public class SalaService extends BaseServiceImpl<Sala, Long, SalaRepository>{
 
 	private final SalaRepository repoSalas ;
 	
-	/***
-	 * Crea los asientos de la sala y genera 
-	 * 3 pases al dia (uno cada 3 horas a partir
-	 * de la hora de apertura) para una semana
-	 * al crear una nueva sala.)
-	 * @param s
-	 * @return
-	 */
-	
-	
 	public Sala add (Sala s) {
 		byte semana=7;
 		byte filas=8;
@@ -59,26 +49,6 @@ public class SalaService extends BaseServiceImpl<Sala, Long, SalaRepository>{
 		}
 		
 		return repoSalas.save(s);
-	}
-	
-	public Sala edit (Sala s) {
-		return repoSalas.save(s);
-	}
-	
-	public void delete (Sala s) {
-		repoSalas.delete(s);
-	}
-	
-	public void delete (long id) {
-		repoSalas.deleteById(id);
-	}
-	
-	public List<Sala> findAll () {
-		return repoSalas.findAll();
-	}
-	
-	public Sala findById (long id) {
-		return repoSalas.findById(id).orElse(null);
 	}
 	
 	public List<Pase> findPaseByFilm(Pelicula p) {

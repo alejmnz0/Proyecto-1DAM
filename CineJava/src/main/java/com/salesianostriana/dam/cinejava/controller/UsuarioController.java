@@ -84,7 +84,7 @@ public class UsuarioController {
 	@GetMapping("/comprar/{id}")
 	public String comprar (@PathVariable("id") long id, Model model) {
 		
-		Pelicula aMostrar = servicioPeli.findById(id);
+		Pelicula aMostrar = servicioPeli.findById(id).get();
 		
 		model.addAttribute("lista", servicioSala.findPaseByFilm(aMostrar));
 		model.addAttribute("pelicula",aMostrar);

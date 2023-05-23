@@ -12,7 +12,7 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class UsuarioService {
+public class UsuarioService extends BaseServiceImpl<Usuario, Long, UsuarioRepository>{
 
 	private final UsuarioRepository repositorioUsuarios;
 	private final PasswordEncoder passwordEncoder;
@@ -25,22 +25,6 @@ public class UsuarioService {
 	public Usuario edit (Usuario u) {
 		u.setPassword(passwordEncoder.encode(u.getPassword()));
 		return repositorioUsuarios.save(u);
-	}
-	
-	public void delete (Usuario u) {
-		repositorioUsuarios.delete(u);
-	}
-	
-	public void delete (long id) {
-		repositorioUsuarios.deleteById(id);
-	}
-	
-	public List<Usuario> findAll () {
-		return repositorioUsuarios.findAll();
-	}
-	
-	public Usuario findById (Long id) {
-		return repositorioUsuarios.findById(id).orElse(null);
 	}
 	
 }
