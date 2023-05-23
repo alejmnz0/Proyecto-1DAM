@@ -26,7 +26,7 @@
 				<th scope="col">Apellidos</th>
 				<th scope="col">Correo</th>
 				<th scope="col">Fecha Nacimiento</th>
-				<th scope="col"><a class="btn btn-info" th:href="@{/admin/nuevo}">Nuevo usuario</a></th>
+				<th scope="col">Operaciones</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -37,7 +37,6 @@
 				<td th:text="${usuario.email}">@mdo</td>
 				<td th:text="${usuario.fechaNac}">0000-00-00</td>
 				<td>
-					<a href="#" th:href="@{/admin/editar/{id}(id=${usuario.id})}"><i class="bi-pencil-square text-info"></i></a>  --
 					<a href="#" th:href="@{/admin/borrar/{id}(id=${usuario.id})}"><i class="bi-trash3 text-info"></i></a>
 				</td>
 			</tr>

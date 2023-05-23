@@ -10,3 +10,7 @@ body {
 .indexcard {
   width: 18em;
 }
+
+.asientoSeleccionado{
+  color: green !important;
+}

@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+    <script src="/js/peliValidacion.js"></script>
+
     <title>Peliculas</title>
     <link rel="stylesheet" href="/CSS/login.css">
 </head>
@@ -21,7 +23,7 @@
             <div class="col-10">
                 <div class="card card-registration bg-dark text-white rounded-4">
                     <div class="card-body p-md-5 pb-md-1">
-                        <form th:action="${pelicula.id != 0} ? @{/admin/peliculas/editar/submit} : @{/admin/peliculas/nuevo/submit}" th:object="${pelicula}" method="post" class="bg-dark text-white" id="formPelis">
+                        <form th:action="${pelicula.id != 0} ? @{/admin/peliculas/editar/submit} : @{/admin/peliculas/nuevo/submit}" th:object="${pelicula}" method="post" class="bg-dark text-white" id="formPelis" onsubmit="return validarFormulario()">
                         <h3 class="mb-4 text-uppercase fw-bold">Pelicula <i class="bi bi-film"></i></h3>
         
                         <div class="row">
@@ -29,14 +31,17 @@
                                 <div class="form-outline">
                                     <input th:field="*{titulo}" type="text" id="titulo" name="titulo" class="form-control form-control-lg" required placeholder="Inserte el título">
                                     <label class="form-label" for="titulo">Título</label>
+                                    <span class="mensaje-error" id="errorTitulo"></span>
                                 </div>
                                 <div class="form-outline mt-4 mb-4">
                                     <textarea name="sinopsis" id="sinopsis" cols="32" rows="7"></textarea><br>
                                     <label class="form-label" for="sinopsis">Sinopsis</label>
+                                    <span class="mensaje-error" id="errorSinopsis"></span>
                                 </div>
                                 <div class="form-outline mt-4 mb-4">
                                     <input th:field="*{altPortada}" type="text" id="altPortada" name="altPortada" class="form-control form-control-lg" required placeholder="Texto alternativo de la portada">
                                     <label class="form-label" for="sinopsis">Alt portada</label>
+                                    <span class="mensaje-error" id="errorAltPortada"></span>
                                 </div>
                             </div>
                             <div class="col-md-6 offset-md-1 mb-4">

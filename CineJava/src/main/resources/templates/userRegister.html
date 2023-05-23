@@ -13,6 +13,8 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <script src="/js/usuarioValidacion.js"></script>
+
   <title>Usuarios</title>
 
   <link rel="stylesheet" href="/CSS/login.css">
@@ -25,7 +27,7 @@
         <div class="card card-registration bg-dark text-white rounded-4">
           <div class="card-body p-md-5">
             <form th:action="${usuario.id != 0} ? @{/admin/editar/submit} : @{/register/submit}" th:object="${usuario}"
-              method="post" class="bg-dark text-white">
+              method="post" class="bg-dark text-white" onsubmit="return validarFormulario()">
               <h3 class="mb-4 text-uppercase fw-bold">Usuario <i class="bi-person-fill-add"></i></h3>
 
               <div class="row">
@@ -35,6 +37,7 @@
                     <input th:field="*{nombre}" type="text" id="nombre" name="nombre"
                       class="form-control form-control-lg" required placeholder="Inserte su nombre">
                     <label class="form-label" for="nombre">Nombre</label>
+                    <span class="mensaje-error" id="errorNombre"></span>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -42,6 +45,7 @@
                     <input th:field="*{apellidos}" type="text" id="apellidos" name="apellidos"
                       class="form-control form-control-lg" required placeholder="Inserte sus apellidos">
                     <label class="form-label" for="apellidos">Apellidos</label>
+                    <span class="mensaje-error" id="errorApellidos"></span>
                   </div>
                 </div>
               </div>
@@ -50,6 +54,7 @@
                 <input th:field="*{email}" type="text" id="username" name="username"
                   class="form-control form-control-lg" required placeholder="Inserte su email">
                 <label class="form-label" for="username">Email</label>
+                <span class="mensaje-error" id="errorEmail"></span>
               </div>
 
               <div class="form-outline mb-4">
@@ -64,6 +69,7 @@
                     <input th:field="*{password}" type="password" id="password" name="password" required
                       class="form-control form-control-lg" sec:authorize="!isAuthenticated()">
                     <label class="form-label" for="password" sec:authorize="!isAuthenticated()">Contraseña</label>
+                    <span class="mensaje-error" id="errorPassword"></span>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -72,6 +78,7 @@
                       sec:authorize="!isAuthenticated()">
                     <label class="form-label" for="passw2" sec:authorize="!isAuthenticated()">Confirme su
                       contraseña</label>
+                      <span class="mensaje-error" id="errorPassword"></span>
                   </div>
                 </div>
               </div>

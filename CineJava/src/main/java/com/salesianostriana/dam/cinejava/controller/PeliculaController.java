@@ -60,7 +60,7 @@ public class PeliculaController {
 
 	@GetMapping("/borrar/{id}")
 	public String borrar(@PathVariable("id") long id) {
-		servicioPeli.delete(servicioPeli.findById(null).get());
+		servicioPeli.delete(servicioPeli.findById(id).get());
 		return "redirect:/admin/peliculas/";
 	}
 }

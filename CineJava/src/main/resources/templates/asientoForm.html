@@ -15,7 +15,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="/js/aos.js" defer></script>
+    <script src="/js/asientosForm.js"></script>
 
     <link rel="stylesheet" href="/CSS/login.css">
     <title>Asiento</title>
@@ -48,23 +48,55 @@
                     <div class="text-center mt-1">
                         <h1>[Pantalla]</h1>
                     </div>
-                    <div class="card-body p-md-5 pb-md-1 d-flex" th:object="${pelicula}">
-                        <ul class="list-unstyled row me-5">
-                            <li th:each="asiento : ${asientos}" class="col-1 offset-1 mb-3">
-                                <div th:if="${asiento.vip}" th:class="text-warning">
-                                    <i class="bi-laptop-fill"></i>
+                    <div class="card-body p-md-5 pb-md-1 d-flex me-4" th:object="${pelicula}">
+                        <form th:action="@{/comprar/pase/submit}" method="post" onsubmit="submitForm()">
+                            <ul class="list-unstyled row me-5">
+                                <li th:each="asiento : ${asientos}" class="col-1 offset-1 mb-3">
+                                    <input type="checkbox" name="asientosCheck" value="*{id}" class="asiento-checkbox">
+                                    <label th:if="${asiento.vip}" for="asientosCheck">vip</label>
+                                </li>
+                            </ul>
+                            <input type="hidden" id="asientosSeleccionadosInput" name="asientosSeleccionados">
+                            <input type="hidden" name="idPase" th:value="${paseId}">
+                            <button type="button" class="btn btn-primary col-6 col-md-2 offset-md-5 offset-3"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Elegir asiento
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="entradasInfo" class="text-dark">
+                                                <p>Has seleccionado <span th:text="${cantidadEntradas}"></span> entradas.</p>
+                                                <p>Precio total: <span th:text="${precioTotal}"></span> euros.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="submit"
+                                                class="btn btn-primary col-6 col-md-3 offset-md-5 offset-3">Aceptar</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div th:unless="${asiento.vip}" th:class="text-light">
-                                    <i class="bi-laptop-fill"></i>
-                                </div>
-                                
-                            </li>
-                        </ul>
+                            </div>
+
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 </body>
 

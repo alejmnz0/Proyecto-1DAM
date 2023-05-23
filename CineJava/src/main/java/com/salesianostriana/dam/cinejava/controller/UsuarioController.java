@@ -1,5 +1,10 @@
 package com.salesianostriana.dam.cinejava.controller;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -9,9 +14,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
+import com.salesianostriana.dam.cinejava.model.Asiento;
+import com.salesianostriana.dam.cinejava.model.Entrada;
 import com.salesianostriana.dam.cinejava.model.Pelicula;
 import com.salesianostriana.dam.cinejava.model.Usuario;
+import com.salesianostriana.dam.cinejava.service.AjustesService;
+import com.salesianostriana.dam.cinejava.service.EntradaService;
 import com.salesianostriana.dam.cinejava.service.PeliculaService;
 import com.salesianostriana.dam.cinejava.service.SalaService;
 import com.salesianostriana.dam.cinejava.service.UsuarioService;
@@ -28,6 +38,10 @@ public class UsuarioController {
 	private PeliculaService servicioPeli;
 	@Autowired
 	private SalaService servicioSala;
+	@Autowired
+	private AjustesService servicioAjustes;
+	@Autowired
+	private EntradaService servicioEntrada;
 	
 	@GetMapping("/login") 
 	public String mandarLogin () {
@@ -92,10 +106,39 @@ public class UsuarioController {
 	}
 	
 	@GetMapping("/comprar/pase/{id}")
-	public String comprarPase (@PathVariable("id") long idPase, Model model) {
-		
+	public String comprarPase(@PathVariable("id") long idPase, Model model) {
+
 		model.addAttribute("asientos", servicioSala.findAsientosByPase(idPase));
+		model.addAttribute("paseId", idPase);
+		model.addAttribute("asientosSeleccionados", new ArrayList<Asiento>());
 		return "asientoForm";
+	}
+
+	@PostMapping("/comprar/pase/submit")
+	public String comprarEntrada(@RequestParam("asientosSeleccionados") String asientosSeleccionados,
+			@RequestParam("idPase") Long idPase, Model model) {
+		List<Long> asientosIds = Arrays.stream(asientosSeleccionados.split(","))
+				.map(Long::parseLong)
+				.collect(Collectors.toList());
+		
+		 int cantidadEntradas = asientosIds.size();
+		    double precioTotal=0;
+		
+		double precio;
+		for (Long id : asientosIds) {
+			precio = (servicioSala.findAsientoById(id).isVip())?servicioAjustes.findPrecioById(1):servicioAjustes.findPrecioById(1)+servicioAjustes.findPrecioVipById(1);
+			Entrada e = Entrada.builder()
+					.pase(servicioSala.findPaseById(idPase))
+					.asiento(servicioSala.findAsientoById(id))
+					.precio(precio)
+					.build();
+			servicioEntrada.save(e);
+			precioTotal+=precio;
+		}
+		
+		model.addAttribute("cantidadEntradas",cantidadEntradas);
+		model.addAttribute("precioTotal",precioTotal);
+		return "redirect:/";
 	}
 	
 }

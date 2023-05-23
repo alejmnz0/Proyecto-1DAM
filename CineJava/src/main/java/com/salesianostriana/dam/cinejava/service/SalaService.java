@@ -63,4 +63,8 @@ public class SalaService extends BaseServiceImpl<Sala, Long, SalaRepository>{
 		return this.repository.findAsientosByPaseId(id);
 	}
 	
+	public Asiento findAsientoById(long id) {
+		return this.repository.findAsientoById(id);
+	}
+	
 }

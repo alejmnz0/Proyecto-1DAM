@@ -28,4 +28,7 @@ public interface SalaRepository extends JpaRepository<Sala, Long> {
 	
 	@Query("SELECT a FROM Sala s JOIN s.asientos a JOIN s.pases p WHERE p.id = :paseId")
 	List<Asiento> findAsientosByPaseId(long paseId);
+	
+	@Query("SELECT a FROM Sala s JOIN s.asientos a WHERE s.id = :id")
+	Asiento findAsientoById(long id);
 }

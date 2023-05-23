@@ -1,5 +1,7 @@
 package com.salesianostriana.dam.cinejava.controller;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,6 +21,7 @@ public class AdminController {
 	@Autowired
 	private UsuarioService servicioUsuario;
 	
+	
 	@GetMapping({"/", "/list"})
 	public String listarTodos(Model model) {
 		model.addAttribute("lista", servicioUsuario.findAll());
@@ -37,28 +40,9 @@ public class AdminController {
 		return "redirect:/admin/";
 	}
 	
-	@GetMapping("/editar/{id}")
-	public String mostrarFormularioEdicion(@PathVariable("id") long id, Model model) {
-		
-		Usuario aEditar = servicioUsuario.findById(id);
-		
-		if (aEditar != null) {
-			model.addAttribute("usuario", aEditar);
-			return "userRegister";
-		} else {
-			return "redirect:/admin/";
-		}
-	}
-	
-	@PostMapping("/editar/submit")
-	public String procesarFormularioEdicion(@ModelAttribute("usuario") Usuario a) {
-		servicioUsuario.edit(a);
-		return "redirect:/admin/";
-	}
-	
 	@GetMapping("/borrar/{id}")
 	public String borrar(@PathVariable("id") long id) {
-		servicioUsuario.delete(id);
+		servicioUsuario.delete(servicioUsuario.findById(id).get());
 		return "redirect:/admin/";
 	}
 }
