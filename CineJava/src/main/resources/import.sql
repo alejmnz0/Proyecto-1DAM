@@ -55,9 +55,19 @@ INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAUL
 
 INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT,'portada de La chaqueta metálica', 'https://4.bp.blogspot.com/-Au5BYXoPHTI/WU6bWgD7rqI/AAAAAAAAFZ0/KUyr5QZW0Kwt3SPkvmLAx2P4rkqmoiQMwCLcBGAs/s1600/Portada%2Bpel%25C3%25ADcula%2BLa%2BChaqueta%2BMet%25C3%25A1lica.jpg', 'La chaqueta metálica es una película británico-estadounidense de 1987 dirigida por Stanley Kubrick y basada en la novela corta The Short-Timers de Gustav Hasford. La película está protagonizada por Matthew Modine como el soldado Joker.', 'La chaqueta metálica');
 
+INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT,'portada de El laberinto del fauno', 'https://www.premiosgoya.com/wp-content/uploads/2016/01/El-laberinto-del-Fauno.jpg', 'El laberinto del fauno es una película española-mexicana del año 2006 escrita y dirigida por Guillermo del Toro. La película está protagonizada por Ivana Baquero como Ofelia.', 'El laberinto del fauno');
+
+INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT,'portada de El exorcista', 'https://www.ecartelera.com/carteles/5100/5147/001_m.jpg', 'El exorcista es una película estadounidense de terror sobrenatural dirigida por William Friedkin y basada en la novela homónima de William Peter Blatty. La película está protagonizada por Ellen Burstyn como Chris MacNeil.', 'El exorcista');
+
+INSERT INTO pelicula (id, alt_portada, portada, sinopsis, titulo) VALUES (DEFAULT,'portada de El resplandor', 'https://es.web.img3.acsta.net/pictures/14/04/15/10/46/568345.jpg', 'El resplandor es una película estadounidense de terror psicológico dirigida por Stanley Kubrick y basada en la novela homónima de Stephen King. La película está protagonizada por Jack Nicholson como Jack Torrance.', 'El resplandor');
+
 
 INSERT INTO sala (id, nombre) VALUES (default, 'Sala 1');
 INSERT INTO sala (id, nombre) VALUES (default, 'Sala 2');
 INSERT INTO sala (id, nombre) VALUES (default, 'Sala 3');
+INSERT INTO sala (id, nombre) VALUES (default, 'Sala 4');
+INSERT INTO sala (id, nombre) VALUES (default, 'Sala 5');
+INSERT INTO sala (id, nombre) VALUES (default, 'Sala 6');
+INSERT INTO sala (id, nombre) VALUES (default, 'Sala 7');
 
 INSERT INTO ajustes (precio_base_entrada,precio_vip) VALUES (5,2.5);
