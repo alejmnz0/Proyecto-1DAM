@@ -45,14 +45,19 @@
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-11">
                 <div class="card card-registration bg-dark text-white rounded-4">
+                    <div class="text-center mt-1">
+                        <h1>[Pantalla]</h1>
+                    </div>
                     <div class="card-body p-md-5 pb-md-1 d-flex" th:object="${pelicula}">
-                        <ul class="list-unstyled row mt-4 me-5">
-                            <li th:each="asiento : ${asientos}" class="col-3 offset-1" data-aos="fade-up">
-                                <div class="card indexcard text-center align-items-center mb-5 pt-3 bg-dark">
-                                    <div class="card-body">
-                                        <i class="bi-laptop"></i>
-                                    </div>
+                        <ul class="list-unstyled row me-5">
+                            <li th:each="asiento : ${asientos}" class="col-1 offset-1 mb-3">
+                                <div th:if="${asiento.vip}" th:class="text-warning">
+                                    <i class="bi-laptop-fill"></i>
                                 </div>
+                                <div th:unless="${asiento.vip}" th:class="text-light">
+                                    <i class="bi-laptop-fill"></i>
+                                </div>
+                                
                             </li>
                         </ul>
                     </div>

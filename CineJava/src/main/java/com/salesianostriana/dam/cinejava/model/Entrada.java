@@ -37,6 +37,10 @@ public class Entrada {
 	})
 	private Asiento asiento;
 	
+	@ManyToOne
+    @JoinColumn(foreignKey = @ForeignKey(name="fk_entrada_venta"))
+    private Venta venta;
+	
 	private double precio;
 	
 }

@@ -35,7 +35,7 @@ public class SalaService extends BaseServiceImpl<Sala, Long, SalaRepository>{
 	public Sala add (Sala s) {
 		byte semana=7;
 		byte filas=8;
-		byte columnas=9;
+		byte columnas=7;
 		LocalTime horaApertura= LocalTime.of(15, 00);
 		LocalDate dia = LocalDate.now();
 		
@@ -89,8 +89,8 @@ public class SalaService extends BaseServiceImpl<Sala, Long, SalaRepository>{
 		return this.repository.buscarPasePorId(id);
 	}
 	
-	public List<Asiento> findAsientosByPase(Pase pa) {
-		return this.repository.buscarAsientosPorPase(pa);
+	public List<Asiento> findAsientosByPase(long id) {
+		return this.repository.findAsientosByPaseId(id);
 	}
 	
 }
