@@ -14,7 +14,7 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class PeliculaService {
+public class PeliculaService extends BaseServiceImpl<Pelicula, Long, PeliculaRepository>{
 
 	private final PeliculaRepository repositorioPelis;
 	private final SalaRepository repositorioSalas;
@@ -32,25 +32,5 @@ public class PeliculaService {
 		}
 		
 		return repositorioPelis.save(p);
-	}
-	
-	public Pelicula edit (Pelicula p) {
-		return repositorioPelis.save(p);
-	}
-	
-	public void delete (Pelicula p) {
-		repositorioPelis.delete(p);
-	}
-	
-	public void delete (long id) {
-		repositorioPelis.deleteById(id);
-	}
-	
-	public List<Pelicula> findAll () {
-		return repositorioPelis.findAll();
-	}
-	
-	public Pelicula findById (Long id) {
-		return repositorioPelis.findById(id).orElse(null);
 	}
 }

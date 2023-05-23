@@ -1,5 +1,7 @@
 package com.salesianostriana.dam.cinejava.controller;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -40,10 +42,10 @@ public class SalaController {
 	@GetMapping("/editar/{id}")
 	public String mostrarFormularioEdicion(@PathVariable("id") long id, Model model) {
 
-		Sala aEditar = servicioSala.findById(id);
+		Optional<Sala> aEditar = servicioSala.findById(id);
 
-		if (aEditar != null) {
-			model.addAttribute("sala", aEditar);
+		if (aEditar.isPresent()) {
+			model.addAttribute("sala", aEditar.get());
 			return "salaRegister";
 		} else {
 			return "redirect:/admin/salas/";
@@ -58,7 +60,7 @@ public class SalaController {
 
 	@GetMapping("/borrar/{id}")
 	public String borrar(@PathVariable("id") long id) {
-		servicioSala.delete(id);
+		servicioSala.delete(servicioSala.findById(id).get());
 		return "redirect:/admin/salas/";
 	}
 }

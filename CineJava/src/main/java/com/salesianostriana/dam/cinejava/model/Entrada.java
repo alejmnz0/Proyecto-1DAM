@@ -37,6 +37,20 @@ public class Entrada {
 	})
 	private Asiento asiento;
 	
+//	@ManyToOne
+//    @JoinColumn(foreignKey = @ForeignKey(name="fk_entrada_venta"))
+//    private Venta venta;
+	
 	private double precio;
+	
+//	public void addToventa(Venta venta) {
+//		this.venta = venta;
+//		venta.getEntradas().add(this);
+//	}
+//	
+//	public void removeFromVenta(Venta venta) {
+//		venta.getEntradas().remove(this);
+//		this.venta = null;		
+//	}
 	
 }

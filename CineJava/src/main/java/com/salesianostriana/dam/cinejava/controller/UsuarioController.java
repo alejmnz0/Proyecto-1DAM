@@ -81,20 +81,20 @@ public class UsuarioController {
 		return "infosalas";
 	}
 	
-	@GetMapping("/pelicula/{id}")
+	@GetMapping("/comprar/{id}")
 	public String comprar (@PathVariable("id") long id, Model model) {
 		
-		Pelicula aMostrar = servicioPeli.findById(id);
+		Pelicula aMostrar = servicioPeli.findById(id).get();
 		
 		model.addAttribute("lista", servicioSala.findPaseByFilm(aMostrar));
 		model.addAttribute("pelicula",aMostrar);
 		return "comprar";
 	}
 	
-	@GetMapping("/pase/{id_pase}")
-	public String comprarPase (@PathVariable("id_pase") String idPase, Model model) {
+	@GetMapping("/comprar/pase/{id}")
+	public String comprarPase (@PathVariable("id") long idPase, Model model) {
 		
-//		model.addAttribute("asientos", servicioSala.findAsientosByPase(servicioSala.findPaseById(idPase)));
+		model.addAttribute("asientos", servicioSala.findAsientosByPase(idPase));
 		return "asientoForm";
 	}
 	
