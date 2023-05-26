@@ -19,7 +19,7 @@
 <body>
 	<form th:action="@{/logout}" method="POST" id="logoutForm"></form>
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
 		<div class="container-fluid">
 			<img src="media/img/logo.png" alt="Logo de la compañía" height="100">
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -58,8 +58,11 @@
 							</li>
 							<li><a class="dropdown-item btn btn-dark text-primary"
 									th:href="@{/admin/peliculas/}">Peliculas</a></li>
-							<li><a class="dropdown-item btn btn-dark text-primary" th:href="@{/admin/salas/}">Salas <i
-										class="bi bi-exclamation-diamond text-warning"></i></a></li>
+							<li><a class="dropdown-item btn btn-dark text-primary" th:href="@{/admin/salas/}">Salas</a>
+							</li>
+							<li><a class="dropdown-item btn btn-dark text-primary"
+									th:href="@{/admin/config/}">Configuración</a>
+							</li>
 						</ul>
 					</li>
 
@@ -78,7 +81,8 @@
 						recibiendo formacion en el centro Salesianos de San pedro, en Triana, Sevilla.
 					</p>
 				</div>
-				<div class="col-lg-6 d-none d-lg-block"><img src="/media/img/hombre.png" alt="" class="img-fluid"></div>
+				<div class="col-lg-6 d-none d-lg-block"><img src="/media/img/hombre.png" alt="Hombre programando"
+						class="img-fluid"></div>
 			</div>
 		</div>
 	</div>
@@ -86,7 +90,10 @@
 	<div class="py-5">
 		<div class="container py-5">
 			<div class="row align-items-center">
-				<div class="col-lg-5 px-5 mx-auto"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d792.601111840439!2d-6.007713231115273!3d37.380266452643106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1685016310334!5m2!1ses!2ses" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+				<div class="col-lg-5 px-5 mx-auto"><iframe
+						src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d792.601111840439!2d-6.007713231115273!3d37.380266452643106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1685016310334!5m2!1ses!2ses"
+						width="430" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 				<div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
 					<h2 class="text-light">Donde estamos</h2>
 					<p class="text-light mb-4">Nos hemos dado a conocer a todo el mundo desde
@@ -103,9 +110,8 @@
 						pelicula puede generar en una persona es justo de lo que se alimenta Cine Dam.
 					</p>
 				</div>
-				<div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img
-						src="/media/img/auriculares.jpg" alt=""
-						class="img-fluid mb-4 mb-lg-0"></div>
+				<div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="/media/img/auriculares.jpg"
+						alt="Imagen de auriculares" class="img-fluid mb-4 mb-lg-0"></div>
 			</div>
 		</div>
 	</div>
