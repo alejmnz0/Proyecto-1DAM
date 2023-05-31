@@ -22,6 +22,8 @@
             <tr class="text-center align-middle">
                 <th scope="col">Precio Entrada Base</th>
                 <th scope="col">Añadido por Asiento Vip</th>
+                <th scope="col">Día Supercine</th>
+                <th scope="col">Descuento Supercine</th>
                 <th scope="col" class="w-25">Editar Ajustes</th>
             </tr>
         </thead>
@@ -29,6 +31,9 @@
             <tr th:each="ajustes : ${lista}" class="text-center align-middle">
                 <th th:text="${ajustes.precioBaseEntrada}">dinero</th>
                 <td th:text="${ajustes.precioVip}">dinero</td>
+                <td th:text="${ajustes.diaDescuento}">dia</td>
+                <td><span th:text="${ajustes.porcentDescuento}"></span> %</td>
+
                 <td>
                     <a href="#" th:href="@{/admin/config/editar/{id}(id=${ajustes.id})}"><i class="bi-pencil-square h3 text-info"></i></a>
                 </td>

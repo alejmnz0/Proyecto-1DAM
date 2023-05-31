@@ -507,4 +507,4 @@ INSERT INTO pase (id_pase, fecha, peli_id, sala_id) VALUES (default, '2023-06-01
 INSERT INTO pase (id_pase, fecha, peli_id, sala_id) VALUES (default, '2023-06-01 18:00:00', null, 7);
 INSERT INTO pase (id_pase, fecha, peli_id, sala_id) VALUES (default, '2023-06-01 21:00:00', null, 7);
 
-INSERT INTO ajustes (precio_base_entrada,precio_vip) VALUES (5,2.5);
+INSERT INTO ajustes (precio_base_entrada,precio_vip,dia_descuento,porcent_descuento) VALUES (5,2.5,'Miercoles',20);

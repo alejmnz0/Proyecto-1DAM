@@ -23,5 +23,7 @@ public class Ajustes {
 	
 	private double precioBaseEntrada;
 	private double precioVip;
+	private String diaDescuento;
+	private double porcentDescuento;
 
 }

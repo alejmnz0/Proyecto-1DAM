@@ -26,8 +26,9 @@
       <div class="col-10">
         <div class="card card-registration bg-dark text-white rounded-4">
           <div class="card-body p-md-5">
-            <form th:action="${ajustes.id != 0} ? @{/admin/config/editar/submit} : @{/config/submit}" th:object="${ajustes}"
-              method="post" class="bg-dark text-white" onsubmit="return validarFormulario(event)">
+            <form th:action="${ajustes.id != 0} ? @{/admin/config/editar/submit} : @{/config/submit}"
+              th:object="${ajustes}" method="post" class="bg-dark text-white"
+              onsubmit="return validarFormulario(event)">
               <h3 class="mb-4 text-uppercase fw-bold">Ajustes <i class="bi-person-fill-add"></i></h3>
 
               <div class="row">
@@ -44,6 +45,27 @@
                     <input th:field="*{precioVip}" type="number" id="precioVip" name="precioVip"
                       class="form-control form-control-lg" required placeholder="Inserte cantidad">
                     <label class="form-label" for="precioVip">Añadido por Vip</label>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <select th:field="*{diaDescuento}" id="diaDescuento" class="form-select form-select-lg">
+                      <option value="MONDAY">Lunes</option>
+                      <option value="TUESDAY">Martes</option>
+                      <option value="WEDNESDAY">Miércoles</option>
+                      <option value="THURSDAY">Jueves</option>
+                      <option value="FRIDAY">Viernes</option>
+                      <option value="SATURDAY">Sábado</option>
+                    </select>
+                    <label for="diaDescuento" class="form-label">Disabled select menu</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input th:field="*{porcentDescuento}" type="number" id="porcentDescuento" name="porcentDescuento"
+                      class="form-control form-control-lg" required placeholder="Inserte cantidad">
+                    <label class="form-label" for="porcentDescuento">Descuento Supercine</label>
                   </div>
                 </div>
               </div>
