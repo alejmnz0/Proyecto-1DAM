@@ -55,7 +55,7 @@ public class SecurityConfig {
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 		http
 		.authorizeRequests()
-			.antMatchers("**/css/**","/js/**", "/h2-console/**", "/register/**").permitAll()
+			.antMatchers("**/CSS/**","/js/**", "/h2-console/**", "/register/**").permitAll()
 			.antMatchers("/admin/**").hasRole("ADMIN")
 			.anyRequest().authenticated()
 			.and()

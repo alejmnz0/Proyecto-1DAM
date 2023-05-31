@@ -15,9 +15,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="/js/asientosForm.js"></script>
+    <script src="/js/asientosForm.js" defer></script>
 
     <link rel="stylesheet" href="/CSS/login.css">
+
     <title>Asiento</title>
 </head>
 
@@ -34,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link btn btn-dark text-danger mx-1" th:href="@{/}">Volver</a>
+                        <a class="nav-link btn btn-dark text-danger mx-1" th:href="@{/comprar}">Volver</a>
                     </li>
                 </ul>
             </div>
@@ -48,20 +49,35 @@
                     <div class="text-center mt-1">
                         <h1>[Pantalla]</h1>
                     </div>
-                    <div class="card-body p-md-5 pb-md-1 d-flex me-4" th:object="${pelicula}">
+
+                    <div>
+                        <ul class="list-unstyled row p-md-5 pb-md-0 d-flex me-3">
+                            <li class="col-1 offset-1">C1</li>
+                            <li class="col-1 offset-1">C2</li>
+                            <li class="col-1 offset-1">C3</li>
+                            <li class="col-1 offset-1">C4</li>
+                            <li class="col-1 offset-1">C5</li>
+                            <li class="col-1 offset-1">C6</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body p-md-5 pt-md-0 pb-md-1 d-flex me-4" th:object="${pelicula}">
                         <form th:action="@{/comprar/pase/submit}" method="post" onsubmit="submitForm()">
-                            <ul class="list-unstyled row me-5">
+                            <ul class="list-unstyled row">
                                 <li th:each="asiento : ${asientos}" class="col-1 offset-1 mb-3">
-                                    <input type="checkbox" name="asientosCheck" value="*{id}" class="asiento-checkbox">
-                                    <label th:if="${asiento.vip}" for="asientosCheck">vip</label>
+                                    <input type="checkbox" name="asientosCheck" value="*{id}"
+                                        class="asiento-checkbox comprada">
+                                    <label th:if="${asiento.vip}" for="asientosCheck" class="comprada"></label>
                                 </li>
                             </ul>
                             <input type="hidden" id="asientosSeleccionadosInput" name="asientosSeleccionados">
                             <input type="hidden" name="idPase" th:value="${paseId}">
                             <button type="button" class="btn btn-primary col-6 col-md-2 offset-md-5 offset-3"
                                 data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                Elegir asiento
-                            </button>
+                                Elegir asiento/s
+                            </button> <i class="bi-info-circle-fill text-danger m-1" data-bs-toggle="popover"
+                                data-bs-content="Al pulsar este botón está terminando la compra de sus entradas, asegúrese de su elección."></i>
+
 
                             <!-- Modal -->
                             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
@@ -70,13 +86,15 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                            <h5 class="modal-title text-black" id="staticBackdropLabel">información de
+                                                compra</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div id="entradasInfo" class="text-dark">
-                                                <p>Has seleccionado <span th:text="${cantidadEntradas}"></span> entradas.</p>
+                                                <p>Has seleccionado <span th:text="${cantidadEntradas}"></span>
+                                                    entradas.</p>
                                                 <p>Precio total: <span th:text="${precioTotal}"></span> euros.</p>
                                             </div>
                                         </div>
@@ -96,6 +114,8 @@
             </div>
         </div>
     </div>
+
+
 
 
 </body>

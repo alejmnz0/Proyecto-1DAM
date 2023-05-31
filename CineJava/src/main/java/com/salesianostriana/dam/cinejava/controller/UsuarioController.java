@@ -31,7 +31,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 @Controller
 public class UsuarioController {
-	
+
 	@Autowired
 	private UsuarioService servicioUsuario;
 	@Autowired
@@ -42,19 +42,18 @@ public class UsuarioController {
 	private AjustesService servicioAjustes;
 	@Autowired
 	private EntradaService servicioEntrada;
-	
-	@GetMapping("/login") 
-	public String mandarLogin () {
+
+	@GetMapping("/login")
+	public String mandarLogin() {
 		return "login";
 	}
-	
-	@GetMapping({"/"})
+
+	@GetMapping({ "/" })
 	public String listarTodos(Model model) {
 		model.addAttribute("lista", servicioPeli.findAll());
 		return "index";
 	}
-	
-	
+
 	@GetMapping("/me")
 	public String me() {
 
@@ -72,39 +71,39 @@ public class UsuarioController {
 
 		return "index";
 	}
-	
+
 	@GetMapping("/register")
 	public String registro(Model model) {
 		model.addAttribute("usuario", new Usuario());
 		return "userRegister";
 	}
-	
+
 	@PostMapping("/register/submit")
-	public String procesarRegistro (@ModelAttribute("usuario") Usuario u) {
+	public String procesarRegistro(@ModelAttribute("usuario") Usuario u) {
 		servicioUsuario.add(u);
 		return "redirect:/login/";
 	}
-	
+
 	@GetMapping("/información")
-	public String mostrarAboutUs () {
+	public String mostrarAboutUs() {
 		return "info";
 	}
-	
+
 	@GetMapping("/información/salas")
-	public String mostrarInfoSalas () {
+	public String mostrarInfoSalas() {
 		return "infosalas";
 	}
-	
+
 	@GetMapping("/comprar/{id}")
-	public String comprar (@PathVariable("id") long id, Model model) {
-		
+	public String comprar(@PathVariable("id") long id, Model model) {
+
 		Pelicula aMostrar = servicioPeli.findById(id).get();
-		
+
 		model.addAttribute("lista", servicioSala.findPaseByFilm(aMostrar));
-		model.addAttribute("pelicula",aMostrar);
+		model.addAttribute("pelicula", aMostrar);
 		return "comprar";
 	}
-	
+
 	@GetMapping("/comprar/pase/{id}")
 	public String comprarPase(@PathVariable("id") long idPase, Model model) {
 
@@ -117,28 +116,24 @@ public class UsuarioController {
 	@PostMapping("/comprar/pase/submit")
 	public String comprarEntrada(@RequestParam("asientosSeleccionados") String asientosSeleccionados,
 			@RequestParam("idPase") Long idPase, Model model) {
-		List<Long> asientosIds = Arrays.stream(asientosSeleccionados.split(","))
-				.map(Long::parseLong)
+		List<Long> asientosIds = Arrays.stream(asientosSeleccionados.split(",")).map(Long::parseLong)
 				.collect(Collectors.toList());
-		
-		 int cantidadEntradas = asientosIds.size();
-		    double precioTotal=0;
-		
+
+		int cantidadEntradas = asientosIds.size();
+		double precioTotal = 0;
 		double precio;
 		for (Long id : asientosIds) {
-			precio = (servicioSala.findAsientoById(id).isVip())?servicioAjustes.findPrecioById(1):servicioAjustes.findPrecioById(1)+servicioAjustes.findPrecioVipById(1);
-			Entrada e = Entrada.builder()
-					.pase(servicioSala.findPaseById(idPase))
-					.asiento(servicioSala.findAsientoById(id))
-					.precio(precio)
-					.build();
+			precio = (servicioSala.findAsientoById(id).isVip()) ? servicioAjustes.findPrecioById(1)
+					: servicioAjustes.findPrecioById(1) + servicioAjustes.findPrecioVipById(1);
+			Entrada e = Entrada.builder().pase(servicioSala.findPaseById(idPase))
+					.asiento(servicioSala.findAsientoById(id)).precio(precio).build();
 			servicioEntrada.save(e);
-			precioTotal+=precio;
+			precioTotal += precio;
 		}
-		
-		model.addAttribute("cantidadEntradas",cantidadEntradas);
-		model.addAttribute("precioTotal",precioTotal);
+
+		model.addAttribute("cantidadEntradas", cantidadEntradas);
+		model.addAttribute("precioTotal", precioTotal);
 		return "redirect:/";
 	}
-	
+
 }

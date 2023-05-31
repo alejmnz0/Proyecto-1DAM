@@ -11,6 +11,94 @@ body {
   width: 18em;
 }
 
-.asientoSeleccionado{
-  color: green !important;
+
+.seleccion{
+  outline: none;
+}
+
+.seleccion input{
+  display: none;
+}
+
+.seleccion label {
+
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  background-color: #f72414;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.seleccion label:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  width: calc(20px * .7);
+  height: calc(20px * .7);
+  margin: 0 auto;
+  background-color: #fff;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  transition: 0.2s ease width, 0.2s ease height;
+}
+
+.seleccion label:hover:before {
+  width: calc(20px * .55);
+  height: calc(20px * .55);
+}
+
+.seleccion .marcado {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  left: calc(20px * -.05);
+  width: calc(20px * .6);
+  height: calc(20px * .6);
+  margin: 0 auto;
+  margin-left: calc(20px * .14);
+  transform: rotateZ(-40deg);
+}
+
+.seleccion .marcado:before,
+.seleccion .marcado:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  border-radius: 2px;
+  opacity: 0;
+}
+
+.seleccion .marcado:before {
+  left: 0;
+  bottom: 0;
+  width: calc(20px * .1);
+  height: calc(20px * .3);
+}
+
+.seleccion .marcado:after {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(20px * .1);
+}
+
+.seleccion input:checked+label {
+  background-color: #0059ff;
+}
+
+.seleccion input:checked+label:before {
+  width: 0;
+  height: 0;
+}
+
+.seleccion input:checked+label .marcado:before,
+.seleccion input:checked+label .marcado:after {
+  transform: translate(0);
+  opacity: 1;
 }
