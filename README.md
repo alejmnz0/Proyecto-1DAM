@@ -1,8 +1,7 @@
 # Proyecto-1-DAM
 ## Para iniciar sesión se usará el correo admin@admin.es y la contraseña admin o user@user.es contraseña 1234. 
-### Administrar solo funciona con usuarios por ahora, por eso las demás tienen el símbolo de peligro.
-### Las contraseñas no deberían salir al administrador al crear o editar usuarios, pero tengo que añadir una forma de generarla aleatoriamente.
-### La apariencia de la página no es la deseada, se trabajará más el diseño.
-### El nav debería ser fragment, lo arreglaré más adelante.
-### Los usuarios creados como administrador son funcionales (se puede iniciar sesión con ellos).
+### Los datos iniciales no son operables, crear nueva sala y pelicula para operar con ellas.
+### Al crear una sala se crean los pases para la misma y cuando se crea una pelicula se vincula con los pases libres.
+### El administrador no puede editar a los usuarios.
+### En Ajustes el administrador podra cambiar el precio de la entrada y la subida de precio que se aplica al ser asiento vip.
 

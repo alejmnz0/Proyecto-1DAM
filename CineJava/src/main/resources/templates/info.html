@@ -19,7 +19,7 @@
 <body>
 	<form th:action="@{/logout}" method="POST" id="logoutForm"></form>
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
 		<div class="container-fluid">
 			<img src="media/img/logo.png" alt="Logo de la compañía" height="100">
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -58,8 +58,11 @@
 							</li>
 							<li><a class="dropdown-item btn btn-dark text-primary"
 									th:href="@{/admin/peliculas/}">Peliculas</a></li>
-							<li><a class="dropdown-item btn btn-dark text-primary" th:href="@{/admin/salas/}">Salas <i
-										class="bi bi-exclamation-diamond text-warning"></i></a></li>
+							<li><a class="dropdown-item btn btn-dark text-primary" th:href="@{/admin/salas/}">Salas</a>
+							</li>
+							<li><a class="dropdown-item btn btn-dark text-primary"
+									th:href="@{/admin/config/}">Configuración</a>
+							</li>
 						</ul>
 					</li>
 
@@ -68,16 +71,49 @@
 		</div>
 	</nav>
 
-	<div class="row m-0">
-		<div class="col-10 offset-1 text-center display-6">
-			<h1 class="h1 display-3">Bienvenidos al Cine Dam</h1>
-			<p class="mt-5">¡Bienvenidos al Cine DAM, la nueva joya del entretenimiento en el corazón de Sevilla! Somos un cine que acaba de surgir en este maravilloso barrio, con la misión de brindarles experiencias cinematográficas inolvidables. En nuestras modernas salas, hemos creado un espacio donde podrán sumergirse en el mágico mundo del séptimo arte y disfrutar de las películas más emocionantes y cautivadoras.</p>
-			<p class="mt-5">En Cine DAM, nos apasiona el cine y queremos compartir esa pasión con cada uno de ustedes. Nuestras instalaciones han sido diseñadas pensando en su comodidad y placer visual. Con cómodos asientos, pantallas de última generación y un sonido envolvente de alta calidad, garantizamos que cada película cobrará vida y los transportará a lugares fascinantes.</p>
-			<p class="mt-5">Pero eso no es todo. Además de ofrecer una selección diversa de películas, también nos esforzamos por crear un ambiente acogedor y familiar. Queremos que se sientan como en casa desde el momento en que cruzan nuestras puertas. Nuestro amable equipo de profesionales estará encantado de atenderles y asegurarse de que su experiencia sea excepcional en todos los sentidos.</p>
-			<p class="mt-5">En Cine DAM, valoramos su confianza y estamos comprometidos en superar sus expectativas. Sabemos que tienen muchas opciones cuando se trata de elegir un cine, por eso nos esforzamos por ofrecerles algo especial. Desde los últimos estrenos hasta clásicos del cine, desde emocionantes películas de acción hasta conmovedoras historias, estamos aquí para brindarles una escapada cinematográfica que recordarán.</p>
-			<p class="mt-5 mb-5">Así que los invitamos a que nos acompañen en esta emocionante aventura cinematográfica. Déjennos ser su destino favorito para disfrutar del mejor cine en Sevilla. Estamos ansiosos por recibirles en nuestras salas y hacer que se enamoren del cine una vez más. ¡Los esperamos en Cine DAM, donde la magia del cine cobra vida!</p>
+	<div>
+		<div class="container py-5">
+			<div class="row h-100 align-items-center py-5">
+				<div class="col-lg-6">
+					<h1 class="display-4 text-light">Sobre nosotros</h1>
+					<p class="lead mb-0 text-light">Este proyecto de cine sale de un joven estudiante de Desarrollo de
+						Aplicaciones Multiplataforma,
+						recibiendo formacion en el centro Salesianos de San pedro, en Triana, Sevilla.
+					</p>
+				</div>
+				<div class="col-lg-6 d-none d-lg-block"><img src="/media/img/hombre.png" alt="Hombre programando"
+						class="img-fluid"></div>
+			</div>
 		</div>
-		<p class="small col-10 offset-1 text-center">Texto totalmente de ejemplo, no buscar parecido con la realidad.</p>
+	</div>
+
+	<div class="py-5">
+		<div class="container py-5">
+			<div class="row align-items-center">
+				<div class="col-lg-5 px-5 mx-auto"><iframe
+						src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d792.601111840439!2d-6.007713231115273!3d37.380266452643106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1685016310334!5m2!1ses!2ses"
+						width="430" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+				<div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
+					<h2 class="text-light">Donde estamos</h2>
+					<p class="text-light mb-4">Nos hemos dado a conocer a todo el mundo desde
+						C. Condes de Bustillo, 41010 Sevilla. Ven a compartir un momento magico con
+						tu familia compartiendo la magia de la gran pantalla.</p>
+				</div>
+			</div>
+
+			<div class="row align-items-center mb-5">
+				<div class="col-lg-6 order-2 order-lg-1">
+					<h2 class="text-light">Nuestra historia</h2>
+					<p class="text-light mb-4">Este cine nace con el sueño de compartir con todas
+						las familias de sevilla la ilusion por el septimo arte. Los sentimientos que una
+						pelicula puede generar en una persona es justo de lo que se alimenta Cine Dam.
+					</p>
+				</div>
+				<div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="/media/img/auriculares.jpg"
+						alt="Imagen de auriculares" class="img-fluid mb-4 mb-lg-0"></div>
+			</div>
+		</div>
 	</div>
 
 	<footer th:replace="~{fragmentos/footer}"></footer>

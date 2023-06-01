@@ -77,7 +77,7 @@
 	</nav>
 
 	<ul class="list-unstyled row mt-4 me-5">
-		<li th:each="pelicula : ${lista}" class="col-3 offset-1" data-aos="fade-up">
+		<li th:each="pelicula : ${lista}" class="col-lg-3 offset-lg-1 col offset-1" data-aos="fade-up">
 			<div class="card indexcard text-center align-items-center mb-5 pt-3 bg-dark">
 				<img th:src="${pelicula.portada}" th:alt="${pelicula.altPortada}"
 					class="img-fluid imgEntrada card-img-top" />
