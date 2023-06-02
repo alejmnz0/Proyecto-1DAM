@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link btn btn-dark text-danger mx-1" th:href="@{/comprar}">Volver</a>
+                        <a class="nav-link btn btn-dark text-danger mx-1" th:href="@{/}">Volver</a>
                     </li>
                 </ul>
             </div>
@@ -51,7 +51,7 @@
                     </div>
 
                     <div>
-                        <ul class="list-unstyled row p-md-5 pb-md-0 d-flex me-3">
+                        <ul class="list-unstyled row p-md-5 pb-md-0 d-flex me-3 ms-1">
                             <li class="col-1 offset-1">C1</li>
                             <li class="col-1 offset-1">C2</li>
                             <li class="col-1 offset-1">C3</li>
@@ -62,6 +62,17 @@
                     </div>
 
                     <div class="card-body p-md-5 pt-md-0 pb-md-1 d-flex me-4" th:object="${pelicula}">
+                        <div>
+                            <ul class="list-unstyled">
+                                <li>F1</li>
+                                <li class="mt-3">F2</li>
+                                <li class="mt-3">F3</li>
+                                <li class="mt-3">F4</li>
+                                <li class="mt-3">F5</li>
+                                <li class="mt-3">F6</li>
+                                <li class="mt-3">F7</li>
+                            </ul>
+                        </div>
                         <form th:action="@{/comprar/pase/submit}" method="post" onsubmit="submitForm()">
                             <ul class="list-unstyled row">
                                 <li th:each="asiento : ${asientos}" class="col-1 offset-1 mb-3">
@@ -72,43 +83,44 @@
                             </ul>
                             <input type="hidden" id="asientosSeleccionadosInput" name="asientosSeleccionados">
                             <input type="hidden" name="idPase" th:value="${paseId}">
-                            <button type="button" class="btn btn-primary col-6 col-md-2 offset-md-5 offset-3"
+                            <button type="submit" class="btn btn-primary col-6 col-md-2 offset-md-5 offset-3"
                                 data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 Elegir asiento/s
                             </button> <i class="bi-info-circle-fill text-danger m-1" data-bs-toggle="popover"
                                 data-bs-content="Al pulsar este botón está terminando la compra de sus entradas, asegúrese de su elección."></i>
+                        </form>
 
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title text-black" id="staticBackdropLabel">información de
-                                                compra</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-black" id="staticBackdropLabel">información de
+                                            compra</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="entradasInfo" class="text-dark">
+                                            <p>Has seleccionado <span th:text="${cantidadEntradas}"></span>
+                                                entradas.</p>
+                                            <p>Precio total: <span th:text="${precioTotal}"></span> euros.</p>
                                         </div>
-                                        <div class="modal-body">
-                                            <div id="entradasInfo" class="text-dark">
-                                                <p>Has seleccionado <span th:text="${cantidadEntradas}"></span>
-                                                    entradas.</p>
-                                                <p>Precio total: <span th:text="${precioTotal}"></span> euros.</p>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <button type="submit"
-                                                class="btn btn-primary col-6 col-md-3 offset-md-5 offset-3">Aceptar</button>
-                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="submit"
+                                            class="btn btn-primary col-6 col-md-3 offset-md-5 offset-3">Aceptar</button>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                        </form>
+
+
+
                     </div>
                 </div>
             </div>

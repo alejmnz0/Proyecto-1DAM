@@ -51,11 +51,7 @@
                                 <tr class="text-center align-middle">
                                     <td class="w-25"><img th:src="*{portada}" th:alt="*{altPortada}"
                                             class="img-fluid imgEntrada"></td>
-                                    <td class="w-50" th:text="*{sinopsis}">Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit.
-                                        Quam eligendi rem dolorem cum voluptatem ducimus consectetur ipsa hic culpa
-                                        obcaecati vel facilis error, repudiandae iure praesentium, modi sint. Quasi,
-                                        adipisci?</td>
+                                    <td class="w-50" th:text="*{sinopsis}"></td>
                                     <td th:each="pase : ${lista}" class="d-flex justify-content-center">
                                         <a th:href="@{/comprar/pase/{id}(id=${pase.id_pase})}">
                                             <button type="button" class="btn btn-light"

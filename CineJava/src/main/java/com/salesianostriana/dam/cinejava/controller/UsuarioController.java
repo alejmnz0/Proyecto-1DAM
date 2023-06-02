@@ -133,7 +133,7 @@ public class UsuarioController {
 
 		model.addAttribute("cantidadEntradas", cantidadEntradas);
 		model.addAttribute("precioTotal", precioTotal);
-		return "redirect:/";
+		return "asientoForm";
 	}
 
 }
