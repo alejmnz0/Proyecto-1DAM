@@ -8,7 +8,6 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.salesianostriana.dam.cinejava.model.Asiento;
-import com.salesianostriana.dam.cinejava.model.AsientoId;
 import com.salesianostriana.dam.cinejava.model.Pase;
 import com.salesianostriana.dam.cinejava.model.Pelicula;
 import com.salesianostriana.dam.cinejava.model.Sala;
@@ -32,7 +31,7 @@ public class SalaService extends BaseServiceImpl<Sala, Long, SalaRepository>{
 		
 		for (int i = 1; i < filas; i++) {
 			for (int j = 1; j < columnas; j++) {
-				Asiento a = (i<filas-1)?new Asiento(new AsientoId (i,j,s.getId()) ,s,false):new Asiento(new AsientoId (i,j,s.getId()) ,s,true);
+				Asiento a = (i<filas-1)?new Asiento(i,j,s,false):new Asiento(i,j,s,true);
 				s.addAsiento(a);
 			}
 		}

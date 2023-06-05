@@ -3,10 +3,11 @@ function submitForm() {
     let asientosSeleccionados = [];
     for (let i = 0; i < checkboxes.length; i++) {
         if (checkboxes[i].checked) {
-            asientosSeleccionados.push(checkboxes[i].id);
+            asientosSeleccionados.push(checkboxes[i].value);
         }
     }
     document.getElementById("asientosSeleccionadosInput").value = asientosSeleccionados;
+    console.log("Sus asientos son: "+ asientosSeleccionados);
 }
 
 let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))

@@ -76,51 +76,17 @@
                         <form th:action="@{/comprar/pase/submit}" method="post" onsubmit="submitForm()">
                             <ul class="list-unstyled row">
                                 <li th:each="asiento : ${asientos}" class="col-1 offset-1 mb-3">
-                                    <input type="checkbox" name="asientosCheck" value="*{id}"
-                                        class="asiento-checkbox comprada">
-                                    <label th:if="${asiento.vip}" for="asientosCheck" class="comprada"></label>
+                                    <input type="checkbox" name="asientosCheck" th:value="${id}" class="asiento-checkbox">
+                                    <label th:if="${asiento.vip}" for="asientosCheck">vip</label>
                                 </li>
                             </ul>
-                            <input type="hidden" id="asientosSeleccionadosInput" name="asientosSeleccionados">
+                            <input type="hidden" id="asientosSeleccionadosInput" name="asientosSeleccionadosInput">
                             <input type="hidden" name="idPase" th:value="${paseId}">
-                            <button type="submit" class="btn btn-primary col-6 col-md-2 offset-md-5 offset-3"
-                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <button type="submit" class="btn btn-primary col-6 col-md-2 offset-md-5 offset-3">
                                 Elegir asiento/s
                             </button> <i class="bi-info-circle-fill text-danger m-1" data-bs-toggle="popover"
                                 data-bs-content="Al pulsar este botón está terminando la compra de sus entradas, asegúrese de su elección."></i>
                         </form>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title text-black" id="staticBackdropLabel">información de
-                                            compra</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div id="entradasInfo" class="text-dark">
-                                            <p>Has seleccionado <span th:text="${cantidadEntradas}"></span>
-                                                entradas.</p>
-                                            <p>Precio total: <span th:text="${precioTotal}"></span> euros.</p>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                        <button type="submit"
-                                            class="btn btn-primary col-6 col-md-3 offset-md-5 offset-3">Aceptar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
                     </div>
                 </div>
             </div>

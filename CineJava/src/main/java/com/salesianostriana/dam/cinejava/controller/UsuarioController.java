@@ -114,9 +114,11 @@ public class UsuarioController {
 	}
 
 	@PostMapping("/comprar/pase/submit")
-	public String comprarEntrada(@RequestParam("asientosSeleccionados") String asientosSeleccionados,
+	public String comprarEntrada(@RequestParam("asientosSeleccionadosInput") String asientosSeleccionados,
 			@RequestParam("idPase") Long idPase, Model model) {
-		List<Long> asientosIds = Arrays.stream(asientosSeleccionados.split(",")).map(Long::parseLong)
+		
+		List<Long> asientosIds = Arrays.stream(asientosSeleccionados.split(","))
+				.map(Long::parseLong)
 				.collect(Collectors.toList());
 
 		int cantidadEntradas = asientosIds.size();
@@ -133,7 +135,7 @@ public class UsuarioController {
 
 		model.addAttribute("cantidadEntradas", cantidadEntradas);
 		model.addAttribute("precioTotal", precioTotal);
-		return "asientoForm";
+		return "ticket";
 	}
 
 }
