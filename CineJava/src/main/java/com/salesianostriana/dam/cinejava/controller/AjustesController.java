@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.salesianostriana.dam.cinejava.model.Ajustes;
-import com.salesianostriana.dam.cinejava.model.Pelicula;
 import com.salesianostriana.dam.cinejava.service.AjustesService;
 
 @Controller

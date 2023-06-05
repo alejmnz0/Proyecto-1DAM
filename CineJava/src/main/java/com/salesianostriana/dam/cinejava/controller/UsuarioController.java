@@ -125,8 +125,9 @@ public class UsuarioController {
 		double precioTotal = 0;
 		double precio;
 		for (Long id : asientosIds) {
-			precio = (servicioSala.findAsientoById(id).isVip()) ? servicioAjustes.findPrecioById(1)
-					: servicioAjustes.findPrecioById(1) + servicioAjustes.findPrecioVipById(1);
+			precio = (servicioSala.findAsientoById(id).isVip()) ? servicioAjustes.findPrecioById(1) + servicioAjustes.findPrecioVipById(1)
+					: servicioAjustes.findPrecioById(1);
+				
 			Entrada e = Entrada.builder().pase(servicioSala.findPaseById(idPase))
 					.asiento(servicioSala.findAsientoById(id)).precio(precio).build();
 			servicioEntrada.save(e);

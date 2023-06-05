@@ -18,8 +18,6 @@ import lombok.RequiredArgsConstructor;
 @Service
 @RequiredArgsConstructor
 public class SalaService extends BaseServiceImpl<Sala, Long, SalaRepository>{
-
-	private final SalaRepository repoSalas ;
 	
 	public Sala add (Sala s) {
 		byte semana=7;
@@ -47,7 +45,7 @@ public class SalaService extends BaseServiceImpl<Sala, Long, SalaRepository>{
 
 		}
 		
-		return repoSalas.save(s);
+		return this.repository.save(s);
 	}
 	
 	public List<Pase> findPaseByFilm(Pelicula p) {

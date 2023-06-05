@@ -74,14 +74,14 @@
                             </ul>
                         </div>
                         <form th:action="@{/comprar/pase/submit}" method="post" onsubmit="submitForm()">
+                            <input type="hidden" name="idPase" th:value="${paseId}">
                             <ul class="list-unstyled row">
                                 <li th:each="asiento : ${asientos}" class="col-1 offset-1 mb-3">
-                                    <input type="checkbox" name="asientosCheck" th:value="${id}" class="asiento-checkbox">
-                                    <label th:if="${asiento.vip}" for="asientosCheck">vip</label>
+                                    <input type="checkbox" name="asientosCheck" th:value="${asiento.id}" class="asiento-checkbox">
+                                    <label th:text="${asiento.id}" for="asientosCheck"></label>
                                 </li>
                             </ul>
                             <input type="hidden" id="asientosSeleccionadosInput" name="asientosSeleccionadosInput">
-                            <input type="hidden" name="idPase" th:value="${paseId}">
                             <button type="submit" class="btn btn-primary col-6 col-md-2 offset-md-5 offset-3">
                                 Elegir asiento/s
                             </button> <i class="bi-info-circle-fill text-danger m-1" data-bs-toggle="popover"
