@@ -116,18 +116,17 @@ public class UsuarioController {
 	@PostMapping("/comprar/pase/submit")
 	public String comprarEntrada(@RequestParam("asientosSeleccionadosInput") String asientosSeleccionados,
 			@RequestParam("idPase") Long idPase, Model model) {
-		
-		List<Long> asientosIds = Arrays.stream(asientosSeleccionados.split(","))
-				.map(Long::parseLong)
+
+		List<Long> asientosIds = Arrays.stream(asientosSeleccionados.split(",")).map(Long::parseLong)
 				.collect(Collectors.toList());
 
 		int cantidadEntradas = asientosIds.size();
 		double precioTotal = 0;
 		double precio;
+		
 		for (Long id : asientosIds) {
-			precio = (servicioSala.findAsientoById(id).isVip()) ? servicioAjustes.findPrecioById(1) + servicioAjustes.findPrecioVipById(1)
-					: servicioAjustes.findPrecioById(1);
-				
+			precio = calcularPrecioVip(id);
+
 			Entrada e = Entrada.builder().pase(servicioSala.findPaseById(idPase))
 					.asiento(servicioSala.findAsientoById(id)).precio(precio).build();
 			servicioEntrada.save(e);
@@ -135,8 +134,23 @@ public class UsuarioController {
 		}
 
 		model.addAttribute("cantidadEntradas", cantidadEntradas);
+		model.addAttribute("diaDescuento", servicioAjustes.findDiaDescuentoById(1));
+		model.addAttribute("descuento", servicioAjustes.findPorcentDescuentoById(1));
 		model.addAttribute("precioTotal", precioTotal);
 		return "ticket";
+	}
+
+	// Helpers
+	
+	public double calcularPrecioVip(Long idAsiento) {
+		return (servicioSala.findAsientoById(idAsiento).isVip())
+				? servicioAjustes.findPrecioById(1) + servicioAjustes.findPrecioVipById(1)
+				: servicioAjustes.findPrecioById(1);
+	}
+	
+	public double calcularPrecioDia(Long idPase, double precio) {
+		return (servicioAjustes.findDiaDescuentoById(1) == servicioSala.findPaseById(idPase).getFecha().getDayOfWeek()
+				.toString()) ? precio * (1 - servicioAjustes.findPorcentDescuentoById(1) / 100) : precio;
 	}
 
 }

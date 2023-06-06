@@ -27,8 +27,7 @@
         <div class="card card-registration bg-dark text-white rounded-4">
           <div class="card-body p-md-5">
             <form th:action="${ajustes.id != 0} ? @{/admin/config/editar/submit} : @{/config/submit}"
-              th:object="${ajustes}" method="post" class="bg-dark text-white"
-              onsubmit="return validarFormulario(event)">
+              th:object="${ajustes}" method="post" class="bg-dark text-white">
               <h3 class="mb-4 text-uppercase fw-bold">Ajustes <i class="bi-person-fill-add"></i></h3>
 
               <div class="row">
@@ -36,14 +35,14 @@
                   <div class="form-outline">
                     <input th:if="${ajustes.id != 0}" type="hidden" name="id" th:field="*{id}" />
                     <input th:field="*{precioBaseEntrada}" type="number" id="precioBaseEntrada" name="precioBaseEntrada"
-                      class="form-control form-control-lg" required placeholder="Inserte precio">
+                      class="form-control form-control-lg" required placeholder="Inserte precio" min="4" step="any">
                     <label class="form-label" for="precioBaseEntrada">Precio Base</label>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
                     <input th:field="*{precioVip}" type="number" id="precioVip" name="precioVip"
-                      class="form-control form-control-lg" required placeholder="Inserte cantidad">
+                      class="form-control form-control-lg" required placeholder="Inserte cantidad" min="2" step="any">
                     <label class="form-label" for="precioVip">Añadido por Vip</label>
                   </div>
                 </div>
@@ -58,15 +57,22 @@
                       <option value="FRIDAY">Viernes</option>
                       <option value="SATURDAY">Sábado</option>
                     </select>
-                    <label for="diaDescuento" class="form-label">Disabled select menu</label>
+                    <label for="diaDescuento" class="form-label">Dia Supercine</label>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
                     <input th:field="*{porcentDescuento}" type="number" id="porcentDescuento" name="porcentDescuento"
-                      class="form-control form-control-lg" required placeholder="Inserte cantidad">
+                      class="form-control form-control-lg" required placeholder="Inserte cantidad" min="10" max="60" step="any">
                     <label class="form-label" for="porcentDescuento">Descuento Supercine</label>
                   </div>
+                </div>
+                <div class="form-outline col-md-6 offset-md-3">
+                  <input th:field="*{cantEntradasParaGratis}" type="number" id="cantEntradasParaGratis"
+                    name="cantEntradasParaGratis" class="form-control form-control-lg" required
+                    placeholder="Inserte cantidad" min="5">
+                  <label class="form-label" for="cantEntradasParaGratis">Por cada cuantas entradas se regalará
+                    una.</label>
                 </div>
               </div>
               <div class="d-flex justify-content-end">

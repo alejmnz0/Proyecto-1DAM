@@ -26,7 +26,7 @@ public interface AjustesRepository extends JpaRepository<Ajustes, Integer>{
 			from Ajustes a
 			where a.id = :id
 		""")
-	double findDiaDescuentoById(int id);
+	String findDiaDescuentoById(int id);
 	
 	@Query("""
 			select a.porcentDescuento
@@ -34,4 +34,11 @@ public interface AjustesRepository extends JpaRepository<Ajustes, Integer>{
 			where a.id = :id
 		""")
 	double findPorcentDescuentoById(int id);
+	
+	@Query("""
+			select a.cantEntradasParaGratis
+			from Ajustes a
+			where a.id = :id
+		""")
+	double findCantEntradasParaGratisById(int id);
 }

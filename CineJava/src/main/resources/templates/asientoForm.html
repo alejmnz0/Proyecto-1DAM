@@ -78,7 +78,7 @@
                             <ul class="list-unstyled row">
                                 <li th:each="asiento : ${asientos}" class="col-1 offset-1 mb-3">
                                     <input type="checkbox" name="asientosCheck" th:value="${asiento.id}" class="asiento-checkbox">
-                                    <label th:text="${asiento.id}" for="asientosCheck"></label>
+                                    <label for="asientosCheck"></label>
                                 </li>
                             </ul>
                             <input type="hidden" id="asientosSeleccionadosInput" name="asientosSeleccionadosInput">

@@ -25,7 +25,6 @@ public class Ajustes {
 	private double precioVip;
 	private String diaDescuento;
 	private double porcentDescuento;
-//	private int cantEntradasDescuento;
-//	private double porcentDescuentoXCantidad;
+	private int cantEntradasParaGratis;
 
 }

@@ -16,11 +16,15 @@ public class AjustesService extends BaseServiceImpl<Ajustes, Integer, AjustesRep
 		return this.repository.findPrecioVipById(id);
 	}
 	
-	public double findDiaDescuentoById(int id) {
+	public String findDiaDescuentoById(int id) {
 		return this.repository.findDiaDescuentoById(id);
 	}
 	
 	public double findPorcentDescuentoById (int id) {
 		return this.repository.findPorcentDescuentoById(id);
+	}
+	
+	public double findCantEntradasParaGratisById (int id) {
+		return this.repository.findCantEntradasParaGratisById(id);
 	}
 }
