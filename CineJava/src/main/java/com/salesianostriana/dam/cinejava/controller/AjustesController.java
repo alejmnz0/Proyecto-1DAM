@@ -20,13 +20,13 @@ public class AjustesController {
 
 	@Autowired
 	private AjustesService servicioAjustes;
-	
-	@GetMapping({"/", "/list"})
+
+	@GetMapping({ "/", "/list" })
 	public String listarTodos(Model model) {
 		model.addAttribute("lista", servicioAjustes.findAll());
 		return "config";
 	}
-	
+
 	@GetMapping("/editar/{id}")
 	public String mostrarFormularioEdicion(@PathVariable("id") int id, Model model) {
 

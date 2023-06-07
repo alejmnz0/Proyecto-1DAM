@@ -16,11 +16,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class Ajustes {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	
+
 	private double precioBaseEntrada;
 	private double precioVip;
 	private String diaDescuento;

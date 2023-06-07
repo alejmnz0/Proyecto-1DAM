@@ -24,27 +24,27 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Usuario implements UserDetails{
-	
+public class Usuario implements UserDetails {
+
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	
+
 	private String nombre, apellidos, email, password;
-	
+
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private LocalDate fechaNac;
-	
+
 	private boolean admin;
-	
+
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		String role = "ROLE_";
 		role += (admin) ? "ADMIN" : "USER";
 		return List.of(new SimpleGrantedAuthority(role));
-	}	
+	}
 
 	@Override
 	public boolean isAccountNonExpired() {

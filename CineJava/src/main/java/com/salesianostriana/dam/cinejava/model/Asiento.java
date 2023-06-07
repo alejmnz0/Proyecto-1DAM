@@ -21,13 +21,13 @@ public class Asiento {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	
+
 	private long fila;
-    private long columna;
-	
+	private long columna;
+
 	@ManyToOne
 	private Sala sala;
-	
+
 	private boolean vip;
 
 	public Asiento(long fila, long columna, Sala sala, boolean vip) {
@@ -37,7 +37,5 @@ public class Asiento {
 		this.sala = sala;
 		this.vip = vip;
 	}
-	
-	
-	
+
 }

@@ -16,13 +16,16 @@
 
 <body>
     <div id="entradasInfo" class="text-dark">
-        <p>Ha comprado <span th:text="${cantidadEntradas}"></span>
-            entradas.</p>
-        <p>X Entradas normales</p>
-        <p>X Entradas vip</p>
-        <p>Precio total: <span th:text="${precioTotal}"></span> euros.</p>
+        <h2>Ha comprado <span th:text="${cantidadEntradas}"></span>
+            entradas.</h2>
+            <ul>
+                <li th:if="${cantNormales>0}"><span th:text="${cantNormales}"></span> Entradas normales</li>
+                <li th:if="${cantVips>0}"><span th:text="${cantVips}"></span> Entradas vip</li>
+                <li>Precio total: <span th:text="${precioTotal}"></span> euros.</li>
+                <li th:if="${gratuitas>0}"><span th:text="${gratuitas}"></span> entrada/s gratis por la compra de <span th:text="${cantidadXGratis}"></span> entradas o mas.</li>
+            </ul>
         <p>Descuento Dia Supercine: </p>
-        <p>Por la compra de mas de <span></span> entradas.</p>
+        <p> </p>
         <p></p>
 
     </div>

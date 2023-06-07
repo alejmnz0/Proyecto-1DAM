@@ -20,6 +20,6 @@ public class Pelicula {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	
+
 	private String titulo, sinopsis, portada, altPortada;
 }

@@ -25,16 +25,15 @@ public class Pase {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id_pase;
-	
+
 	@ManyToOne
 	@JoinColumn(foreignKey = @ForeignKey(name = "fk_pase_sala"))
 	private Sala sala;
-	
+
 	@ManyToOne
 	@JoinColumn(foreignKey = @ForeignKey(name = "fk_pase_pelicula"))
 	private Pelicula peli;
-	
+
 	private LocalDateTime fecha;
-	
-	
+
 }

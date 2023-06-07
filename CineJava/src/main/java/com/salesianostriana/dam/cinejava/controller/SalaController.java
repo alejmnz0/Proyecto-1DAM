@@ -20,25 +20,25 @@ public class SalaController {
 
 	@Autowired
 	private SalaService servicioSala;
-	
-	@GetMapping({"/", "/list"})
+
+	@GetMapping({ "/", "/list" })
 	public String listarTodos(Model model) {
 		model.addAttribute("lista", servicioSala.findAll());
 		return "salas";
 	}
-	
+
 	@GetMapping("/nuevo")
-	public String mostrarRegistro (Model model) {
+	public String mostrarRegistro(Model model) {
 		model.addAttribute("sala", new Sala());
 		return "salaRegister";
 	}
-	
+
 	@PostMapping("/nuevo/submit")
-	public String procesarRegistro (@ModelAttribute("sala") Sala s) {
+	public String procesarRegistro(@ModelAttribute("sala") Sala s) {
 		servicioSala.add(s);
 		return "redirect:/admin/salas/";
 	}
-	
+
 	@GetMapping("/editar/{id}")
 	public String mostrarFormularioEdicion(@PathVariable("id") long id, Model model) {
 

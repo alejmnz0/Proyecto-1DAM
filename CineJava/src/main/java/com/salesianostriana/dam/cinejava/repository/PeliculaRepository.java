@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.salesianostriana.dam.cinejava.model.Pelicula;
 
-public interface PeliculaRepository extends JpaRepository<Pelicula, Long>{
+public interface PeliculaRepository extends JpaRepository<Pelicula, Long> {
 
 }

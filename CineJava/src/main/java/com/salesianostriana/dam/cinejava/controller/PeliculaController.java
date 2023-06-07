@@ -20,25 +20,25 @@ public class PeliculaController {
 
 	@Autowired
 	private PeliculaService servicioPeli;
-	
-	@GetMapping({"/", "/list"})
+
+	@GetMapping({ "/", "/list" })
 	public String listarTodos(Model model) {
 		model.addAttribute("lista", servicioPeli.findAll());
 		return "pelis";
 	}
-	
+
 	@GetMapping("/nuevo")
-	public String mostrarRegistro (Model model) {
+	public String mostrarRegistro(Model model) {
 		model.addAttribute("pelicula", new Pelicula());
 		return "filmRegister";
 	}
-	
+
 	@PostMapping("/nuevo/submit")
-	public String procesarRegistro (@ModelAttribute("pelicula") Pelicula p) {
+	public String procesarRegistro(@ModelAttribute("pelicula") Pelicula p) {
 		servicioPeli.add(p);
 		return "redirect:/admin/peliculas/";
 	}
-	
+
 	@GetMapping("/editar/{id}")
 	public String mostrarFormularioEdicion(@PathVariable("id") long id, Model model) {
 

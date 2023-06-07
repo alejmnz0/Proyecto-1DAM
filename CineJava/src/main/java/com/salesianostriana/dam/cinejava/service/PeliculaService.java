@@ -14,23 +14,23 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class PeliculaService extends BaseServiceImpl<Pelicula, Long, PeliculaRepository>{
+public class PeliculaService extends BaseServiceImpl<Pelicula, Long, PeliculaRepository> {
 
 	private final PeliculaRepository repositorioPelis;
 	private final SalaRepository repositorioSalas;
-	
-	public Pelicula add (Pelicula p) {
-		byte breakPoint=0;
-		
+
+	public Pelicula add(Pelicula p) {
+		byte breakPoint = 0;
+
 		for (Sala sala : repositorioSalas.findAll()) {
 			for (Pase pase : sala.getPases()) {
-				if (pase.getPeli()==null&&breakPoint<9) {
+				if (pase.getPeli() == null && breakPoint < 9) {
 					pase.setPeli(p);
 					breakPoint++;
 				}
 			}
 		}
-		
+
 		return repositorioPelis.save(p);
 	}
 }

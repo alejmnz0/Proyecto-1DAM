@@ -17,51 +17,48 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class SalaService extends BaseServiceImpl<Sala, Long, SalaRepository>{
-	
-	public Sala add (Sala s) {
-		byte semana=7;
-		byte filas=8;
-		byte columnas=7;
-		LocalTime horaApertura= LocalTime.of(15, 00);
+public class SalaService extends BaseServiceImpl<Sala, Long, SalaRepository> {
+
+	public Sala add(Sala s) {
+		byte semana = 7;
+		byte filas = 8;
+		byte columnas = 7;
+		LocalTime horaApertura = LocalTime.of(15, 00);
 		LocalDate dia = LocalDate.now();
-		
-		
+
 		for (int i = 1; i < filas; i++) {
 			for (int j = 1; j < columnas; j++) {
-				Asiento a = (i<filas-1)?new Asiento(i,j,s,false):new Asiento(i,j,s,true);
+				Asiento a = (i < filas - 1) ? new Asiento(i, j, s, false) : new Asiento(i, j, s, true);
 				s.addAsiento(a);
 			}
 		}
-		
+
 		for (int i = 1; i < semana; i++) {
-			for (int j = 0; j < 7; j+=3) {
-				Pase p = Pase.builder()
-				.sala(s)
-				.fecha(LocalDateTime.of(dia.plusDays(i), horaApertura.plusHours(j)))
-				.build();
+			for (int j = 0; j < 7; j += 3) {
+				Pase p = Pase.builder().sala(s).fecha(LocalDateTime.of(dia.plusDays(i), horaApertura.plusHours(j)))
+						.build();
 				s.addPase(p);
 			}
 
 		}
-		
+
 		return this.repository.save(s);
 	}
-	
+
 	public List<Pase> findPaseByFilm(Pelicula p) {
 		return this.repository.buscarPasePorPeli(p);
 	}
-	
+
 	public Pase findPaseById(long id) {
 		return this.repository.buscarPasePorId(id);
 	}
-	
+
 	public List<Asiento> findAsientosByPase(long id) {
 		return this.repository.findAsientosByPaseId(id);
 	}
-	
+
 	public Asiento findAsientoById(long id) {
 		return this.repository.findAsientoById(id);
 	}
-	
+
 }

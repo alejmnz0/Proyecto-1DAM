@@ -1,4 +1,4 @@
-package com.salesianostriana.dam.cinejava.service; 
+package com.salesianostriana.dam.cinejava.service;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -10,19 +10,19 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class UsuarioService extends BaseServiceImpl<Usuario, Long, UsuarioRepository>{
+public class UsuarioService extends BaseServiceImpl<Usuario, Long, UsuarioRepository> {
 
 	private final UsuarioRepository repositorioUsuarios;
 	private final PasswordEncoder passwordEncoder;
-	
-	public Usuario add (Usuario u) {
+
+	public Usuario add(Usuario u) {
 		u.setPassword(passwordEncoder.encode(u.getPassword()));
 		return repositorioUsuarios.save(u);
 	}
-	
-	public Usuario edit (Usuario u) {
+
+	public Usuario edit(Usuario u) {
 		u.setPassword(passwordEncoder.encode(u.getPassword()));
 		return repositorioUsuarios.save(u);
 	}
-	
+
 }
