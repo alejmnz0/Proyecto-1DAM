@@ -11,94 +11,53 @@ body {
   width: 18em;
 }
 
-
-.seleccion{
-  outline: none;
-}
-
-.seleccion input{
-  display: none;
-}
-
-.seleccion label {
-
-  position: relative;
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin: 0 auto;
-  background-color: #f72414;
-  border-radius: 50%;
+.asiento-checkbox {
   cursor: pointer;
-  z-index: 1;
-}
-
-.seleccion label:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  left: 0;
-  width: calc(20px * .7);
-  height: calc(20px * .7);
-  margin: 0 auto;
   background-color: #fff;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  transition: 0.2s ease width, 0.2s ease height;
+  color: #fff;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+  width: 17px;
+  height: 17px;
+  appearance: none;
+  border: 2px solid #888;
+  background-position: 0 -2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
 }
 
-.seleccion label:hover:before {
-  width: calc(20px * .55);
-  height: calc(20px * .55);
+.asiento-checkbox:checked {
+  background-color: rgb(75, 156, 13);
+  color: rgb(75, 156, 13);
+  background-position: 0 0;
 }
 
-.seleccion .marcado {
-  position: absolute;
-  top: -1px;
-  right: 0;
-  left: calc(20px * -.05);
-  width: calc(20px * .6);
-  height: calc(20px * .6);
-  margin: 0 auto;
-  margin-left: calc(20px * .14);
-  transform: rotateZ(-40deg);
+.asiento-checkbox-disabled {
+  cursor: pointer;
+  background-color: #ff0000;
+  color: #fff;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+  width: 17px;
+  height: 17px;
+  appearance: none;
+  border: 2px solid #888;
+  background-position: 0 -2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
 }
 
-.seleccion .marcado:before,
-.seleccion .marcado:after {
-  content: "";
-  position: absolute;
-  background-color: #fff;
-  border-radius: 2px;
-  opacity: 0;
-}
-
-.seleccion .marcado:before {
-  left: 0;
-  bottom: 0;
-  width: calc(20px * .1);
-  height: calc(20px * .3);
-}
-
-.seleccion .marcado:after {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: calc(20px * .1);
-}
-
-.seleccion input:checked+label {
-  background-color: #0059ff;
-}
-
-.seleccion input:checked+label:before {
-  width: 0;
-  height: 0;
-}
-
-.seleccion input:checked+label .marcado:before,
-.seleccion input:checked+label .marcado:after {
-  transform: translate(0);
-  opacity: 1;
+.asiento-checkbox-vip {
+  cursor: pointer;
+  background-color: #ffd900;
+  color: #fff;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+  width: 17px;
+  height: 17px;
+  appearance: none;
+  border: 2px solid #888;
+  background-position: 0 -2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
 }

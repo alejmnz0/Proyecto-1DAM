@@ -28,7 +28,7 @@ public class Asiento {
 	@ManyToOne
 	private Sala sala;
 
-	private boolean vip;
+	private boolean vip,disponible;
 
 	public Asiento(long fila, long columna, Sala sala, boolean vip) {
 		super();

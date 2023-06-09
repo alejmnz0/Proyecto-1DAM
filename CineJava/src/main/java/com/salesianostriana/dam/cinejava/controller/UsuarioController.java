@@ -3,6 +3,7 @@ package com.salesianostriana.dam.cinejava.controller;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -107,9 +108,10 @@ public class UsuarioController {
 	@GetMapping("/comprar/pase/{id}")
 	public String comprarPase(@PathVariable("id") long idPase, Model model) {
 
-		model.addAttribute("asientos", servicioSala.findAsientosByPase(idPase));
+		model.addAttribute("asientos", comprobarDisponibilidad(servicioSala.findAsientosByPase(idPase),idPase));
 		model.addAttribute("paseId", idPase);
 		model.addAttribute("asientosSeleccionados", new ArrayList<Asiento>());
+		model.addAttribute("ajustes", servicioAjustes.findById(1).get());
 		return "asientoForm";
 	}
 
@@ -168,6 +170,16 @@ public class UsuarioController {
 	public double calcularPrecioTotal (int cantEntradas,double precioTotal) {
 		System.out.println(cantEntradas/servicioAjustes.findCantEntradasParaGratisById(1));
 		return precioTotal-servicioAjustes.findPrecioById(1)*(cantEntradas/servicioAjustes.findCantEntradasParaGratisById(1));
+	}
+	
+	public List<Asiento> comprobarDisponibilidad (List<Asiento> asientos, long idPase){
+		for (Asiento asiento : asientos) {
+			Optional<Entrada> entrada = servicioEntrada.findEntradaVendida(asiento.getId(), idPase);
+			if(entrada.isPresent()) {
+				asiento.setDisponible(false);
+			}
+		}
+		return asientos;
 	}
 
 }
