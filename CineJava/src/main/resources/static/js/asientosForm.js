@@ -1,5 +1,5 @@
 function submitForm() {
-    let checkboxes = document.getElementsByClassName("asiento-checkbox");
+    let checkboxes = document.getElementsByName("asientosCheck");
     let asientosSeleccionados = [];
     let checked = false;
     

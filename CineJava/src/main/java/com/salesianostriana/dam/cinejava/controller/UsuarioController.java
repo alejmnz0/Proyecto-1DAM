@@ -112,6 +112,10 @@ public class UsuarioController {
 		model.addAttribute("paseId", idPase);
 		model.addAttribute("asientosSeleccionados", new ArrayList<Asiento>());
 		model.addAttribute("ajustes", servicioAjustes.findById(1).get());
+		model.addAttribute("cantidadXGratis", servicioAjustes.findCantEntradasParaGratisById(1));
+		model.addAttribute("descuento", servicioAjustes.findPorcentDescuentoById(1));
+		model.addAttribute("diaDescuento", (servicioAjustes.findDiaDescuentoById(1)
+				.equalsIgnoreCase(servicioSala.findPaseById(idPase).getFecha().getDayOfWeek().toString())));
 		return "asientoForm";
 	}
 
@@ -149,6 +153,8 @@ public class UsuarioController {
 		model.addAttribute("diaDescuento", (servicioAjustes.findDiaDescuentoById(1)
 				.equalsIgnoreCase(servicioSala.findPaseById(idPase).getFecha().getDayOfWeek().toString())));
 		model.addAttribute("descuento", servicioAjustes.findPorcentDescuentoById(1));
+		model.addAttribute("precioNormal", servicioAjustes.findPrecioById(1));
+		model.addAttribute("precioVip", servicioAjustes.findPrecioVipById(1));
 		model.addAttribute("precioTotal", precioTotal);
 		return "ticket";
 	}

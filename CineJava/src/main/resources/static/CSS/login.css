@@ -26,7 +26,13 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.asiento-checkbox:checked {
+.asiento-checkbox:checked{
+  background-color: rgb(75, 156, 13);
+  color: rgb(75, 156, 13);
+  background-position: 0 0;
+}
+
+.asiento-checkbox-vip:checked{
   background-color: rgb(75, 156, 13);
   color: rgb(75, 156, 13);
   background-position: 0 0;
@@ -45,6 +51,7 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   transition: all 0.5s ease-in-out;
+  
 }
 
 .asiento-checkbox-vip {

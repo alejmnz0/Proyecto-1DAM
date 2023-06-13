@@ -41,7 +41,15 @@
                         <p>Precio entrada: <span th:text="${ajustes.precioBaseEntrada}"></span>€</p>
                     </li>
                     <li class="text-light ms-5 pt-2">
-                        <p>Precio entrada Vip (Fila 7): <span th:text="${ajustes.precioVip+ajustes.precioBaseEntrada}"></span>€</p>
+                        <p>Precio entrada Vip <input disabled class="asiento-checkbox-vip"></input>: <span
+                                th:text="${ajustes.precioVip+ajustes.precioBaseEntrada}"></span>€</p>
+                    </li>
+                    <li class="text-light ms-5 pt-2">
+                        <p>Llevate 1 entrada gratis por la compra de <span th:text="${cantidadXGratis}"></span> entradas
+                            o más.</p>
+                    </li>
+                    <li class="text-light ms-5 pt-2" th:if="${diaDescuento}">
+                        <p><span th:text="${descuento}"></span>% descuento añadido.</p>
                     </li>
                 </ul>
             </div>
@@ -83,12 +91,19 @@
                             <input type="hidden" name="idPase" th:value="${paseId}">
                             <ul class="list-unstyled row">
                                 <li th:each="asiento : ${asientos}" class="col-1 offset-1 mb-3">
-                                    <input th:if="${asiento.disponible}" type="checkbox" name="asientosCheck" th:value="${asiento.id}" class="asiento-checkbox">
+                                    <input type="checkbox" name="asientosCheck" th:value="${asiento.id}"
+                                        th:disabled="${!asiento.disponible}"
+                                        th:classappend="${(asiento.disponible)?((asiento.vip)?'asiento-checkbox-vip':'asiento-checkbox'):'asiento-checkbox-disabled'}">
+                                    </input>
+
+                                    <!--                             <input th:if="${asiento.disponible}" type="checkbox" name="asientosCheck"
+                                        th:value="${asiento.id}" class="asiento-checkbox">
                                     <div th:unless="${asiento.disponible}">
-                                        <input type="checkbox" name="asientosCheck" th:value="${asiento.id}" class="asiento-checkbox-disabled" hidden>
+                                        <input type="checkbox" name="asientosCheck" th:value="${asiento.id}"
+                                            class="asiento-checkbox-disabled" hidden>
                                         <div class="asiento-checkbox-disabled"></div>
                                     </div>
-                                    
+-->
                                 </li>
                             </ul>
                             <input type="hidden" id="asientosSeleccionadosInput" name="asientosSeleccionadosInput">
