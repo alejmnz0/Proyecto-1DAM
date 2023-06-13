@@ -146,7 +146,8 @@ public class UsuarioController {
 		model.addAttribute("gratuitas", cantidadEntradas/servicioAjustes.findCantEntradasParaGratisById(1));
 		model.addAttribute("cantidadXGratis", servicioAjustes.findCantEntradasParaGratisById(1));
 		model.addAttribute("cantidadEntradas", cantidadEntradas);
-		model.addAttribute("diaDescuento", servicioAjustes.findDiaDescuentoById(1));
+		model.addAttribute("diaDescuento", (servicioAjustes.findDiaDescuentoById(1)
+				.equalsIgnoreCase(servicioSala.findPaseById(idPase).getFecha().getDayOfWeek().toString())));
 		model.addAttribute("descuento", servicioAjustes.findPorcentDescuentoById(1));
 		model.addAttribute("precioTotal", precioTotal);
 		return "ticket";

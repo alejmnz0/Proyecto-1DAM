@@ -23,8 +23,9 @@
                 <li th:if="${cantVips>0}"><span th:text="${cantVips}"></span> Entradas vip</li>
                 <li>Precio total: <span th:text="${precioTotal}"></span> euros.</li>
                 <li th:if="${gratuitas>0}"><span th:text="${gratuitas}"></span> entrada/s gratis por la compra de <span th:text="${cantidadXGratis}"></span> entradas o mas.</li>
+                <li th:if="${diaDescuento}"><span th:text="${descuento}"></span> % de descuento por Dia SuperCine.</li>
+
             </ul>
-        <p>Descuento Dia Supercine: </p>
         <p> </p>
         <p></p>
 
