@@ -95,15 +95,6 @@
                                         th:disabled="${!asiento.disponible}"
                                         th:classappend="${(asiento.disponible)?((asiento.vip)?'asiento-checkbox-vip':'asiento-checkbox'):'asiento-checkbox-disabled'}">
                                     </input>
-
-                                    <!--                             <input th:if="${asiento.disponible}" type="checkbox" name="asientosCheck"
-                                        th:value="${asiento.id}" class="asiento-checkbox">
-                                    <div th:unless="${asiento.disponible}">
-                                        <input type="checkbox" name="asientosCheck" th:value="${asiento.id}"
-                                            class="asiento-checkbox-disabled" hidden>
-                                        <div class="asiento-checkbox-disabled"></div>
-                                    </div>
--->
                                 </li>
                             </ul>
                             <input type="hidden" id="asientosSeleccionadosInput" name="asientosSeleccionadosInput">

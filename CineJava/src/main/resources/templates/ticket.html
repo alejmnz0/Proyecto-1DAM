@@ -19,14 +19,22 @@
     <div id="entradasInfo" class="text-dark text-center">
         <h2 class="text-light display-3 fw-bold">Ha comprado <span th:text="${cantidadEntradas}"></span>
             entradas.</h2>
-            <ul class="list-unstyled text-light h3">
-                <li class="m-3" th:if="${cantNormales>0}"><span th:text="${#numbers.formatDecimal(precioNormal, 1, 2)}"></span>€ x <span th:text="${cantNormales}"></span> Entradas normales -- <span th:text="${#numbers.formatDecimal(precioTotalNormales, 1, 2)}"></span>€</li>
-                <li class="m-3" th:if="${cantVips>0}"><span th:text="${precioVip+precioNormal}"></span>€ x <span th:text="${cantVips}"></span> Entradas vip -- <span th:text="${#numbers.formatDecimal(precioTotalVip, 1, 2)}"></span>€</li>
-                <li class="m-3" th:if="${gratuitas>0}"><span th:text="${gratuitas}"></span> entrada/s gratis por la compra de <span th:text="${cantidadXGratis}"></span> entradas o más.</li>
-                <li class="m-3" th:if="${diaDescuento}"><span th:text="${#numbers.formatDecimal(descuento, 1, 2)}"></span> % de descuento por Dia SuperCine.</li>
-                <li class="m-3">Precio total -- <span th:text="${#numbers.formatDecimal(precioTotal, 1, 2)}"></span>€</li>
-                <li><a class="btn btn-dark text-light mx-1" th:href="@{/}">Volver al cine</a></li>
-            </ul>
+        <ul class="list-unstyled text-light h3">
+            <li class="m-3" th:if="${cantNormales>0}"><span
+                    th:text="${#numbers.formatDecimal(precioNormal, 1, 2)}"></span>€ x <span
+                    th:text="${cantNormales}"></span> Entradas normales -- <span
+                    th:text="${#numbers.formatDecimal(precioTotalNormales, 1, 2)}"></span>€</li>
+            <li class="m-3" th:if="${cantVips>0}"><span th:text="${precioVip+precioNormal}"></span>€ x <span
+                    th:text="${cantVips}"></span> Entradas vip -- <span
+                    th:text="${#numbers.formatDecimal(precioTotalVip, 1, 2)}"></span>€</li>
+            <li class="m-3" th:if="${gratuitas>0}"><span th:text="${gratuitas}"></span> entrada/s gratis por la compra
+                de <span th:text="${cantidadXGratis}"></span> entradas o más.</li>
+            <li class="m-3" th:if="${diaDescuento}"><span th:text="${#numbers.formatDecimal(descuento, 1, 2)}"></span> %
+                de descuento por Dia SuperCine.</li>
+            <li class="m-3">Precio total -- <span th:text="${#numbers.formatDecimal(precioTotal, 1, 2)}"></span>€</li>
+            <li><a class="btn btn-dark text-light mx-1" th:href="@{/pdf/?format=pdf}">Entradas Pdf</a></li>
+            <li><a class="btn btn-dark text-light mx-1" th:href="@{/}">Volver al cine</a></li>
+        </ul>
     </div>
 
 

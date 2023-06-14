@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -108,7 +110,7 @@ public class UsuarioController {
 	@GetMapping("/comprar/pase/{id}")
 	public String comprarPase(@PathVariable("id") long idPase, Model model) {
 
-		model.addAttribute("asientos", comprobarDisponibilidad(servicioSala.findAsientosByPase(idPase),idPase));
+		model.addAttribute("asientos", comprobarDisponibilidad(servicioSala.findAsientosByPase(idPase), idPase));
 		model.addAttribute("paseId", idPase);
 		model.addAttribute("asientosSeleccionados", new ArrayList<Asiento>());
 		model.addAttribute("ajustes", servicioAjustes.findById(1).get());
@@ -121,33 +123,36 @@ public class UsuarioController {
 
 	@PostMapping("/comprar/pase/submit")
 	public String comprarEntrada(@RequestParam("asientosSeleccionadosInput") String asientosSeleccionados,
-			@RequestParam("idPase") Long idPase, Model model) {
+			@RequestParam("idPase") Long idPase, Model model, HttpSession session){
 
 		List<Long> asientosIds = Arrays.stream(asientosSeleccionados.split(",")).map(Long::parseLong)
 				.collect(Collectors.toList());
 
-		int cantidadEntradas = asientosIds.size(),vips=0,normales=0;
+		int cantidadEntradas = asientosIds.size(), vips = 0, normales = 0;
 		double precioTotal = 0;
 		double precio;
-
+		List<Entrada> entradas = new ArrayList<Entrada>();
 		for (Long id : asientosIds) {
 			precio = calcularPrecioVip(id);
 			precio = calcularPrecioDia(idPase, precio);
-			
-			if(servicioSala.findAsientoById(id).isVip())
+
+			if (servicioSala.findAsientoById(id).isVip())
 				vips++;
 			else
 				normales++;
 
 			Entrada e = Entrada.builder().pase(servicioSala.findPaseById(idPase))
 					.asiento(servicioSala.findAsientoById(id)).precio(precio).build();
+			entradas.add(e);
 			servicioEntrada.save(e);
 			precioTotal += precio;
 		}
-		precioTotal = calcularPrecioTotal(asientosIds.size(),precioTotal);
+		precioTotal = calcularPrecioTotal(asientosIds.size(), precioTotal);
+		model.addAttribute("entradas", entradas);
+		session.setAttribute("entradas", entradas);
 		model.addAttribute("cantVips", vips);
 		model.addAttribute("cantNormales", normales);
-		model.addAttribute("gratuitas", cantidadEntradas/servicioAjustes.findCantEntradasParaGratisById(1));
+		model.addAttribute("gratuitas", cantidadEntradas / servicioAjustes.findCantEntradasParaGratisById(1));
 		model.addAttribute("cantidadXGratis", servicioAjustes.findCantEntradasParaGratisById(1));
 		model.addAttribute("cantidadEntradas", cantidadEntradas);
 		model.addAttribute("diaDescuento", (servicioAjustes.findDiaDescuentoById(1)
@@ -156,9 +161,15 @@ public class UsuarioController {
 		model.addAttribute("precioNormal", servicioAjustes.findPrecioById(1));
 		model.addAttribute("precioVip", servicioAjustes.findPrecioVipById(1));
 		model.addAttribute("precioTotal", precioTotal);
-		model.addAttribute("precioTotalVip", servicioAjustes.findById(1).get().calcularPrecioVip()*vips);
-		model.addAttribute("precioTotalNormales", servicioAjustes.findPrecioById(1)*normales);
+		model.addAttribute("precioTotalVip", servicioAjustes.findById(1).get().calcularPrecioVip() * vips);
+		model.addAttribute("precioTotalNormales", servicioAjustes.findPrecioById(1) * normales);
 		return "ticket";
+	}
+
+	@GetMapping("/pdf")
+	public String mostrarPdf(Model model, HttpSession session) {
+		model.addAttribute("entradas", session.getAttribute("entradas"));
+		return "pdf";
 	}
 
 	// Helpers
@@ -175,16 +186,17 @@ public class UsuarioController {
 						? (precio * (1 - servicioAjustes.findPorcentDescuentoById(1) / 100))
 						: precio;
 	}
-	
-	public double calcularPrecioTotal (int cantEntradas,double precioTotal) {
-		System.out.println(cantEntradas/servicioAjustes.findCantEntradasParaGratisById(1));
-		return precioTotal-servicioAjustes.findPrecioById(1)*(cantEntradas/servicioAjustes.findCantEntradasParaGratisById(1));
+
+	public double calcularPrecioTotal(int cantEntradas, double precioTotal) {
+		System.out.println(cantEntradas / servicioAjustes.findCantEntradasParaGratisById(1));
+		return precioTotal - servicioAjustes.findPrecioById(1)
+				* (cantEntradas / servicioAjustes.findCantEntradasParaGratisById(1));
 	}
-	
-	public List<Asiento> comprobarDisponibilidad (List<Asiento> asientos, long idPase){
+
+	public List<Asiento> comprobarDisponibilidad(List<Asiento> asientos, long idPase) {
 		for (Asiento asiento : asientos) {
 			Optional<Entrada> entrada = servicioEntrada.findEntradaVendida(asiento.getId(), idPase);
-			if(entrada.isPresent()) {
+			if (entrada.isPresent()) {
 				asiento.setDisponible(false);
 			}
 		}
