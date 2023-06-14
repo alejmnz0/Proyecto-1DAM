@@ -30,10 +30,10 @@
         </thead>
         <tbody>
             <tr th:each="ajustes : ${lista}" class="text-center align-middle">
-                <td th:text="${ajustes.precioBaseEntrada}">dinero</td>
-                <td th:text="${ajustes.precioVip}">dinero</td>
+                <td th:text="${#numbers.formatDecimal(ajustes.precioBaseEntrada, 1, 2)}">dinero</td>
+                <td th:text="${#numbers.formatDecimal(ajustes.precioVip, 1, 2)}">dinero</td>
                 <td th:text="${ajustes.diaDescuento}">dia</td>
-                <td><span th:text="${ajustes.porcentDescuento}"></span> %</td>
+                <td><span th:text="${#numbers.formatDecimal(ajustes.porcentDescuento, 1, 2)}"></span> %</td>
                 <td><span th:text="${ajustes.cantEntradasParaGratis}"></span></td>
 
                 <td>

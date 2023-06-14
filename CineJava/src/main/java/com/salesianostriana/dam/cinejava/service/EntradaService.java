@@ -1,5 +1,6 @@
 package com.salesianostriana.dam.cinejava.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
@@ -14,4 +15,7 @@ public class EntradaService extends BaseServiceImpl<Entrada, Long, EntradaReposi
 		return this.repository.findEntradaByIdAsientoAndIdPase(idAsiento, idPase);
 	}
 	
+	public List<Entrada> findEntradaByIdPase(long idPase){
+		return this.repository.findEntradaByIdPase(idPase);
+	};
 }

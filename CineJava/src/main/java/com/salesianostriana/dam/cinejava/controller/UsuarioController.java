@@ -156,6 +156,8 @@ public class UsuarioController {
 		model.addAttribute("precioNormal", servicioAjustes.findPrecioById(1));
 		model.addAttribute("precioVip", servicioAjustes.findPrecioVipById(1));
 		model.addAttribute("precioTotal", precioTotal);
+		model.addAttribute("precioTotalVip", servicioAjustes.findById(1).get().calcularPrecioVip()*vips);
+		model.addAttribute("precioTotalNormales", servicioAjustes.findPrecioById(1)*normales);
 		return "ticket";
 	}
 

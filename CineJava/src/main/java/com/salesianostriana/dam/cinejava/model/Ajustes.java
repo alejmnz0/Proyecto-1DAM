@@ -27,4 +27,8 @@ public class Ajustes {
 	private double porcentDescuento;
 	private int cantEntradasParaGratis;
 
+	
+	public double calcularPrecioVip() {
+		return precioVip+precioBaseEntrada;
+	}
 }

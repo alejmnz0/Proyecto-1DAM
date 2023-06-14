@@ -38,18 +38,18 @@
                         <a class="nav-link btn btn-dark text-danger mx-1" th:href="@{/}">Volver</a>
                     </li>
                     <li class="text-light ms-5 pt-2">
-                        <p>Precio entrada: <span th:text="${ajustes.precioBaseEntrada}"></span>€</p>
+                        <p>Precio entrada: <span th:text="${#numbers.formatDecimal (ajustes.precioBaseEntrada, 1, 2)}"></span>€</p>
                     </li>
                     <li class="text-light ms-5 pt-2">
                         <p>Precio entrada Vip <input disabled class="asiento-checkbox-vip"></input>: <span
-                                th:text="${ajustes.precioVip+ajustes.precioBaseEntrada}"></span>€</p>
+                                th:text="${#numbers.formatDecimal (ajustes.calcularPrecioVip(), 1, 2)}"></span>€</p>
                     </li>
                     <li class="text-light ms-5 pt-2">
                         <p>Llevate 1 entrada gratis por la compra de <span th:text="${cantidadXGratis}"></span> entradas
                             o más.</p>
                     </li>
                     <li class="text-light ms-5 pt-2" th:if="${diaDescuento}">
-                        <p><span th:text="${descuento}"></span>% descuento añadido.</p>
+                        <p><span th:text="${#numbers.formatDecimal (descuento, 1, 2)}"></span>% descuento añadido.</p>
                     </li>
                 </ul>
             </div>

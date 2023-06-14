@@ -60,7 +60,6 @@ public class SalaController {
 
 	@GetMapping("/borrar/{id}")
 	public String borrar(@PathVariable("id") long id) {
-		servicioSala.delete(servicioSala.findById(id).get());
-		return "redirect:/admin/salas/";
+		return (servicioSala.deleteSala(servicioSala.findById(id).get()))? "redirect:/admin/salas/":"/admin/salas/?error=true";
 	}
 }

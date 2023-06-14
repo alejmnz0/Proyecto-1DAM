@@ -61,4 +61,12 @@ public class SalaService extends BaseServiceImpl<Sala, Long, SalaRepository> {
 		return this.repository.findAsientoById(id);
 	}
 
+	public boolean deleteSala (Sala s) {
+		for (Pase pase : s.getPases()) {
+			if(pase.getPeli()!=null)
+				return false;
+		}
+		this.repository.delete(s);
+		return true;
+	}
 }
